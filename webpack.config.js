@@ -19,5 +19,9 @@ module.exports = {
       { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig]
+  plugins: [HtmlWebpackPluginConfig],
+  resolve: {
+    extensions: [".jsx", ".js"]
+  },
+  devtool: 'inline-source-map'
 }
