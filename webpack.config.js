@@ -16,12 +16,13 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
+      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ },
+      { test: /\.(png|jpg)$/, loader: 'url-loader'}
     ]
   },
   plugins: [HtmlWebpackPluginConfig],
   resolve: {
     extensions: [".jsx", ".js"]
   },
-  devtool: 'inline-source-map'
+  devtool: 'source-map'
 }

@@ -10,8 +10,8 @@ const Main = () => (
     <Switch>
       <Route exact path="/" component={Home}/>
       <Route path="/townhomes" component={Townhomes}/>
-      <Route exact path="/apartments" component={Apartments}/>
-      <Route exact path="/neighborhood" component={Neighborhood}/>
+      <Route path="/apartments" component={Apartments}/>
+      <Route path="/neighborhood" component={Neighborhood}/>
     </Switch>
   </main>
 )
