@@ -32,7 +32,7 @@ const content = {
       paragraph1: "Townhomes within the Bighorn Crossing development create a seamless blend of historic Georgetown with active modern living.  You’ll enjoy sleek, clean floor plans with lots of natural light and the feeling of bringing the outdoors right into your living room.  With very affordable pricing and extensive indoor/outdoor features, it’s a great place to call home."
     },
     textBlock2: {
-      paragraph1: "Rose Mill Townhomes are available in two primary styles with either an attached garage (975 sq/ft) or detached garage (1,080 sq/ft).  Each building type is created with hip, modern elements for a visually appealing community that is complementary to historic Georgetown architecture in material and design.  Inside, floor plans are clean and innovative to maximize usability for an active family lifestyle."
+      paragraph1: "Bighorn Crossing Townhomes are available in two primary styles with either an attached garage (975 sq/ft) or detached garage (1,080 sq/ft).  Each building type is created with hip, modern elements for a visually appealing community that is complementary to historic Georgetown architecture in material and design.  Inside, floor plans are clean and innovative to maximize usability for an active family lifestyle."
     },
     list1: {
       title: "Amenities",

@@ -3,6 +3,7 @@ import content from '../content/content';
 import ImageGallery from './image-gallery';
 import Textblock from './textblock';
 import List from './list';
+import galleries from '../content/images'
 
 class Home extends React.Component {
     constructor(props) {
@@ -12,7 +13,7 @@ class Home extends React.Component {
       return (
         <div className="homepage">
           <h1><span>{'Bighorn'}</span><span>{'Crossing'}</span></h1>
-          <ImageGallery/>
+          <ImageGallery images={galleries.homepage}/>
           <Textblock content={content.homepage.textBlock1}/>
           <img src='https://res.cloudinary.com/bighorncrossing/image/upload/v1514406147/homepage-townhome-hero_j3uis2.jpg'/>
           <h2>{'Townhomes'}</h2>

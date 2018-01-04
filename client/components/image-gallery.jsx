@@ -1,23 +1,42 @@
 import React from 'react';
 
+
 export default class ImageGallery extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { imageUrl:'https://res.cloudinary.com/bighorncrossing/image/upload/v1514344514/homepage1_aualev.jpg',
-                  position: 2}
+    this.state = { imageUrl:'',
+                  position: 0,
+                  initialLoad: true
+                }
     this.changeUrl = this.changeUrl.bind(this)
+  }
+
+  componentWillMount() {
+    this.setState({imageUrl: this.props.images[0].imageUrl, position: this.props.images[0].position})
   }
   componentDidMount() {
     setInterval(this.changeUrl, 3000);
   }
 
   changeUrl() {
-    if (this.state.position == 0) {
-      this.setState({imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1514344512/homepage3_qbndhr.jpg', position: 1})
-    } else if (this.state.position == 1) {
-      this.setState({imageUrl:'http://res.cloudinary.com/bighorncrossing/image/upload/v1514344512/homepage2_hi4e1r.jpg', position: 2})
-    } else if (this.state.position == 2) {
-      this.setState({imageUrl:'https://res.cloudinary.com/bighorncrossing/image/upload/v1514344514/homepage1_aualev.jpg', position: 0})
+    if (this.state.initialLoad == true) {
+      this.setState({initialLoad: false})
+      return
+    }
+    if (this.state.position === 0) {
+      this.setState({imageUrl: this.props.images[1].imageUrl, position: this.props.images[1].position})
+      return
+    }
+    if (this.state.position === 1 && this.props.images[2]) {
+      this.setState({imageUrl: this.props.images[2].imageUrl, position: this.props.images[2].position})
+      return
+    } else {
+      this.setState({imageUrl: this.props.images[0].imageUrl, position: this.props.images[0].position})
+      return
+    }
+    if (this.state.position === 2) {
+      this.setState({imageUrl: this.props.images[0].imageUrl, position: this.props.images[0].position})
+      return
     }
   }
 
