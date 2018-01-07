@@ -11,6 +11,12 @@ const galleries = {
   townhomesDetached: [
     { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-1_psj229.jpg', position: 0},
     { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-2_muwpyn.jpg', position: 1}
+  ],
+  neighborhood: [
+    { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-1_psj229.jpg', position: 0},
+    { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-1_psj229.jpg', position: 1},
+    { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-1_psj229.jpg', position: 2}
+
   ]
 }
 

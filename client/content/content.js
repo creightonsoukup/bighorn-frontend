@@ -39,6 +39,12 @@ const content = {
       listItems: ['1','2']
     }
   },
+  apartments: {
+    textBlock1: {
+      title: "Gorgeous Modern One & Two Bedroom Apartments",
+      paragraph1: "Bighorn Crossing Apartments offer upscale one and two bedroom units with modern floor plans and spectacular views.  With large master bedrooms/bathrooms, excellent storage and breathtaking architecture, you’ll be living in spectacular mountain paradise."
+    }
+  },
   neighborhood: {
     textBlock1: {
       paragraph1: "The name Bighorn Crossing is a tribute to the daily commute of our local bighorn sheep, which travel down the mountainsides daily for food and water.  Cohabitating with these majestic animals has been a way of life in the Georgetown area for centuries."

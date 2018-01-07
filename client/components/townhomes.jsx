@@ -38,7 +38,10 @@ class Townhomes extends React.Component {
             <img src={require('../assets/D1.png')}/>
             <span>{'TWO BEDROOM'}</span>
           </button>
-          <ImageGallery images={this.state.images}/>
+          <div>
+            <h2>{'EXTERIOR'}</h2>
+            <ImageGallery images={this.state.images}/>
+          </div>
         </div>
       </div>
     )

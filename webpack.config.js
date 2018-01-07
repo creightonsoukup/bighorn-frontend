@@ -1,5 +1,8 @@
 const path = require ('path');
 
+var DIST_DIR   = path.join(__dirname, "dist"),
+    CLIENT_DIR = path.join(__dirname, "client");
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './client/index.html',
@@ -8,9 +11,10 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 })
 
 module.exports = {
-  entry: './client/index.js',
+  context: CLIENT_DIR,
+  entry: './index.js',
   output: {
-    path: path.resolve('dist'),
+    path: DIST_DIR
     filename: 'index_bundle.js'
   },
   module: {
