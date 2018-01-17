@@ -1,0 +1,30 @@
+.fullpage-image {
+  width: 100vw;
+  height: 45vh;
+  overflow: hidden;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  img {
+    height: 45vh;
+    width: auto;
+    overflow: hidden;
+  }
+  @include respond-to('small') {
+    height: 55vh;
+    image {
+      height: 55vh;
+    }
+  }
+  @include respond-to('medium') {
+    height: 60vh;
+    img {
+      height: 60vh;
+    }
+  }
+  @include respond-to('large') {
+    height: 100vh;
+    img {
+      height: 100vh;
+    }
+  }
+}

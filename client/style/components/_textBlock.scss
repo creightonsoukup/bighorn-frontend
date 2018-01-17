@@ -1,0 +1,17 @@
+.text-block {
+  width: 80vw;
+  height: auto;
+  margin: 5vw 5vw 5vw 5vw;
+  padding: 5vw 5vw 5vw 5vw;
+  background-color: $bighorn-grey;
+  h2 {
+    font-family: $subheader-font;
+    font-size: 1.5em;
+    padding-bottom: 16px;
+    line-height: 1.5em;
+  }
+  h3 {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}

@@ -1,0 +1,49 @@
+nav {
+  background-color: $bighorn-tan;
+  width: 100vw;
+  font-family: $header-font;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  .logo {
+    width: auto;
+    height: 50px;
+    padding: 15px;
+  }
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .nav-links {
+    display: none;
+    @include respond-to('large') {
+      display: flex;
+      margin-right: 15px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: $header-weight;
+      padding: 32px 15px 32px 15px;
+      font-size: 14px;
+    }
+  }
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 15px 25px 15px;
+  span {
+    font-size: 14px;
+    font-weight: $header-weight;
+    padding-right: 10px;
+  }
+  img {
+    width: auto;
+    height: 25px;
+  }
+}

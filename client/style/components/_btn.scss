@@ -1,0 +1,57 @@
+.button-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 5vw;
+  .btn {
+    border: 2px solid $bighorn-brown;
+    color: black;
+    padding: 10px;
+    background-color: rgba(0,0,0,0);
+    font-weight: bold;
+    font-size: .8em;
+    margin: 10px 0 10px 0;
+  }
+}
+
+.btn {
+  border: 2px solid $bighorn-brown;
+  color: black;
+  padding: 10px;
+  background-color: rgba(0,0,0,0);
+  font-weight: bold;
+  font-size: .8em;
+  margin: 10px 0 10px 0;
+  text-align: center;
+  width: 90vw;
+  margin: 5vw;
+}
+
+
+.lrg-btn {
+  font-weight: bold;
+  color: black;
+  font-size: 2em;
+  line-height: 1em;
+  padding: 10px;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  border-bottom: 3px solid black;
+  float: right;
+}
+
+.homepage-btn {
+  width: 80vw;
+  height: auto;
+  margin: 0vw 5vw 5vw 5vw;
+  padding: 0vw 5vw 5vw 5vw;
+  background-color: $bighorn-grey;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.homepage {
+  .text-block {
+    margin-bottom: 0;
+  }
+}

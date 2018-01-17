@@ -1,0 +1,238 @@
+img {
+  width: 100vw; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: Suisse International, sans-serif;
+  font-weight: 300;
+  font-style: normal; }
+
+nav {
+  background-color: #DBB89E;
+  width: 100vw;
+  font-family: Suisse International, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; }
+  nav .logo {
+    width: auto;
+    height: 50px;
+    padding: 15px; }
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .nav-items .nav-links {
+    display: none; }
+    @media (min-width: 1000px) {
+      .nav-items .nav-links {
+        display: flex;
+        margin-right: 15px; } }
+    .nav-items .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      padding: 32px 15px 32px 15px;
+      font-size: 14px; }
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 15px 25px 15px; }
+  .nav-menu span {
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 10px; }
+  .nav-menu img {
+    width: auto;
+    height: 25px; }
+
+.image-gallery {
+  width: 100vw;
+  height: 45vh;
+  overflow: hidden; }
+  .image-gallery img {
+    height: 40vh;
+    width: auto;
+    overflow: hidden; }
+  @media (min-width: 600px) {
+    .image-gallery {
+      height: 55vh; }
+      .image-gallery image {
+        height: 50vh; } }
+  @media (min-width: 800px) {
+    .image-gallery {
+      height: 60vh; }
+      .image-gallery img {
+        height: 55vh; } }
+  @media (min-width: 1000px) {
+    .image-gallery {
+      height: 100vh; }
+      .image-gallery img {
+        height: 95vh; } }
+
+.image-controls {
+  display: flex;
+  width: 100vw;
+  height: 5vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .image-controls span {
+    background: content-box #DBB89E;
+    width: 30vw;
+    height: 2vh;
+    padding-top: 15px; }
+
+.text-block {
+  width: 80vw;
+  height: auto;
+  margin: 5vw 5vw 5vw 5vw;
+  padding: 5vw 5vw 5vw 5vw;
+  background-color: #F7F6F8; }
+  .text-block h2 {
+    font-family: Miller Display, serif;
+    font-size: 1.5em;
+    padding-bottom: 16px;
+    line-height: 1.5em; }
+  .text-block h3 {
+    font-size: 1em;
+    line-height: 1.5em; }
+
+.subheader h2 {
+  font-family: Suisse International, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5em;
+  padding: 5vw 5vw 0 5vw; }
+
+.fullpage-image {
+  width: 100vw;
+  height: 45vh;
+  overflow: hidden;
+  margin-top: 5vw;
+  margin-bottom: 5vw; }
+  .fullpage-image img {
+    height: 45vh;
+    width: auto;
+    overflow: hidden; }
+  @media (min-width: 600px) {
+    .fullpage-image {
+      height: 55vh; }
+      .fullpage-image image {
+        height: 55vh; } }
+  @media (min-width: 800px) {
+    .fullpage-image {
+      height: 60vh; }
+      .fullpage-image img {
+        height: 60vh; } }
+  @media (min-width: 1000px) {
+    .fullpage-image {
+      height: 100vh; }
+      .fullpage-image img {
+        height: 100vh; } }
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 5vw; }
+  .button-group .btn {
+    border: 2px solid #A97C50;
+    color: black;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: bold;
+    font-size: .8em;
+    margin: 10px 0 10px 0; }
+
+.btn {
+  border: 2px solid #A97C50;
+  color: black;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+  font-size: .8em;
+  margin: 10px 0 10px 0;
+  text-align: center;
+  width: 90vw;
+  margin: 5vw; }
+
+.lrg-btn {
+  font-weight: bold;
+  color: black;
+  font-size: 2em;
+  line-height: 1em;
+  padding: 10px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 3px solid black;
+  float: right; }
+
+.homepage-btn {
+  width: 80vw;
+  height: auto;
+  margin: 0vw 5vw 5vw 5vw;
+  padding: 0vw 5vw 5vw 5vw;
+  background-color: #F7F6F8;
+  display: flex;
+  justify-content: flex-end; }
+
+.homepage .text-block {
+  margin-bottom: 0; }
+
+.homepage h1 {
+  display: none; }
+  @media (min-width: 800px) {
+    .homepage h1 {
+      display: flex; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+.image-gallery {
+  width: 100vw;
+  height: 45vh;
+  overflow: hidden;
+  img {
+    height: 40vh;
+    width: auto;
+    overflow: hidden;
+  }
+  @include respond-to('small') {
+    height: 55vh;
+    image {
+      height: 50vh;
+    }
+  }
+  @include respond-to('medium') {
+    height: 60vh;
+    img {
+      height: 55vh;
+    }
+  }
+  @include respond-to('large') {
+    height: 100vh;
+    img {
+      height: 95vh;
+    }
+  }
+}
+
+.image-controls {
+  display: flex;
+  width: 100vw;
+  height: 5vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  span {
+    background: content-box $bighorn-tan;
+    width: 30vw;
+    height: 2vh;
+    padding-top: 15px;
+  }
+}

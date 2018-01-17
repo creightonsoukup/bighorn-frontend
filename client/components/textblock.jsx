@@ -6,10 +6,15 @@ export default class Textblock extends React.Component {
   }
   render() {
     return (
-      <div>
-        {this.props.content.title && <h2>{this.props.content.title}</h2>}
+      <div className="text-block">
+        {
+          this.props.content.title &&
+          <h2>{this.props.content.title}</h2>
+        }
         <h3>{this.props.content.paragraph1}</h3>
-        {this.props.content.paragraph2 && <h3>{this.props.content.paragraph2}</h3>}
+        { this.props.content.paragraph2 &&
+          <h3>{this.props.content.paragraph2}</h3>
+        }
       </div>
         )
   }

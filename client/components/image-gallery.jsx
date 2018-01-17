@@ -12,10 +12,10 @@ export default class ImageGallery extends React.Component {
   }
 
   componentWillMount() {
-    this.setState({imageUrl: this.props.images[0].imageUrl, position: this.props.images[0].position})
+    this.setState({imageUrl: this.props.images[0].imageUrl, position: this.props.images[0].position, kenBurns: 'imageContainer'})
   }
   componentDidMount() {
-    setInterval(this.changeUrl, 3000);
+    setInterval(this.changeUrl, 5000);
   }
 
   changeUrl() {
@@ -43,8 +43,13 @@ export default class ImageGallery extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='image-gallery'>
         <img src={ this.state.imageUrl } />
+        <div className='image-controls'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     )
   }
