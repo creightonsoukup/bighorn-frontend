@@ -4,14 +4,60 @@
   margin: 5vw 5vw 5vw 5vw;
   padding: 5vw 5vw 5vw 5vw;
   background-color: $bighorn-grey;
+  @include respond-to('small') {
+    padding: 10vh 5vw 10vh 5vw;
+  }
+  @include respond-to('large') {
+    background-color: rgba(0,0,0,0);
+    width: 60vw;
+    height: 50vh;
+    margin: 10vh 0 0 0;
+    padding: 0;
+  }
   h2 {
     font-family: $subheader-font;
     font-size: 1.5em;
     padding-bottom: 16px;
     line-height: 1.5em;
+    @include respond-to('small') {
+      padding: 5vw;
+      font-size: 2em;
+    }
   }
   h3 {
     font-size: 1em;
     line-height: 1.5em;
+    @include respond-to('small') {
+      padding: 1vh 5vw 5vw 5vw;
+      font-size: 1.3em;
+    }
   }
+}
+
+.right-block {
+  float: right;
+  margin-top: 0;
+}
+
+.neighborhood {
+  .right-block {
+    margin-top: 10vh;
+  }
+}
+
+.left-block2 {
+  @include respond-to('large') {
+    float: left;
+    margin-top: 0;
+    transform: translate(0, 10vh);
+  }
+}
+
+.left-block {
+    float: left;
+    margin-top: 0;
+}
+
+.top-margin {
+  margin-top: 10vh;
 }

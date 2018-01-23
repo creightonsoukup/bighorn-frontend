@@ -19,6 +19,7 @@ const content = {
       paragraph1: "You’ll also be pleased to know Bighorn Crossing is building a state of the art hotel complex within our community for seasonal visitors and weekend getaways. Townhome owners also have the option to rent their properties through the Wyndham Residence Program."
     },
     textBlock5: {
+      title: "title for georgetown",
       paragraph1: "Bighorn Crossing is located in the majestic Georgetown, Colorado within easy walking distance of Georgetown Lake, community hiking trails, ski shuttles to Loveland, and countless other outdoor activities.  The neighborhood is also packed with communal spaces for year-round outdoor activities and numerous rental options."
     },
     list1: {

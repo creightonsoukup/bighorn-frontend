@@ -1,8 +1,22 @@
 .homepage {
+  section {
+    @include respond-to('large') {
+      max-height: 120vh;
+      overflow: hidden;
+    }
+  }
+  .text-only {
+    @include respond-to('large') {
+      max-height: 85vh;
+    }
+  }
   h1 {
     display: none;
     @include respond-to('medium') {
       display: flex;
     }
+  }
+  @include respond-to('large') {
+    overflow: hidden;
   }
 }

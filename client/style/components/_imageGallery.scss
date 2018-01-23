@@ -1,29 +1,27 @@
 .image-gallery {
   width: 100vw;
-  height: 45vh;
+  height: 50vh;
+  position: relative;
   overflow: hidden;
-  img {
-    height: 40vh;
-    width: auto;
-    overflow: hidden;
-  }
   @include respond-to('small') {
-    height: 55vh;
-    image {
-      height: 50vh;
-    }
+    height: 60vh;
   }
   @include respond-to('medium') {
-    height: 60vh;
-    img {
-      height: 55vh;
-    }
+    height: 70vh;
   }
   @include respond-to('large') {
     height: 100vh;
-    img {
-      height: 95vh;
+  }
+  img {
+    min-width: 100vh;
+    overflow: hidden;
+    height: auto;
+    @include respond-to('large') {
+      min-height: 100vh;
+      width: auto;
+      max-width: 120vw;
     }
+
   }
 }
 

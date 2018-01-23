@@ -27,9 +27,9 @@ class Townhomes extends React.Component {
     return (
       <div>
         <img src="https://res.cloudinary.com/bighorncrossing/image/upload/v1514344512/townhome-hero_cyhc8r.jpg"/>
-        <img src={require('../assets/townhomes-logo.png')}/>
-        <Textblock content={content.townhomes.textBlock1}/>
-        <div>
+        <img className='sub-logo' src={require('../assets/townhomes-logo.png')}/>
+        <Textblock className='' content={content.townhomes.textBlock1}/>
+        <section>
           <button onClick={this.threeBedroom}>
             <img src={require('../assets/D1.png')}/>
             <span>{'THREE BEDROOM'}</span>
@@ -42,7 +42,7 @@ class Townhomes extends React.Component {
             <h2>{'EXTERIOR'}</h2>
             <ImageGallery images={this.state.images}/>
           </div>
-        </div>
+        </section>
       </div>
     )
   }
