@@ -7,7 +7,7 @@ const path = require("path"),
 
 
 const DIST_DIR = path.join(__dirname, "dist"),
-      PORT = process.env.PORT || 3000,
+      PORT = process.env.PORT || 4000,
       app = express();
 
 app.use(function(req,res,next) {

@@ -3,20 +3,20 @@ const content = {
   navbarOpen : ["townhomes", "apartments", "neighborhood"],
   homepage : {
     textBlock1 : {
-      title : "Breathtaking Colorado Mountain & Lakeside Living",
-      paragraph1: "Bighorn Crossing offers spectacular mountain and lakeside living for the adventurous at heart.  With sleek, modern floor plans in townhomes and apartments, extensive amenities and very affordable pricing, Bighorn Crossing is the gorgeous lakefront community with serene mountain views that you’ve always dreamed of calling home."
+      title : "Bighorn Crossing - Redefining Mountain Living",
+      paragraph1: "Think mountain living - rugged trails, sprawling mountains, sweeping slopes, acres and acres of snow and greenery.   Think modern living - fresh design, contemporary architecture, accessible amenities.  Think lake views from glass plated windows. Think the great outdoors and the great indoors in equilibrium.  Think Bighorn Crossing - where mountain and modern living meet."
     },
     textBlock2 : {
-      title: "Sleek, Traditional New Townhomes",
-      paragraph1: "As one of the first new communities built in Georgetown in decades, the townhouses of Rose Mill are sleek and stylish community-themed homes with traditional elegance and modern functionality."
+      title: "Charming Mountain Living Meets Contemporary Functionality",
+      paragraph1: "The Bighorn Crossing Townhome is the quintessential mountain home.  Units run at 2 or 3 bedrooms/ 2-3 full baths with a personal outdoor courtyard space and a 1- 2 car garage. Each unit also includes mountain/lake views, an option to rent through Wyndham, and a completely customizable interior."
     },
     textBlock3: {
-      title: "Million Dollar View Apartments",
-      paragraph1: "Bighorn Crossing also features upscale one and two bedroom apartments in the same lakeside community.  With an easy commute along I-70, it’s a perfect location for year-round residents or a seasonal retreat."
+      title: "Bighorn Crossing Condos - Redefining Both the Everyday and the Getaway",
+      paragraph1: "Bighorn Crossing Condos are ideal for both the every day or a getaway.  Condos list at either 1 or 2 bedrooms/2 full baths, Each condo offers mountain/lake views and a completely customizable interior."
     },
     textBlock4: {
-      title: "World-Class Rentals in the Heart of it All",
-      paragraph1: "You’ll also be pleased to know Bighorn Crossing is building a state of the art hotel complex within our community for seasonal visitors and weekend getaways. Townhome owners also have the option to rent their properties through the Wyndham Residence Program."
+      title: "Bighorn Crossing Microtel by Wyndham - Redefining R and R",
+      paragraph1: " In need of some R and R?  The Bighorn Crossing community also offers a full service Wyndham Microtel.   The hotel offers 83 rooms designed with the same contemporary touch as the Townhomes and Condos.  The Bighorn Crossing Wyndham is a destination for those seeking an outdoor retreat with access to fishing, camping, hiking, skiing, etc."
     },
     textBlock5: {
       title: "title for georgetown",
@@ -29,11 +29,14 @@ const content = {
   },
   townhomes:  {
     textBlock1: {
-      title: "The New Standard in Georgetown Living",
-      paragraph1: "Townhomes within the Bighorn Crossing development create a seamless blend of historic Georgetown with active modern living.  You’ll enjoy sleek, clean floor plans with lots of natural light and the feeling of bringing the outdoors right into your living room.  With very affordable pricing and extensive indoor/outdoor features, it’s a great place to call home."
+      paragraph1: "The Bighorn Crossing Townhome is modern, spacious, flooded with natural light, pet friendly and ideal for small families.   Cozy up to the gas fireplace included in unit while basking in sprawling mountain and lake views. Make your house a home with customizable interior options through a collaboration with 359 Designs.  Select countertops, appliance finishes, etc to suit you and your family.  Unwind and enjoy access to Wyndham Garden Microtel amenities.",
+      paragraph2: "Not to mention, each townhomes is just 45 minutes from eight world class ski locations and  steps away from hiking, biking, and fishing, kayaking, and swimming in the Georgetown Lake.  Whether interested in a full time residency or as a second home, the Bighorn Crossing townhome is the quintessential mountain home."
     },
     textBlock2: {
-      paragraph1: "Bighorn Crossing Townhomes are available in two primary styles with either an attached garage (975 sq/ft) or detached garage (1,080 sq/ft).  Each building type is created with hip, modern elements for a visually appealing community that is complementary to historic Georgetown architecture in material and design.  Inside, floor plans are clean and innovative to maximize usability for an active family lifestyle."
+      paragraph1: "The Bighorn Crossing three bedroom layout includes laundry in unit, gas fireplace, three bedrooms, three bathrooms, and the option for an detached two car garage.  The detached two car garage creates an outdoor courtyard space ideal for entertaining and enjoying the mountains and lake right outside your door."
+    },
+    textBlock3: {
+      paragraph1: "The Bighorn Crossing two bedroom layout includes laundry in unit, attached porch space, two bedrooms, two bathrooms and an attached one car garage.  The porch space is ideal for soaking in your sprawling surroundings."
     },
     list1: {
       title: "Amenities",
@@ -42,13 +45,12 @@ const content = {
   },
   apartments: {
     textBlock1: {
-      title: "Gorgeous Modern One & Two Bedroom Apartments",
-      paragraph1: "Bighorn Crossing Apartments offer upscale one and two bedroom units with modern floor plans and spectacular views.  With large master bedrooms/bathrooms, excellent storage and breathtaking architecture, you’ll be living in spectacular mountain paradise."
+      paragraph1: "The Bighorn Crossing Condo is a spacious, upscale, oasis ideal for couples or small families.  Each condo is framed in glass plated windows, with the option of 1 or 2 bedrooms, 2 full baths, a kitchen, dining and living area, and an attached porch space.  Every unit offers scenic mountain/lake views and access to all Wyndham Hotel amenities. Ideal for year round residents or vacation stays, the Bighorn Condo is your slice of paradise in the Colorado wilderness. Learn more about all the Condos have to offer"
     }
   },
   neighborhood: {
     textBlock1: {
-      paragraph1: "The name Bighorn Crossing is a tribute to the daily commute of our local bighorn sheep, which travel down the mountainsides daily for food and water.  Cohabitating with these majestic animals has been a way of life in the Georgetown area for centuries."
+      paragraph1: "Georgetown, Colorado, established in 1859, embodies mountain charm, tradition, and community.  Surrounded by 2,000 pristine acres of preserved land, it is one of the largest protected habitats in America.  This quaint mining town nestled in the Colorados hills offers a glimpse into early America with many renovated homes from the late 1800’s.  Additionally, Georgetown offers a variety of restaurants, shopping, museums, two scenic byways, health/fitness events and dozens of community clubs. Whether enjoying a Creekside tonic on the heated deck of Coopers on the Creek restaurant, snapping a picture of at the  Guanella Pass Scenic and Historic Byway, or hitting the slopes at Loveland Mountain, Georgetown is the perfect escape."
     },
     textBlock2: {
       title: "Georgetown, Colorado — Old Town Living",

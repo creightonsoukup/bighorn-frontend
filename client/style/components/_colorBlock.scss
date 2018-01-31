@@ -31,9 +31,9 @@
 .rotate-right {
   @include respond-to('large') {
     -webkit-transform: rotate(25deg);
-    transform: rotate(25deg) translate(-15vw, -80vh);
-    width: 70vw;
-    height: 130vh;
+    transform: rotate(25deg) translate(-15vw, -100vh);
+    width: 80vw;
+    height: 140vh;
     display: flex;
     float: right;
     z-index: -11;
@@ -44,8 +44,8 @@
   @include respond-to('large') {
     -webkit-transform: rotate(-25deg);
     transform: rotate(-25deg) translate(15vw, -80vh);
-    width: 70vw;
-    height: 130vh;
+    width: 80vw;
+    height: 140vh;
     display: flex;
     float: left;
     z-index: -12;

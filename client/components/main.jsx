@@ -7,12 +7,12 @@ import Neighborhood from './neighborhood';
 
 const Main = () => (
   <main>
-    <Switch>
+    <div>
       <Route exact path="/" component={Home}/>
       <Route path="/townhomes" component={Townhomes}/>
       <Route path="/apartments" component={Apartments}/>
       <Route path="/neighborhood" component={Neighborhood}/>
-    </Switch>
+    </div>
   </main>
 )
 

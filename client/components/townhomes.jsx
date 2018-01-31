@@ -3,6 +3,8 @@ import Textblock from './textblock';
 import content from '../content/content';
 import galleries from '../content/images';
 import ImageGallery from './image-gallery';
+import Logo from './logo'
+import Floorplans from './floorplans'
 
 class Townhomes extends React.Component {
   constructor(props) {
@@ -25,23 +27,30 @@ class Townhomes extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className='townhomes'>
         <img src="https://res.cloudinary.com/bighorncrossing/image/upload/v1514344512/townhome-hero_cyhc8r.jpg"/>
-        <img className='sub-logo' src={require('../assets/townhomes-logo.png')}/>
-        <Textblock className='' content={content.townhomes.textBlock1}/>
+        <section className='townhome-intro'>
+          <Logo src={require('../assets/townhomes-logo.png')}/>
+          <Textblock style='text-block right-block top-margin' content={content.townhomes.textBlock1}/>
+        </section>
         <section>
-          <button onClick={this.threeBedroom}>
-            <img src={require('../assets/D1.png')}/>
-            <span>{'THREE BEDROOM'}</span>
-          </button>
-          <button onClick={this.twoBedroom}>
-            <img src={require('../assets/D1.png')}/>
-            <span>{'TWO BEDROOM'}</span>
-          </button>
-          <div>
+          <div className='model-buttons'>
+            <button onClick={this.threeBedroom}>
+              <img src={require('../assets/D1.png')}/>
+              <div>{'THREE BEDROOM'}</div>
+            </button>
+            <button onClick={this.twoBedroom}>
+              <img src={require('../assets/D1.png')}/>
+              <div>{'TWO BEDROOM'}</div>
+            </button>
+          </div>
+          <div className='elevations'>
             <h2>{'EXTERIOR'}</h2>
             <ImageGallery images={this.state.images}/>
           </div>
+          <section>
+            <Floorplans />
+          </section>
         </section>
       </div>
     )

@@ -17,6 +17,9 @@ export default class Textblock extends React.Component {
         { this.props.content.paragraph2 &&
           <h3>{this.props.content.paragraph2}</h3>
         }
+        {this.props.content.paragraph2 &&
+          <h3>{this.props.content.paragraph3}</h3>
+        }
       </div>
         )
   }

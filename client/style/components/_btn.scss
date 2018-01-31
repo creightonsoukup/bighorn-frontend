@@ -17,6 +17,7 @@
     font-weight: bold;
     font-size: .8em;
     margin: 10px;
+    width: 80vw;
     @include respond-to('small') {
       width: 60vw;
       font-size: 1em;
@@ -31,6 +32,7 @@
 .right-btn {
   @include respond-to('large') {
     margin-left: 45vw;
+    transform: translate(0, 10vh);
   }
 }
 
@@ -68,6 +70,7 @@
   height: 10vh;
   margin: 0vw 5vw 5vw 5vw;
   padding: 0vw 5vw 5vw 5vw;
+  transform: translate(0,-5vw);
   background-color: $bighorn-grey;
   display: flex;
   justify-content: flex-end;
@@ -90,11 +93,5 @@
   @include respond-to('large') {
     justify-content: flex-end;
     margin-top: 30vh;
-  }
-}
-
-.homepage {
-  .text-block {
-    margin-bottom: 0;
   }
 }

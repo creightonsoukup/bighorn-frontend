@@ -21,14 +21,12 @@ class Home extends React.Component {
           <h1 className='gallery-overlay'><span>{'BIGHORN'}</span><span>{'CROSSING'}</span></h1>
           <ImageGallery images={galleries.homepage}/>
           <section className='text-only'>
-            <Textblock style={'text-block right-block top-margin'} content={content.homepage.textBlock1}/>
-            <div className='color-block right'>
-            </div>
+            <Textblock style={'text-block background right-block'} content={content.homepage.textBlock1}/>
           </section>
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460916/vqu4stpehzaq83rwcia0.jpg'/>
           <section>
             <SubHeader style={'subheader left-header'} text={'TOWNHOMES'}/>
-            <Textblock style={'text-block right-block'} content={content.homepage.textBlock2}/>
+            <Textblock style={'text-block right-block no-margin'} content={content.homepage.textBlock2}/>
             <div className='color-block rotate-right'></div>
 
             <div className='homepage-btn left-homepage-btn'>

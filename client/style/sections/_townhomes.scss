@@ -1,0 +1,39 @@
+.townhome-intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    margin-top: 5vh;
+    width: 200px;
+  }
+  .text-block {
+    margin-top: 5vh;
+  }
+}
+
+.model-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+  font-size: 1em;
+  img {
+    width: 40vw;
+  }
+  div {
+    padding: 10px;
+    border: 2px solid $bighorn-brown;
+    font-weight: bold;
+  }
+}
+
+.elevations {
+  h2 {
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    margin: 5vh 0 5vh 0;
+  }
+}

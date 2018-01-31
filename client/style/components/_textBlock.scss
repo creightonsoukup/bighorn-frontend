@@ -5,7 +5,7 @@
   padding: 5vw 5vw 5vw 5vw;
   background-color: $bighorn-grey;
   @include respond-to('small') {
-    padding: 10vh 5vw 10vh 5vw;
+    padding: 5vw;
   }
   @include respond-to('large') {
     background-color: rgba(0,0,0,0);
@@ -16,32 +16,47 @@
   }
   h2 {
     font-family: $subheader-font;
-    font-size: 1.5em;
+    font-size: 1.25em;
     padding-bottom: 16px;
     line-height: 1.5em;
     @include respond-to('small') {
       padding: 5vw;
-      font-size: 2em;
+      font-size: 1.7em;
+    }
+    @include respond-to('large') {
+      font-size: 2.5em;
     }
   }
   h3 {
-    font-size: 1em;
+    font-size: .9em;
     line-height: 1.5em;
     @include respond-to('small') {
       padding: 1vh 5vw 5vw 5vw;
-      font-size: 1.3em;
+      font-size: 1.2em;
     }
   }
 }
 
 .right-block {
-  float: right;
-  margin-top: 0;
+  @include respond-to('large') {
+    float: right;
+    margin-top: 0;
+    height: auto;
+    margin: 10vh 0 10vh 0;
+  }
+}
+
+.background {
+  @include respond-to('large') {
+    background-color: $bighorn-grey;
+  };
 }
 
 .neighborhood {
-  .right-block {
-    margin-top: 10vh;
+  @include respond-to('large') {
+    .right-block {
+      margin-top: 10vh;
+    }
   }
 }
 
@@ -54,10 +69,14 @@
 }
 
 .left-block {
+  @include respond-to('large') {
     float: left;
     margin-top: 0;
+  }
 }
 
-.top-margin {
-  margin-top: 10vh;
+.no-margin {
+  @include respond-to('large') {
+    margin-top: 0;
+  }
 }

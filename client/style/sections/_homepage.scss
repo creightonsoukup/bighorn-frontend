@@ -5,10 +5,10 @@
       overflow: hidden;
     }
   }
-  .text-only {
-    @include respond-to('large') {
-      max-height: 85vh;
-    }
+ .text-only {
+   @include respond-to('large') {
+     height: auto;
+   };
   }
   h1 {
     display: none;
