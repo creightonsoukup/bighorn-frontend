@@ -159,7 +159,8 @@ nav {
         font-size: 1.7em; } }
     @media (min-width: 1000px) {
       .text-block h2 {
-        font-size: 2.5em; } }
+        font-size: 2.5em;
+        padding-bottom: 4vw; } }
   .text-block h3 {
     font-size: .9em;
     line-height: 1.5em; }
@@ -187,12 +188,16 @@ nav {
   .left-block2 {
     float: left;
     margin-top: 0;
-    transform: translate(0, 10vh); } }
+    height: auto;
+    margin: 5vh 0 10vh 2vw;
+    padding-bottom: 15vh; } }
 
 @media (min-width: 1000px) {
   .left-block {
     float: left;
-    margin-top: 0; } }
+    margin-top: 0;
+    height: auto;
+    margin-left: 2vw; } }
 
 @media (min-width: 1000px) {
   .no-margin {
@@ -247,6 +252,12 @@ nav {
       padding: 5vh 5vh 10vh 5vh;
       color: rgba(255, 255, 255, 0.63);
       font-size: 7em; } }
+
+.elevations h2 {
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  margin: 5vh 0 5vh 0; }
 
 .fullpage-image {
   width: 100vw;
@@ -310,11 +321,11 @@ nav {
 @media (min-width: 1000px) {
   .right-btn {
     margin-left: 45vw;
-    transform: translate(0, 10vh); } }
+    transform: translate(0, 13vh); } }
 
 @media (min-width: 1000px) {
   .left-btn {
-    transform: translate(-65vw); } }
+    transform: translate(-73vw, 10vh); } }
 
 @media (min-width: 1000px) {
   .left-btn2 {
@@ -355,12 +366,28 @@ nav {
 @media (min-width: 1000px) {
   .left-homepage-btn {
     justify-content: flex-start;
-    margin-top: 30vh; } }
+    margin-top: 30vh;
+    transform: translate(0, 10vh); } }
 
 @media (min-width: 1000px) {
   .right-homepage-btn {
     justify-content: flex-end;
-    margin-top: 30vh; } }
+    margin-top: 30vh;
+    transform: translate(0, 10vh); } }
+
+.model-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+  font-size: 1em;
+  margin: 0 2vw 10vh 2vw; }
+  .model-buttons img {
+    width: 40vw; }
+  .model-buttons div {
+    padding: 10px;
+    border: 2px solid #A97C50;
+    font-weight: bold; }
 
 .color-block {
   display: none; }
@@ -435,23 +462,8 @@ nav {
   .townhome-intro .text-block {
     margin-top: 5vh; }
 
-.model-buttons {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  justify-content: space-around;
-  font-size: 1em; }
-  .model-buttons img {
-    width: 40vw; }
-  .model-buttons div {
-    padding: 10px;
-    border: 2px solid #A97C50;
-    font-weight: bold; }
-
-.elevations h2 {
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
-  margin: 5vh 0 5vh 0; }
+.townhomes .subheader h2 {
+  font-size: 2em;
+  margin: 2vh 0 5vh 0; }
 
 /*# sourceMappingURL=style.css.map */

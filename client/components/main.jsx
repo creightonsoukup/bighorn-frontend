@@ -4,6 +4,7 @@ import Home from './home';
 import Townhomes from './townhomes';
 import Apartments from './apartments';
 import Neighborhood from './neighborhood';
+import ThreeBedroom from './three-bedroom';
 
 const Main = () => (
   <main>

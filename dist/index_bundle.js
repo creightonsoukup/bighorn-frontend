@@ -1797,9 +1797,10 @@ exports.default = Textblock;
 
 var galleries = {
   homepage: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1514344514/homepage1_aualev.jpg', position: 0 }, { imageUrl: 'http://res.cloudinary.com/bighorncrossing/image/upload/v1514344512/homepage2_hi4e1r.jpg', position: 1 }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1514344512/townhome-hero_cyhc8r.jpg', position: 2 }],
-  townhomesAttached: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1514406136/attached-elevation-1_ipo6of.png', position: 0 }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094358/attached-elevation-2_eic2a5.jpg', position: 1 }],
-  townhomesDetached: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-1_psj229.jpg', position: 0 }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-2_muwpyn.jpg', position: 1 }],
-  neighborhood: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-1_psj229.jpg', position: 0 }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-1_psj229.jpg', position: 1 }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-1_psj229.jpg', position: 2 }]
+  townhomesAttached: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460914/attached1_poggfo.jpg', position: 0 }, { imageUrl: 'http://res.cloudinary.com/bighorncrossing/image/upload/v1516460912/attached2_apcppd.jpg', position: 1 }],
+  townhomesDetached: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516461072/detached1_mplieu.jpg', position: 0 }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/detached2_fexqus.jpg', position: 1 }],
+  neighborhood: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-1_psj229.jpg', position: 0 }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-1_psj229.jpg', position: 1 }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-1_psj229.jpg', position: 2 }],
+  detachedFloorplans: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517436355/detached-bottom_hknkut.png', position: 0 }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517436355/detached-top_qkqjvp.png', position: 1 }]
 };
 
 module.exports = galleries;
@@ -23873,6 +23874,10 @@ var _neighborhood = __webpack_require__(97);
 
 var _neighborhood2 = _interopRequireDefault(_neighborhood);
 
+var _threeBedroom = __webpack_require__(99);
+
+var _threeBedroom2 = _interopRequireDefault(_threeBedroom);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Main = function Main() {
@@ -24030,8 +24035,7 @@ var Home = function (_React$Component) {
           'section',
           null,
           _react2.default.createElement(_subheader2.default, { style: 'subheader right-header no-margin', text: 'THE LODGE' }),
-          _react2.default.createElement(_textblock2.default, { style: 'text-block left-block2', content: _content2.default.homepage.textBlock4 }),
-          _react2.default.createElement('div', { className: 'color-block left' }),
+          _react2.default.createElement(_textblock2.default, { style: 'text-block left-block2 background', content: _content2.default.homepage.textBlock4 }),
           _react2.default.createElement(
             'div',
             { className: 'button-group left-btn2' },
@@ -24043,8 +24047,7 @@ var Home = function (_React$Component) {
           'section',
           { className: 'neighborhood' },
           _react2.default.createElement(_subheader2.default, { style: 'subheader left-header no-margin', text: 'THE NEIGHBORHOOD' }),
-          _react2.default.createElement(_textblock2.default, { style: 'text-block right-block ', content: _content2.default.homepage.textBlock5 }),
-          _react2.default.createElement('div', { className: 'color-block right' }),
+          _react2.default.createElement(_textblock2.default, { style: 'text-block right-block background', content: _content2.default.homepage.textBlock5 }),
           _react2.default.createElement(
             'div',
             { className: 'homepage-btn left-homepage-btn' },
@@ -24253,9 +24256,13 @@ var _logo = __webpack_require__(92);
 
 var _logo2 = _interopRequireDefault(_logo);
 
-var _floorplans = __webpack_require__(93);
+var _subheader = __webpack_require__(90);
 
-var _floorplans2 = _interopRequireDefault(_floorplans);
+var _subheader2 = _interopRequireDefault(_subheader);
+
+var _threeBedroom = __webpack_require__(99);
+
+var _threeBedroom2 = _interopRequireDefault(_threeBedroom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24274,8 +24281,7 @@ var Townhomes = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Townhomes.__proto__ || Object.getPrototypeOf(Townhomes)).call(this, props));
 
     _this.state = {
-      activeTab: 1,
-      images: _images2.default.townhomesDetached
+      activeTab: ''
     };
     _this.threeBedroom = _this.threeBedroom.bind(_this);
     _this.twoBedroom = _this.twoBedroom.bind(_this);
@@ -24285,12 +24291,12 @@ var Townhomes = function (_React$Component) {
   _createClass(Townhomes, [{
     key: 'twoBedroom',
     value: function twoBedroom() {
-      this.setState({ activeTab: 2, images: _images2.default.townhomesAttached });
+      this.setState({ activeTab: 'two' });
     }
   }, {
     key: 'threeBedroom',
     value: function threeBedroom() {
-      this.setState({ activeTab: 1, images: _images2.default.townhomesDetached });
+      this.setState({ activeTab: 'three' });
     }
   }, {
     key: 'render',
@@ -24308,6 +24314,7 @@ var Townhomes = function (_React$Component) {
         _react2.default.createElement(
           'section',
           null,
+          _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'SELECT A MODEL' }),
           _react2.default.createElement(
             'div',
             { className: 'model-buttons' },
@@ -24332,21 +24339,8 @@ var Townhomes = function (_React$Component) {
               )
             )
           ),
-          _react2.default.createElement(
-            'div',
-            { className: 'elevations' },
-            _react2.default.createElement(
-              'h2',
-              null,
-              'EXTERIOR'
-            ),
-            _react2.default.createElement(_imageGallery2.default, { images: this.state.images })
-          ),
-          _react2.default.createElement(
-            'section',
-            null,
-            _react2.default.createElement(_floorplans2.default, null)
-          )
+          this.state.activeTab === 'three' && _react2.default.createElement(_threeBedroom2.default, null),
+          this.state.activeTab === 'two' && _react2.default.createElement(TwoBedroom, null)
         )
       );
     }
@@ -24385,52 +24379,7 @@ var Logo = function Logo(props) {
 exports.default = Logo;
 
 /***/ }),
-/* 93 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Floorplans = function (_React$Component) {
-  _inherits(Floorplans, _React$Component);
-
-  function Floorplans() {
-    _classCallCheck(this, Floorplans);
-
-    return _possibleConstructorReturn(this, (Floorplans.__proto__ || Object.getPrototypeOf(Floorplans)).apply(this, arguments));
-  }
-
-  _createClass(Floorplans, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement('div', { className: 'floorplans' });
-    }
-  }]);
-
-  return Floorplans;
-}(_react2.default.Component);
-
-exports.default = Floorplans;
-
-/***/ }),
+/* 93 */,
 /* 94 */
 /***/ (function(module, exports) {
 
@@ -24604,6 +24553,216 @@ exports.default = Neighborhood;
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "style.css";
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _subheader = __webpack_require__(90);
+
+var _subheader2 = _interopRequireDefault(_subheader);
+
+var _FloorplansMobile = __webpack_require__(100);
+
+var _FloorplansMobile2 = _interopRequireDefault(_FloorplansMobile);
+
+var _images = __webpack_require__(25);
+
+var _images2 = _interopRequireDefault(_images);
+
+var _townhomes = __webpack_require__(91);
+
+var _townhomes2 = _interopRequireDefault(_townhomes);
+
+var _imageGallery = __webpack_require__(23);
+
+var _imageGallery2 = _interopRequireDefault(_imageGallery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ThreeBedroom = function (_React$Component) {
+  _inherits(ThreeBedroom, _React$Component);
+
+  function ThreeBedroom() {
+    _classCallCheck(this, ThreeBedroom);
+
+    return _possibleConstructorReturn(this, (ThreeBedroom.__proto__ || Object.getPrototypeOf(ThreeBedroom)).apply(this, arguments));
+  }
+
+  _createClass(ThreeBedroom, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'three-bedroom' },
+        _react2.default.createElement(
+          'div',
+          { className: 'mobile' },
+          _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'ELEVATION' }),
+          _react2.default.createElement(_imageGallery2.default, { images: _images2.default.townhomesDetached }),
+          _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'FLOORPLANS' }),
+          _react2.default.createElement(_FloorplansMobile2.default, null)
+        )
+      );
+    }
+  }]);
+
+  return ThreeBedroom;
+}(_react2.default.Component);
+
+exports.default = ThreeBedroom;
+
+/***/ }),
+/* 100 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _images = __webpack_require__(25);
+
+var _images2 = _interopRequireDefault(_images);
+
+var _galleryCaptions = __webpack_require__(101);
+
+var _galleryCaptions2 = _interopRequireDefault(_galleryCaptions);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var FloorplansMobile = function (_React$Component) {
+  _inherits(FloorplansMobile, _React$Component);
+
+  function FloorplansMobile() {
+    _classCallCheck(this, FloorplansMobile);
+
+    return _possibleConstructorReturn(this, (FloorplansMobile.__proto__ || Object.getPrototypeOf(FloorplansMobile)).apply(this, arguments));
+  }
+
+  _createClass(FloorplansMobile, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'floorplans-mobile' },
+        _react2.default.createElement(_galleryCaptions2.default, { images: _images2.default.detachedFloorplans })
+      );
+    }
+  }]);
+
+  return FloorplansMobile;
+}(_react2.default.Component);
+
+exports.default = FloorplansMobile;
+
+/***/ }),
+/* 101 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _images = __webpack_require__(25);
+
+var _images2 = _interopRequireDefault(_images);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Gallery = function (_React$Component) {
+  _inherits(Gallery, _React$Component);
+
+  function Gallery(props) {
+    _classCallCheck(this, Gallery);
+
+    var _this = _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
+
+    _this.state = {
+      imageUrl: '',
+      position: 0
+    };
+
+    _this.changeImage = _this.changeImage.bind(_this);
+    return _this;
+  }
+
+  _createClass(Gallery, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.setState({ imageUrl: this.props.images[0].imageUrl, position: this.props.images[0].position });
+    }
+  }, {
+    key: 'changeImage',
+    value: function changeImage() {
+      var imageCount = this.props.images.length;
+      console.log(imageCount);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement('span', null),
+        _react2.default.createElement('img', { src: this.state.imageUrl }),
+        _react2.default.createElement('span', null)
+      );
+    }
+  }]);
+
+  return Gallery;
+}(_react2.default.Component);
+
+exports.default = Gallery;
 
 /***/ })
 /******/ ]);

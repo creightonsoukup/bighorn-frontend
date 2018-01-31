@@ -53,8 +53,7 @@ class Home extends React.Component {
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516463338/B3_jyhir9.jpg'/>
           <section>
             <SubHeader style={'subheader right-header no-margin'} text={'THE LODGE'}/>
-            <Textblock style={'text-block left-block2'} content={content.homepage.textBlock4}/>
-            <div className='color-block left'></div>
+            <Textblock style={'text-block left-block2 background'} content={content.homepage.textBlock4}/>
             <div className='button-group left-btn2'>
               <Button type={'btn'} text={'COMING SOON'}/>
             </div>
@@ -62,8 +61,7 @@ class Home extends React.Component {
           <FullpageImage src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1516462298/downtown1_lust3v.jpg'}/>
           <section className='neighborhood'>
             <SubHeader style={'subheader left-header no-margin'} text={'THE NEIGHBORHOOD'}/>
-            <Textblock style={'text-block right-block '} content={content.homepage.textBlock5} />
-            <div className='color-block right'></div>
+            <Textblock style={'text-block right-block background'} content={content.homepage.textBlock5} />
             <div className='homepage-btn left-homepage-btn'>
               <Button type={'lrg-btn'} text={'EXPLORE'}/>
             </div>

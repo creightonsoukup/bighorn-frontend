@@ -4,26 +4,26 @@ import content from '../content/content';
 import galleries from '../content/images';
 import ImageGallery from './image-gallery';
 import Logo from './logo'
-import Floorplans from './floorplans'
+import SubHeader from './subheader';
+import ThreeBedroom from './three-bedroom'
 
 class Townhomes extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      activeTab: 1,
-      images: galleries.townhomesDetached
+      activeTab: ''
     }
     this.threeBedroom = this.threeBedroom.bind(this)
     this.twoBedroom = this.twoBedroom.bind(this)
   }
 
   twoBedroom() {
-    this.setState({activeTab:2, images: galleries.townhomesAttached})
+    this.setState({activeTab:'two'})
   }
 
   threeBedroom() {
-    this.setState({activeTab:1, images: galleries.townhomesDetached})
+    this.setState({activeTab:'three'})
   }
   render() {
     return (
@@ -34,6 +34,7 @@ class Townhomes extends React.Component {
           <Textblock style='text-block right-block top-margin' content={content.townhomes.textBlock1}/>
         </section>
         <section>
+          <SubHeader style={'subheader left-header'} text={'SELECT A MODEL'}/>
           <div className='model-buttons'>
             <button onClick={this.threeBedroom}>
               <img src={require('../assets/D1.png')}/>
@@ -44,13 +45,12 @@ class Townhomes extends React.Component {
               <div>{'TWO BEDROOM'}</div>
             </button>
           </div>
-          <div className='elevations'>
-            <h2>{'EXTERIOR'}</h2>
-            <ImageGallery images={this.state.images}/>
-          </div>
-          <section>
-            <Floorplans />
-          </section>
+          { this.state.activeTab === 'three' &&
+            <ThreeBedroom />
+          }
+          { this.state.activeTab === 'two' &&
+            <TwoBedroom />
+          }
         </section>
       </div>
     )

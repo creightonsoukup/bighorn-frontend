@@ -32,13 +32,13 @@
 .right-btn {
   @include respond-to('large') {
     margin-left: 45vw;
-    transform: translate(0, 10vh);
+    transform: translate(0, 13vh);
   }
 }
 
 .left-btn {
   @include respond-to('large') {
-    transform: translate(-65vw);
+    transform: translate(-73vw, 10vh);
   }
 }
 
@@ -86,6 +86,7 @@
   @include respond-to('large') {
     justify-content: flex-start;
     margin-top: 30vh;
+    transform: translate(0, 10vh);
   }
 }
 
@@ -93,5 +94,23 @@
   @include respond-to('large') {
     justify-content: flex-end;
     margin-top: 30vh;
+    transform: translate(0, 10vh);
+  }
+}
+
+.model-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+  font-size: 1em;
+  margin: 0 2vw 10vh 2vw;
+  img {
+    width: 40vw;
+  }
+  div {
+    padding: 10px;
+    border: 2px solid $bighorn-brown;
+    font-weight: bold;
   }
 }
