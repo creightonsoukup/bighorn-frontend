@@ -20,8 +20,8 @@ const content = {
       paragraph1: " In need of some R and R?  The Bighorn Crossing community also offers a full service Wyndham Microtel.   The hotel offers 77 rooms designed with the same contemporary touch as the Townhomes and Condos.  The Bighorn Crossing Wyndham is a destination for those seeking an outdoor retreat with access to fishing, camping, hiking, skiing, etc."
     },
     textBlock5: {
-      title: "title for georgetown",
-      paragraph1: "Bighorn Crossing is located in the majestic Georgetown, Colorado within easy walking distance of Georgetown Lake, community hiking trails, ski shuttles to Loveland, and countless other outdoor activities.  The neighborhood is also packed with communal spaces for year-round outdoor activities and numerous rental options."
+      title: "Georgetown: Quintessential Mountain Town",
+      paragraph1: "Georgetown, Colorado, established in 1859, embodies mountain charm, tradition, and community.  Surrounded by 2,000 pristine acres of preserved land, it is one of the largest protected habitats in America.  This quaint mining town nestled in the Colorados hills offers a glimpse into early America with many renovated homes from the late 1800’s.  Additionally, Georgetown offers a variety of restaurants, shopping, museums, two scenic byways, health/fitness events and dozens of community clubs. Whether enjoying a Creekside tonic on the heated deck of Coopers on the Creek restaurant, snapping a picture of at the  Guanella Pass Scenic and Historic Byway, or hitting the slopes at Loveland Mountain, Georgetown is the perfect escape."
     },
     list1: {
       title: "Neighborhood Amenities",

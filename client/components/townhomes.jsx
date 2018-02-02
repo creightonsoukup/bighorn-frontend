@@ -6,7 +6,8 @@ import ImageGallery from './image-gallery';
 import Logo from './logo'
 import SubHeader from './subheader';
 import ThreeBedroom from './three-bedroom';
-import TwoBedroom from './two_bedroom'
+import TwoBedroom from './two_bedroom';
+import FullpageImage from './fullpage-image'
 
 class Townhomes extends React.Component {
   constructor(props) {

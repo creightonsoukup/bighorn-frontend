@@ -6,6 +6,8 @@ import TownhomeIntro from './townhomes'
 import ImageGallery from './image-gallery';
 import Textblock from './textblock';
 import content from '../content/content'
+import Floorplans from './floorplans';
+import FullpageImage from './fullpage-image';
 
 
 export default class ThreeBedroom extends React.Component {
@@ -19,6 +21,8 @@ export default class ThreeBedroom extends React.Component {
           <ImageGallery images={galleries.townhomesDetached}/>
           <Subheader style={'subheader left-header'} text={'FLOORPLANS'}/>
           <FloorplansMobile images={galleries.detachedFloorplans}/>
+          <Floorplans images={galleries.detachedFloorplans}/>
+          <FullpageImage src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460914/interior_i1y2r3.jpg'}/>
         </div>
       </div>
 

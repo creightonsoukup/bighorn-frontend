@@ -24,7 +24,7 @@ class Home extends React.Component {
             <Textblock style={'text-block background right-block'} content={content.homepage.textBlock1}/>
           </section>
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460916/vqu4stpehzaq83rwcia0.jpg'/>
-          <section>
+          <section className='overflow'>
             <SubHeader style={'subheader left-header'} text={'TOWNHOMES'}/>
             <Textblock style={'text-block right-block no-margin'} content={content.homepage.textBlock2}/>
             <div className='color-block rotate-right'></div>
@@ -38,7 +38,7 @@ class Home extends React.Component {
             </div>
           </section>
           <FullpageImage  src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/condos_dhkmg3.jpg'/>
-          <section>
+          <section className='overflow'>
             <SubHeader style={'subheader right-header'} text={'CONDOMINIUMS'}/>
             <Textblock style={'text-block left-block'} content={content.homepage.textBlock3}/>
             <div className='color-block rotate-left'></div>
@@ -66,6 +66,7 @@ class Home extends React.Component {
               <Button type={'lrg-btn'} text={'EXPLORE'}/>
             </div>
           </section>
+          <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460915/sitemap_t0qxrf.jpg'/>
         </div>
       )
     }

@@ -1,9 +1,11 @@
 .homepage {
   section {
     @include respond-to('large') {
-      max-height: 120vh;
       overflow: hidden;
     }
+  }
+  .overflow {
+    max-height: 130vh;
   }
  .text-only {
    @include respond-to('large') {
@@ -12,7 +14,7 @@
   }
   h1 {
     display: none;
-    @include respond-to('medium') {
+    @include respond-to('large') {
       display: flex;
     }
   }

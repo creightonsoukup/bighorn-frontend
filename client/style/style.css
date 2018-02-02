@@ -381,9 +381,9 @@ nav {
   width: 100vw;
   justify-content: space-around;
   font-size: 1em;
-  margin: 0 2vw 10vh 2vw; }
+  margin: 0 2vw 10vh 0; }
   .model-buttons img {
-    width: 40vw; }
+    width: 35vw; }
   .model-buttons div {
     padding: 10px;
     border: 2px solid #A97C50;
@@ -444,6 +444,22 @@ nav {
   color: #A97C50;
   float: right; }
 
+@media (min-width: 800px) {
+  .floorplans-mobile {
+    display: none; } }
+
+.floorplans {
+  display: none; }
+  @media (min-width: 800px) {
+    .floorplans {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .floorplans img {
+        width: 35vw;
+        height: auto; } }
+
 .gallery-controls {
   display: flex;
   flex-direction: row;
@@ -459,14 +475,15 @@ nav {
 
 @media (min-width: 1000px) {
   .homepage section {
-    max-height: 120vh;
     overflow: hidden; } }
+.homepage .overflow {
+  max-height: 130vh; }
 @media (min-width: 1000px) {
   .homepage .text-only {
     height: auto; } }
 .homepage h1 {
   display: none; }
-  @media (min-width: 800px) {
+  @media (min-width: 1000px) {
     .homepage h1 {
       display: flex; } }
 @media (min-width: 1000px) {

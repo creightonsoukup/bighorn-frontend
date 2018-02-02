@@ -1693,8 +1693,8 @@ var content = {
       paragraph1: " In need of some R and R?  The Bighorn Crossing community also offers a full service Wyndham Microtel.   The hotel offers 77 rooms designed with the same contemporary touch as the Townhomes and Condos.  The Bighorn Crossing Wyndham is a destination for those seeking an outdoor retreat with access to fishing, camping, hiking, skiing, etc."
     },
     textBlock5: {
-      title: "title for georgetown",
-      paragraph1: "Bighorn Crossing is located in the majestic Georgetown, Colorado within easy walking distance of Georgetown Lake, community hiking trails, ski shuttles to Loveland, and countless other outdoor activities.  The neighborhood is also packed with communal spaces for year-round outdoor activities and numerous rental options."
+      title: "Georgetown: Quintessential Mountain Town",
+      paragraph1: "Georgetown, Colorado, established in 1859, embodies mountain charm, tradition, and community.  Surrounded by 2,000 pristine acres of preserved land, it is one of the largest protected habitats in America.  This quaint mining town nestled in the Colorados hills offers a glimpse into early America with many renovated homes from the late 1800’s.  Additionally, Georgetown offers a variety of restaurants, shopping, museums, two scenic byways, health/fitness events and dozens of community clubs. Whether enjoying a Creekside tonic on the heated deck of Coopers on the Creek restaurant, snapping a picture of at the  Guanella Pass Scenic and Historic Byway, or hitting the slopes at Loveland Mountain, Georgetown is the perfect escape."
     },
     list1: {
       title: "Neighborhood Amenities",
@@ -2713,6 +2713,10 @@ var _two_bedroom = __webpack_require__(101);
 
 var _two_bedroom2 = _interopRequireDefault(_two_bedroom);
 
+var _fullpageImage = __webpack_require__(91);
+
+var _fullpageImage2 = _interopRequireDefault(_fullpageImage);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2845,6 +2849,14 @@ var _content = __webpack_require__(24);
 
 var _content2 = _interopRequireDefault(_content);
 
+var _floorplans = __webpack_require__(102);
+
+var _floorplans2 = _interopRequireDefault(_floorplans);
+
+var _fullpageImage = __webpack_require__(91);
+
+var _fullpageImage2 = _interopRequireDefault(_fullpageImage);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2876,7 +2888,9 @@ var ThreeBedroom = function (_React$Component) {
           _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'ELEVATION' }),
           _react2.default.createElement(_imageGallery2.default, { images: _images2.default.townhomesDetached }),
           _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'FLOORPLANS' }),
-          _react2.default.createElement(_FloorplansMobile2.default, { images: _images2.default.detachedFloorplans })
+          _react2.default.createElement(_FloorplansMobile2.default, { images: _images2.default.detachedFloorplans }),
+          _react2.default.createElement(_floorplans2.default, { images: _images2.default.detachedFloorplans }),
+          _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460914/interior_i1y2r3.jpg' })
         )
       );
     }
@@ -24247,7 +24261,7 @@ var Home = function (_React$Component) {
         _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460916/vqu4stpehzaq83rwcia0.jpg' }),
         _react2.default.createElement(
           'section',
-          null,
+          { className: 'overflow' },
           _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'TOWNHOMES' }),
           _react2.default.createElement(_textblock2.default, { style: 'text-block right-block no-margin', content: _content2.default.homepage.textBlock2 }),
           _react2.default.createElement('div', { className: 'color-block rotate-right' }),
@@ -24266,7 +24280,7 @@ var Home = function (_React$Component) {
         _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/condos_dhkmg3.jpg' }),
         _react2.default.createElement(
           'section',
-          null,
+          { className: 'overflow' },
           _react2.default.createElement(_subheader2.default, { style: 'subheader right-header', text: 'CONDOMINIUMS' }),
           _react2.default.createElement(_textblock2.default, { style: 'text-block left-block', content: _content2.default.homepage.textBlock3 }),
           _react2.default.createElement('div', { className: 'color-block rotate-left' }),
@@ -24305,7 +24319,8 @@ var Home = function (_React$Component) {
             { className: 'homepage-btn left-homepage-btn' },
             _react2.default.createElement(_button2.default, { type: 'lrg-btn', text: 'EXPLORE' })
           )
-        )
+        ),
+        _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460915/sitemap_t0qxrf.jpg' })
       );
     }
   }]);
@@ -24873,6 +24888,14 @@ var _content = __webpack_require__(24);
 
 var _content2 = _interopRequireDefault(_content);
 
+var _floorplans = __webpack_require__(102);
+
+var _floorplans2 = _interopRequireDefault(_floorplans);
+
+var _fullpageImage = __webpack_require__(91);
+
+var _fullpageImage2 = _interopRequireDefault(_fullpageImage);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24904,7 +24927,9 @@ var TwoBedroom = function (_React$Component) {
           _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'ELEVATION' }),
           _react2.default.createElement(_imageGallery2.default, { images: _images2.default.townhomesAttached }),
           _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'FLOORPLANS' }),
-          _react2.default.createElement(_FloorplansMobile2.default, { images: _images2.default.attachedFloorplans })
+          _react2.default.createElement(_FloorplansMobile2.default, { images: _images2.default.attachedFloorplans }),
+          _react2.default.createElement(_floorplans2.default, { images: _images2.default.attachedFloorplans }),
+          _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460914/interior_i1y2r3.jpg' })
         )
       );
     }
@@ -24914,6 +24939,57 @@ var TwoBedroom = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = TwoBedroom;
+
+/***/ }),
+/* 102 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Floorplans = function (_React$Component) {
+  _inherits(Floorplans, _React$Component);
+
+  function Floorplans() {
+    _classCallCheck(this, Floorplans);
+
+    return _possibleConstructorReturn(this, (Floorplans.__proto__ || Object.getPrototypeOf(Floorplans)).apply(this, arguments));
+  }
+
+  _createClass(Floorplans, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'floorplans' },
+        _react2.default.createElement('img', { src: this.props.images[0].imageUrl }),
+        _react2.default.createElement('img', { src: this.props.images[1].imageUrl })
+      );
+    }
+  }]);
+
+  return Floorplans;
+}(_react2.default.Component);
+
+exports.default = Floorplans;
 
 /***/ })
 /******/ ]);
