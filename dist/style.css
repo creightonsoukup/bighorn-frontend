@@ -190,7 +190,7 @@ nav {
     margin-top: 0;
     height: auto;
     margin: 5vh 0 10vh 2vw;
-    padding-bottom: 15vh; } }
+    padding-bottom: 20vh; } }
 
 @media (min-width: 1000px) {
   .left-block {
@@ -329,7 +329,7 @@ nav {
 
 @media (min-width: 1000px) {
   .left-btn2 {
-    transform: translate(-55vw, 65vh); } }
+    transform: translate(-55vw, 500px); } }
 
 .lrg-btn {
   font-weight: bold;

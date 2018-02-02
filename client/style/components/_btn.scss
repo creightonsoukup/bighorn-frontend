@@ -44,7 +44,7 @@
 
 .left-btn2 {
   @include respond-to('large') {
-    transform: translate(-55vw, 65vh)
+    transform: translate(-55vw, 500px)
   }
 }
 
