@@ -20350,7 +20350,7 @@ var Header = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   _reactRouterDom.Link,
-                  { to: '/townhomes' },
+                  { to: '/' },
                   'TOWNHOMES'
                 )
               ),
@@ -20359,7 +20359,7 @@ var Header = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   _reactRouterDom.Link,
-                  { to: '/apartments' },
+                  { to: '/' },
                   "APARTMENTS"
                 )
               ),
@@ -20368,7 +20368,7 @@ var Header = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   _reactRouterDom.Link,
-                  { to: '/neighborhood' },
+                  { to: '/' },
                   "NEIGHBORHOOD"
                 )
               )
