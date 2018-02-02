@@ -35,6 +35,7 @@ class Townhomes extends React.Component {
           <Logo src={require('../assets/townhomes-logo.png')}/>
           <Textblock style='text-block right-block top-margin' content={content.townhomes.textBlock1}/>
         </section>
+        <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460916/vqu4stpehzaq83rwcia0.jpg'/>
         <section>
           <SubHeader style={'subheader left-header'} text={'SELECT A MODEL'}/>
           <div className='model-buttons'>

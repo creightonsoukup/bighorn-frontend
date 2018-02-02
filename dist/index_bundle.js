@@ -2764,6 +2764,7 @@ var Townhomes = function (_React$Component) {
           _react2.default.createElement(_logo2.default, { src: __webpack_require__(96) }),
           _react2.default.createElement(_textblock2.default, { style: 'text-block right-block top-margin', content: _content2.default.townhomes.textBlock1 })
         ),
+        _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460916/vqu4stpehzaq83rwcia0.jpg' }),
         _react2.default.createElement(
           'section',
           null,
@@ -24258,7 +24259,7 @@ var Home = function (_React$Component) {
           { className: 'text-only' },
           _react2.default.createElement(_textblock2.default, { style: 'text-block background right-block', content: _content2.default.homepage.textBlock1 })
         ),
-        _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460916/vqu4stpehzaq83rwcia0.jpg' }),
+        _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/backyard_o2zp5r.jpg' }),
         _react2.default.createElement(
           'section',
           { className: 'overflow' },
