@@ -20,6 +20,13 @@ const galleries = {
   detachedFloorplans: [
     { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517436355/detached-bottom_hknkut.png', position: 0},
     { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517436355/detached-top_qkqjvp.png', position: 1}
+  ],
+  attachedFloorplans: [
+    { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517506029/attachedbottom_csjk0r.png', position: 0},
+    { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517506029/attachedtop_gbvqjr.png', position: 1}
+  ],
+  townhomes: [
+    {imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1514344512/homepage3_qbndhr.jpg'}
   ]
 }
 

@@ -1,0 +1,17 @@
+.gallery-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  i {
+    font-size: 2em;
+    padding: 15px;
+  }
+}
+
+.gallery {
+  img {
+    max-width: 60vw;
+    height: auto;
+  }
+}

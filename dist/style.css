@@ -434,6 +434,29 @@ nav {
     float: left;
     z-index: -12; } }
 
+.three i {
+  font-size: 2em;
+  color: #A97C50;
+  float: left; }
+
+.two i {
+  font-size: 2em;
+  color: #A97C50;
+  float: right; }
+
+.gallery-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .gallery-controls i {
+    font-size: 2em;
+    padding: 15px; }
+
+.gallery img {
+  max-width: 60vw;
+  height: auto; }
+
 @media (min-width: 1000px) {
   .homepage section {
     max-height: 120vh;

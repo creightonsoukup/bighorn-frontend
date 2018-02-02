@@ -6,7 +6,7 @@ export default class FloorplansMobile extends React.Component {
   render() {
     return(
       <div className='floorplans-mobile'>
-        <Gallery images={galleries.detachedFloorplans}/>
+        <Gallery images={this.props.images}/>
       </div>
     )
   }

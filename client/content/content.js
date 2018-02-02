@@ -4,7 +4,8 @@ const content = {
   homepage : {
     textBlock1 : {
       title : "Bighorn Crossing - Redefining Mountain Living",
-      paragraph1: "Think mountain living - rugged trails, sprawling mountains, sweeping slopes, acres and acres of snow and greenery.   Think modern living - fresh design, contemporary architecture, accessible amenities.  Think lake views from glass plated windows. Think the great outdoors and the great indoors in equilibrium.  Think Bighorn Crossing - where mountain and modern living meet."
+      paragraph1: "Bighorn Crossing is refining the idea of mountain living.  There is no need to compromise on luxury indoors in order to feel at one with the outdoors.  We created Bighorn Crossing with this very principle in mind. Bighorn Crossing is a community of 64 townhomes, 72 condos, and a full service Wyndham Microtel. With access to Arapahoe and Roosevelt National Forest, the Georgetown Lake, local trails and byways, and eight world class ski areas - nature’s finest is at your fingertips",
+      paragraph2: "Whether interested in a full time residence, a vacation home or a weekend getaway,  there are a variety of townhome layouts, condo layouts and even a full service hotel to fit your every need.  Of course, you’re thinking where is this mountain oasis? Bighorn Crossing is steps away from the charming, historic town of Georgetown, Colorado and just 40 miles outside of Denver"
     },
     textBlock2 : {
       title: "Charming Mountain Living Meets Contemporary Functionality",
@@ -16,7 +17,7 @@ const content = {
     },
     textBlock4: {
       title: "Bighorn Crossing Microtel by Wyndham - Redefining R and R",
-      paragraph1: " In need of some R and R?  The Bighorn Crossing community also offers a full service Wyndham Microtel.   The hotel offers 83 rooms designed with the same contemporary touch as the Townhomes and Condos.  The Bighorn Crossing Wyndham is a destination for those seeking an outdoor retreat with access to fishing, camping, hiking, skiing, etc."
+      paragraph1: " In need of some R and R?  The Bighorn Crossing community also offers a full service Wyndham Microtel.   The hotel offers 77 rooms designed with the same contemporary touch as the Townhomes and Condos.  The Bighorn Crossing Wyndham is a destination for those seeking an outdoor retreat with access to fishing, camping, hiking, skiing, etc."
     },
     textBlock5: {
       title: "title for georgetown",

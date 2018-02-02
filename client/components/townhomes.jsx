@@ -5,7 +5,8 @@ import galleries from '../content/images';
 import ImageGallery from './image-gallery';
 import Logo from './logo'
 import SubHeader from './subheader';
-import ThreeBedroom from './three-bedroom'
+import ThreeBedroom from './three-bedroom';
+import TwoBedroom from './two_bedroom'
 
 class Townhomes extends React.Component {
   constructor(props) {
@@ -28,7 +29,7 @@ class Townhomes extends React.Component {
   render() {
     return (
       <div className='townhomes'>
-        <img src="https://res.cloudinary.com/bighorncrossing/image/upload/v1514344512/townhome-hero_cyhc8r.jpg"/>
+        <img src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1514344512/homepage3_qbndhr.jpg'}/>
         <section className='townhome-intro'>
           <Logo src={require('../assets/townhomes-logo.png')}/>
           <Textblock style='text-block right-block top-margin' content={content.townhomes.textBlock1}/>
@@ -37,11 +38,11 @@ class Townhomes extends React.Component {
           <SubHeader style={'subheader left-header'} text={'SELECT A MODEL'}/>
           <div className='model-buttons'>
             <button onClick={this.threeBedroom}>
-              <img src={require('../assets/D1.png')}/>
+              <img src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1517516252/D2_iwpmrp.png'}/>
               <div>{'THREE BEDROOM'}</div>
             </button>
             <button onClick={this.twoBedroom}>
-              <img src={require('../assets/D1.png')}/>
+              <img src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1517516252/d1_zbft9p.png'}/>
               <div>{'TWO BEDROOM'}</div>
             </button>
           </div>
