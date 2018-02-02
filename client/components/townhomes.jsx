@@ -33,7 +33,7 @@ class Townhomes extends React.Component {
         <img src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1514344512/homepage3_qbndhr.jpg'}/>
         <section className='townhome-intro'>
           <Logo src={require('../assets/townhomes-logo.png')}/>
-          <Textblock style='text-block right-block top-margin' content={content.townhomes.textBlock1}/>
+          <Textblock style='text-block right-block top-margin background' content={content.townhomes.textBlock1}/>
         </section>
         <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460916/vqu4stpehzaq83rwcia0.jpg'/>
         <section>

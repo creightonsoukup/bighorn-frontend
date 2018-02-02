@@ -103,10 +103,21 @@
   flex-direction: row;
   width: 100vw;
   justify-content: space-around;
+  align-items: center;
   font-size: 1em;
   margin: 0 2vw 10vh 0;
+  button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
   img {
     width: 35vw;
+  }
+  button:first-of-type {
+    img {
+        padding: 5px 0 5px 0;
+    }
   }
   div {
     padding: 10px;

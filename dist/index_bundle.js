@@ -1794,7 +1794,7 @@ var Textblock = function (_React$Component) {
           null,
           this.props.content.paragraph2
         ),
-        this.props.content.paragraph2 && _react2.default.createElement(
+        this.props.content.paragraph3 && _react2.default.createElement(
           'h3',
           null,
           this.props.content.paragraph3
@@ -2762,7 +2762,7 @@ var Townhomes = function (_React$Component) {
           'section',
           { className: 'townhome-intro' },
           _react2.default.createElement(_logo2.default, { src: __webpack_require__(96) }),
-          _react2.default.createElement(_textblock2.default, { style: 'text-block right-block top-margin', content: _content2.default.townhomes.textBlock1 })
+          _react2.default.createElement(_textblock2.default, { style: 'text-block right-block top-margin background', content: _content2.default.townhomes.textBlock1 })
         ),
         _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460916/vqu4stpehzaq83rwcia0.jpg' }),
         _react2.default.createElement(

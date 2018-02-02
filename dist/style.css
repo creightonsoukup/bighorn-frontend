@@ -59,7 +59,10 @@ nav {
   font-family: Suisse International, sans-serif;
   display: flex;
   justify-content: space-between;
-  flex-direction: row; }
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  z-index: 1000; }
   nav .logo {
     width: auto;
     height: 50px;
@@ -160,14 +163,16 @@ nav {
     @media (min-width: 1000px) {
       .text-block h2 {
         font-size: 2.5em;
-        padding-bottom: 4vw; } }
+        padding-bottom: 4vw;
+        line-height: 1.75em; } }
   .text-block h3 {
     font-size: .9em;
     line-height: 1.5em; }
     @media (min-width: 600px) {
       .text-block h3 {
         padding: 1vh 5vw 5vw 5vw;
-        font-size: 1.2em; } }
+        font-size: 1.2em;
+        line-height: 1.9em; } }
 
 @media (min-width: 1000px) {
   .right-block {
@@ -244,6 +249,7 @@ nav {
     .gallery-overlay span:first-of-type {
       font-weight: bold;
       padding: 7vh;
+      margin-top: 5vh;
       color: rgba(255, 255, 255, 0.63);
       font-size: 8em; }
     .gallery-overlay span:last-of-type {
@@ -380,10 +386,17 @@ nav {
   flex-direction: row;
   width: 100vw;
   justify-content: space-around;
+  align-items: center;
   font-size: 1em;
   margin: 0 2vw 10vh 0; }
+  .model-buttons button {
+    background-color: transparent;
+    outline: none;
+    border: none; }
   .model-buttons img {
     width: 35vw; }
+  .model-buttons button:first-of-type img {
+    padding: 5px 0 5px 0; }
   .model-buttons div {
     padding: 10px;
     border: 2px solid #A97C50;
@@ -496,11 +509,22 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: center; }
+  @media (min-width: 1000px) {
+    .townhome-intro {
+      flex-direction: row;
+      justify-content: space-around; } }
   .townhome-intro img {
     margin-top: 5vh;
     width: 200px; }
+    @media (min-width: 1000px) {
+      .townhome-intro img {
+        transform: rotate(-90deg);
+        width: 400px; } }
   .townhome-intro .text-block {
     margin-top: 5vh; }
+    @media (min-width: 1000px) {
+      .townhome-intro .text-block {
+        padding: 5vw; } }
 
 .townhomes .subheader h2 {
   font-size: 2em;
