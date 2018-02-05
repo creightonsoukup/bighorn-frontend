@@ -43,7 +43,7 @@ class Home extends React.Component {
             <Textblock style={'text-block left-block'} content={content.homepage.textBlock3}/>
             <div className='color-block rotate-left'></div>
             <div className='homepage-btn right-homepage-btn'>
-              <Button type={'lrg-btn'} text={'EXPLORE'}/>
+              <Link to='/condos'><Button type={'lrg-btn'} text={'EXPLORE'}/></Link>
             </div>
             <div className='button-group left-btn'>
               <Button type={'btn'} text={'JOIN THE WATILIST'}/>

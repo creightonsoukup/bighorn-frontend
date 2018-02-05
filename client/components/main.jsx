@@ -11,7 +11,7 @@ const Main = () => (
     <div>
       <Route exact path="/" component={Home}/>
       <Route path="/townhomes" component={Townhomes}/>
-      <Route path="/apartments" component={Apartments}/>
+      <Route path="/condos" component={Apartments}/>
       <Route path="/neighborhood" component={Neighborhood}/>
     </div>
   </main>

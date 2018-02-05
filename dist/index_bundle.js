@@ -2760,7 +2760,7 @@ var Townhomes = function (_React$Component) {
         _react2.default.createElement('img', { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1514344512/homepage3_qbndhr.jpg' }),
         _react2.default.createElement(
           'section',
-          { className: 'townhome-intro' },
+          { className: 'unit-intro' },
           _react2.default.createElement(_logo2.default, { src: __webpack_require__(96) }),
           _react2.default.createElement(_textblock2.default, { style: 'text-block right-block top-margin background', content: _content2.default.townhomes.textBlock1 })
         ),
@@ -20363,8 +20363,8 @@ var Header = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   _reactRouterDom.Link,
-                  { to: '/' },
-                  "APARTMENTS"
+                  { to: '/condos' },
+                  "CONDOS"
                 )
               ),
               _react2.default.createElement(
@@ -24159,7 +24159,7 @@ var Main = function Main() {
       null,
       _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '/townhomes', component: _townhomes2.default }),
-      _react2.default.createElement(_reactRouterDom.Route, { path: '/apartments', component: _apartments2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/condos', component: _apartments2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '/neighborhood', component: _neighborhood2.default })
     )
   );
@@ -24297,7 +24297,11 @@ var Home = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'homepage-btn right-homepage-btn' },
-            _react2.default.createElement(_button2.default, { type: 'lrg-btn', text: 'EXPLORE' })
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { to: '/condos' },
+              _react2.default.createElement(_button2.default, { type: 'lrg-btn', text: 'EXPLORE' })
+            )
           ),
           _react2.default.createElement(
             'div',
@@ -24712,6 +24716,18 @@ var _images = __webpack_require__(6);
 
 var _images2 = _interopRequireDefault(_images);
 
+var _fullpageImage = __webpack_require__(91);
+
+var _fullpageImage2 = _interopRequireDefault(_fullpageImage);
+
+var _logo = __webpack_require__(93);
+
+var _logo2 = _interopRequireDefault(_logo);
+
+var _subheader = __webpack_require__(26);
+
+var _subheader2 = _interopRequireDefault(_subheader);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24742,7 +24758,7 @@ var Apartments = function (_React$Component) {
     value: function oneBedroom() {
       this.setState({
         activeTab: 2,
-        floorplan: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515281948/one-bedroom-floorplan_tjk8tu.png'
+        floorplan: 'https://res.cloudinary.com/bighorncrossing/image/upload/a_90/v1515281948/one-bedroom-floorplan_tjk8tu.png'
       });
     }
   }, {
@@ -24758,13 +24774,19 @@ var Apartments = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        null,
+        { className: 'condos' },
         _react2.default.createElement('img', { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1514344511/apartment-hero_uhsy64.jpg' }),
-        _react2.default.createElement('img', { src: __webpack_require__(98) }),
-        _react2.default.createElement(_textblock2.default, { content: _content2.default.apartments.textBlock1 }),
+        _react2.default.createElement(
+          'section',
+          { className: 'unit-intro' },
+          _react2.default.createElement(_logo2.default, { src: __webpack_require__(98) }),
+          _react2.default.createElement(_textblock2.default, { style: 'text-block right-block background', content: _content2.default.apartments.textBlock1 })
+        ),
+        _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460912/condoelevation_jl1n8b.jpg' }),
+        _react2.default.createElement(_subheader2.default, { style: 'left-header subheader', text: 'SELECT A UNIT' }),
         _react2.default.createElement(
           'div',
-          null,
+          { className: 'condo-buttons' },
           _react2.default.createElement(
             'button',
             { onClick: this.twoBedroom },
@@ -24774,9 +24796,9 @@ var Apartments = function (_React$Component) {
             'button',
             { onClick: this.oneBedroom },
             'ONE BEDROOM'
-          ),
-          _react2.default.createElement('img', { src: this.state.floorplan })
-        )
+          )
+        ),
+        _react2.default.createElement('img', { className: 'unit-plans', src: this.state.floorplan })
       );
     }
   }]);

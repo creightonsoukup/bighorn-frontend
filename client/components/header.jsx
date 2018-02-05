@@ -18,7 +18,7 @@ class Header extends React.Component {
             <div className='nav-items'>
               <ul className='nav-links'>
                 <li><Link to='/townhomes'>{'TOWNHOMES'}</Link></li>
-                <li><Link to='/'>{"APARTMENTS"}</Link></li>
+                <li><Link to='/condos'>{"CONDOS"}</Link></li>
                 <li><Link to='/'>{"NEIGHBORHOOD"}</Link></li>
               </ul>
               <div className="nav-menu">

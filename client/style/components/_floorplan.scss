@@ -36,3 +36,13 @@
      margin: 15vh 0 15vh 0;
    }
 }
+
+.unit-plans {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  display: block;
+  @include respond-to('large') {
+    width: 60vw;
+  }
+}

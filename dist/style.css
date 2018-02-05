@@ -399,6 +399,9 @@ nav {
     background-color: transparent;
     outline: none;
     border: none; }
+    @media (min-width: 600px) {
+      .model-buttons button {
+        font-size: 18px; } }
   .model-buttons img {
     width: 35vw; }
   .model-buttons button:first-of-type img {
@@ -407,6 +410,26 @@ nav {
     padding: 10px;
     border: 2px solid #A97C50;
     font-weight: bold; }
+
+.condo-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  @media (min-width: 1000px) {
+    .condo-buttons {
+      margin: 10vh 0 5vh 0; } }
+  .condo-buttons button {
+    border: 2px solid #A97C50;
+    font-weight: bold;
+    padding: 10px;
+    margin: 40px 0 30px 0;
+    background-color: transparent;
+    outline: none; }
+    @media (min-width: 600px) {
+      .condo-buttons button {
+        min-width: 200px;
+        font-size: 18px; } }
 
 .color-block {
   display: none; }
@@ -483,6 +506,15 @@ nav {
     .floorplans {
       margin: 15vh 0 15vh 0; } }
 
+.unit-plans {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  display: block; }
+  @media (min-width: 1000px) {
+    .unit-plans {
+      width: 60vw; } }
+
 .gallery-controls {
   display: flex;
   flex-direction: row;
@@ -513,27 +545,27 @@ nav {
   .homepage {
     overflow: hidden; } }
 
-.townhome-intro {
+.unit-intro {
   display: flex;
   justify-content: center;
   flex-direction: column;
   justify-content: space-between;
   align-items: center; }
   @media (min-width: 1000px) {
-    .townhome-intro {
+    .unit-intro {
       flex-direction: row;
       justify-content: space-around; } }
-  .townhome-intro img {
+  .unit-intro img {
     margin-top: 5vh;
     width: 200px; }
     @media (min-width: 1000px) {
-      .townhome-intro img {
+      .unit-intro img {
         transform: rotate(-90deg);
         width: 400px; } }
-  .townhome-intro .text-block {
+  .unit-intro .text-block {
     margin-top: 5vh; }
     @media (min-width: 1000px) {
-      .townhome-intro .text-block {
+      .unit-intro .text-block {
         padding: 5vw; } }
 
 .townhomes {
@@ -560,5 +592,8 @@ nav {
   float: none;
   text-align: left;
   margin: 10vh 0 10vh 0; }
+
+.condos {
+  margin-top: 75px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -32,7 +32,7 @@ class Townhomes extends React.Component {
     return (
       <div className='townhomes'>
         <img src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1514344512/homepage3_qbndhr.jpg'}/>
-        <section className='townhome-intro'>
+        <section className='unit-intro'>
           <Logo src={require('../assets/townhomes-logo.png')}/>
           <Textblock style='text-block right-block top-margin background' content={content.townhomes.textBlock1}/>
         </section>
