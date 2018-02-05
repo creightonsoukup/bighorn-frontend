@@ -4,13 +4,7 @@ import Main from './components/main';
 
 export default class App extends React.Component {
   componentDidMount(){
-    const element = document.getElementById('loader')
-    if(element){
-      setTimeout(() => {
-        element.classList.add('available')
-        element.outerHTML = ''
-      }, 3000)
-    }
+    window.scrollTo(0, 0);
   }
   render() {
     return (

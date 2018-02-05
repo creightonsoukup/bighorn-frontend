@@ -27,6 +27,7 @@ class Townhomes extends React.Component {
   threeBedroom() {
     this.setState({activeTab:'three'})
   }
+
   render() {
     return (
       <div className='townhomes'>

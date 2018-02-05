@@ -26,9 +26,13 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 5vh;
     img {
       width: 35vw;
       height: auto;
     }
-   };
+   }
+   @include respond-to('large') {
+     margin: 15vh 0 15vh 0;
+   }
 }

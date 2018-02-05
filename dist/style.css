@@ -100,27 +100,28 @@ nav {
 
 .image-gallery {
   width: 100vw;
-  height: 50vh;
+  height: 350px;
+  margin-top: 80px;
   position: relative;
   overflow: hidden; }
   @media (min-width: 600px) {
     .image-gallery {
-      height: 60vh; } }
+      height: 70vh; } }
   @media (min-width: 800px) {
     .image-gallery {
-      height: 70vh; } }
+      height: 80vh; } }
   @media (min-width: 1000px) {
     .image-gallery {
       height: 100vh; } }
   .image-gallery img {
-    min-width: 100vh;
-    overflow: hidden;
-    height: auto; }
+    min-width: 100%;
+    transform: scale(1.5);
+    height: auto;
+    margin-top: 50px; }
     @media (min-width: 1000px) {
       .image-gallery img {
-        min-height: 100vh;
-        width: auto;
-        max-width: 120vw; } }
+        transform: scale(1);
+        margin-top: 0; } }
 
 .image-controls {
   display: flex;
@@ -194,8 +195,15 @@ nav {
     float: left;
     margin-top: 0;
     height: auto;
-    margin: 5vh 0 10vh 2vw;
+    margin: 5vh 0 10vh 0;
     padding-bottom: 20vh; } }
+
+@media (min-width: 1000px) {
+  .three-bedroom .left-block2 {
+    padding: 5vh;
+    width: 50vw; }
+    .three-bedroom .left-block2 h3 {
+      padding: 5vh; } }
 
 @media (min-width: 1000px) {
   .left-block {
@@ -265,35 +273,33 @@ nav {
   text-align: center;
   margin: 5vh 0 5vh 0; }
 
+@media (min-width: 1000px) {
+  .three-bedroom h2 {
+    font-size: 5em; } }
+
 .fullpage-image {
-  width: 100vw;
-  height: 45vh;
-  overflow: hidden;
-  margin-top: 5vw;
-  margin-bottom: 5vw; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 45vh;
+  overflow: hidden; }
   .fullpage-image img {
-    height: 45vh;
-    min-width: 100vw;
-    overflow: hidden; }
-    @media (min-width: 600px) {
-      .fullpage-image img {
-        height: 55vh; } }
-    @media (min-width: 800px) {
-      .fullpage-image img {
-        height: 60vh; } }
+    width: 100vw;
+    transform: scale(1.4); }
     @media (min-width: 1000px) {
       .fullpage-image img {
-        height: 100vh; } }
+        transform: scale(1); } }
   @media (min-width: 600px) {
     .fullpage-image {
-      height: 55vh; } }
+      min-height: 70vh; } }
   @media (min-width: 800px) {
     .fullpage-image {
-      height: 60vh; } }
+      min-height: 80vh; } }
   @media (min-width: 1000px) {
     .fullpage-image {
-      height: 100vh;
-      margin: 0; } }
+      min-height: 100vh; } }
 
 .button-group {
   display: flex;
@@ -327,15 +333,15 @@ nav {
 @media (min-width: 1000px) {
   .right-btn {
     margin-left: 45vw;
-    transform: translate(0, 13vh); } }
+    transform: translate(0, 25vh); } }
 
 @media (min-width: 1000px) {
   .left-btn {
-    transform: translate(-73vw, 10vh); } }
+    transform: translate(-55vw, 20vh); } }
 
 @media (min-width: 1000px) {
   .left-btn2 {
-    transform: translate(-55vw, 500px); } }
+    transform: translate(-55vw, 550px); } }
 
 .lrg-btn {
   font-weight: bold;
@@ -468,10 +474,14 @@ nav {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      align-items: center; }
+      align-items: center;
+      margin: 5vh; }
       .floorplans img {
         width: 35vw;
         height: auto; } }
+  @media (min-width: 1000px) {
+    .floorplans {
+      margin: 15vh 0 15vh 0; } }
 
 .gallery-controls {
   display: flex;
@@ -526,8 +536,29 @@ nav {
       .townhome-intro .text-block {
         padding: 5vw; } }
 
-.townhomes .subheader h2 {
-  font-size: 2em;
-  margin: 2vh 0 5vh 0; }
+.townhomes {
+  margin-top: 75px; }
+  @media (min-width: 1000px) {
+    .townhomes .subheader {
+      font-size: 3em; } }
+  .townhomes .subheader h2 {
+    font-size: 2em;
+    margin: 2vh 0 5vh 0; }
+  @media (min-width: 1000px) {
+    .townhomes .right-block {
+      padding: 5vh 5vw 5vh 5vw;
+      width: 50vw; }
+      .townhomes .right-block h3 {
+        padding: 5vw; } }
+
+.two-bedroom h2 {
+  float: none;
+  text-align: right;
+  margin: 10vh 0 10vh 0; }
+
+.three-bedroom h2 {
+  float: none;
+  text-align: left;
+  margin: 10vh 0 10vh 0; }
 
 /*# sourceMappingURL=style.css.map */

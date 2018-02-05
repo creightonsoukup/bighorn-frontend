@@ -2881,8 +2881,8 @@ var ThreeBedroom = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'three-bedroom' },
-        _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'THREE BEDROOM' }),
-        _react2.default.createElement(_textblock2.default, { style: 'text-block left-block background', content: _content2.default.townhomes.textBlock2 }),
+        _react2.default.createElement(_subheader2.default, { style: 'subheader left-header center', text: 'THREE BEDROOM' }),
+        _react2.default.createElement(_textblock2.default, { style: 'text-block left-block2 background', content: _content2.default.townhomes.textBlock2 }),
         _react2.default.createElement(
           'div',
           { className: 'mobile' },
@@ -2891,6 +2891,7 @@ var ThreeBedroom = function (_React$Component) {
           _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'FLOORPLANS' }),
           _react2.default.createElement(_FloorplansMobile2.default, { images: _images2.default.detachedFloorplans }),
           _react2.default.createElement(_floorplans2.default, { images: _images2.default.detachedFloorplans }),
+          _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'INTERIOR' }),
           _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460914/interior_i1y2r3.jpg' })
         )
       );
@@ -2924,6 +2925,10 @@ var _App2 = _interopRequireDefault(_App);
 
 var _reactRouterDom = __webpack_require__(17);
 
+var _ScrollToTop = __webpack_require__(117);
+
+var _ScrollToTop2 = _interopRequireDefault(_ScrollToTop);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 __webpack_require__(100);
@@ -2931,7 +2936,11 @@ __webpack_require__(100);
 (0, _reactDom.render)(_react2.default.createElement(
   _reactRouterDom.BrowserRouter,
   null,
-  _react2.default.createElement(_App2.default, null)
+  _react2.default.createElement(
+    _ScrollToTop2.default,
+    null,
+    _react2.default.createElement(_App2.default, null)
+  )
 ), document.getElementById('root'));
 
 /***/ }),
@@ -20255,13 +20264,7 @@ var App = function (_React$Component) {
   _createClass(App, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      var element = document.getElementById('loader');
-      if (element) {
-        setTimeout(function () {
-          element.classList.add('available');
-          element.outerHTML = '';
-        }, 3000);
-      }
+      window.scrollTo(0, 0);
     }
   }, {
     key: 'render',
@@ -20351,7 +20354,7 @@ var Header = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   _reactRouterDom.Link,
-                  { to: '/' },
+                  { to: '/townhomes' },
                   'TOWNHOMES'
                 )
               ),
@@ -24213,6 +24216,8 @@ var _subheader = __webpack_require__(26);
 
 var _subheader2 = _interopRequireDefault(_subheader);
 
+var _reactRouterDom = __webpack_require__(17);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24269,13 +24274,17 @@ var Home = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'homepage-btn left-homepage-btn' },
-            _react2.default.createElement(_button2.default, { type: 'lrg-btn', text: 'EXPLORE' })
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { to: '/townhomes' },
+              ' ',
+              _react2.default.createElement(_button2.default, { type: 'lrg-btn', text: 'EXPLORE' })
+            )
           ),
           _react2.default.createElement(
             'div',
             { className: 'button-group right-btn' },
-            _react2.default.createElement(_button2.default, { type: 'btn', text: 'JOIN THE WAITLIST' }),
-            _react2.default.createElement(_button2.default, { type: 'btn', text: 'LEARN ABOUT PURCHASE INCENTIVES' })
+            _react2.default.createElement(_button2.default, { type: 'btn', text: 'CONTACT A BROKER' })
           )
         ),
         _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/condos_dhkmg3.jpg' }),
@@ -24293,8 +24302,7 @@ var Home = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'button-group left-btn' },
-            _react2.default.createElement(_button2.default, { type: 'btn', text: 'JOIN THE WATILIST' }),
-            _react2.default.createElement(_button2.default, { type: 'btn', text: 'LEARN ABOUT PURCHASE INCENTIVES' })
+            _react2.default.createElement(_button2.default, { type: 'btn', text: 'JOIN THE WATILIST' })
           )
         ),
         _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516463338/B3_jyhir9.jpg' }),
@@ -24422,7 +24430,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var FullpageImage = function FullpageImage(props) {
   return _react2.default.createElement(
     'div',
-    { className: 'fullpage-image' },
+    { className: 'fullpage-image cover' },
     _react2.default.createElement('img', { src: props.src })
   );
 };
@@ -24921,7 +24929,7 @@ var TwoBedroom = function (_React$Component) {
         'div',
         { className: 'two-bedroom' },
         _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'TWO BEDROOM' }),
-        _react2.default.createElement(_textblock2.default, { style: 'text-block left-block background', content: _content2.default.townhomes.textBlock3 }),
+        _react2.default.createElement(_textblock2.default, { style: 'text-block right-block background', content: _content2.default.townhomes.textBlock3 }),
         _react2.default.createElement(
           'div',
           { className: 'mobile' },
@@ -24930,6 +24938,7 @@ var TwoBedroom = function (_React$Component) {
           _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'FLOORPLANS' }),
           _react2.default.createElement(_FloorplansMobile2.default, { images: _images2.default.attachedFloorplans }),
           _react2.default.createElement(_floorplans2.default, { images: _images2.default.attachedFloorplans }),
+          _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'INTERIOR' }),
           _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460914/interior_i1y2r3.jpg' })
         )
       );
@@ -24991,6 +25000,75 @@ var Floorplans = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Floorplans;
+
+/***/ }),
+/* 103 */,
+/* 104 */,
+/* 105 */,
+/* 106 */,
+/* 107 */,
+/* 108 */,
+/* 109 */,
+/* 110 */,
+/* 111 */,
+/* 112 */,
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */,
+/* 117 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(17);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ScrollToTop = function (_React$Component) {
+  _inherits(ScrollToTop, _React$Component);
+
+  function ScrollToTop() {
+    _classCallCheck(this, ScrollToTop);
+
+    return _possibleConstructorReturn(this, (ScrollToTop.__proto__ || Object.getPrototypeOf(ScrollToTop)).apply(this, arguments));
+  }
+
+  _createClass(ScrollToTop, [{
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate(prevProps) {
+      if (this.props.location !== prevProps.location) {
+        window.scrollTo(0, 0);
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return this.props.children;
+    }
+  }]);
+
+  return ScrollToTop;
+}(_react2.default.Component);
+
+exports.default = (0, _reactRouterDom.withRouter)(ScrollToTop);
 
 /***/ })
 /******/ ]);

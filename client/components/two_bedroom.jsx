@@ -15,13 +15,14 @@ export default class TwoBedroom extends React.Component {
     return (
       <div className='two-bedroom'>
         <Subheader style={'subheader left-header'} text={'TWO BEDROOM'}/>
-        <Textblock style={'text-block left-block background'} content={content.townhomes.textBlock3}/>
+        <Textblock style={'text-block right-block background'} content={content.townhomes.textBlock3}/>
         <div className='mobile'>
           <Subheader style={'subheader left-header'} text={'ELEVATION'}/>
           <ImageGallery images={galleries.townhomesAttached}/>
           <Subheader style={'subheader left-header'} text={'FLOORPLANS'}/>
           <FloorplansMobile images={galleries.attachedFloorplans}/>
           <Floorplans images={galleries.attachedFloorplans}/>
+          <Subheader style={'subheader left-header'} text={'INTERIOR'}/>
           <FullpageImage src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460914/interior_i1y2r3.jpg'}/>
         </div>
       </div>

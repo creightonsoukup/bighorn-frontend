@@ -17,7 +17,7 @@ class Header extends React.Component {
             <Link to='/'><img className='logo' src={require('../assets/bighorn-logo.png')}/></Link>
             <div className='nav-items'>
               <ul className='nav-links'>
-                <li><Link to='/'>{'TOWNHOMES'}</Link></li>
+                <li><Link to='/townhomes'>{'TOWNHOMES'}</Link></li>
                 <li><Link to='/'>{"APARTMENTS"}</Link></li>
                 <li><Link to='/'>{"NEIGHBORHOOD"}</Link></li>
               </ul>

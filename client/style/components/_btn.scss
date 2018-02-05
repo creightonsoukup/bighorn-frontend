@@ -32,19 +32,19 @@
 .right-btn {
   @include respond-to('large') {
     margin-left: 45vw;
-    transform: translate(0, 13vh);
+    transform: translate(0, 25vh);
   }
 }
 
 .left-btn {
   @include respond-to('large') {
-    transform: translate(-73vw, 10vh);
+    transform: translate(-55vw, 20vh);
   }
 }
 
 .left-btn2 {
   @include respond-to('large') {
-    transform: translate(-55vw, 500px)
+    transform: translate(-55vw, 550px)
   }
 }
 

@@ -77,3 +77,11 @@
     margin: 5vh 0 5vh 0;
   }
 }
+
+.three-bedroom {
+  @include respond-to('large') {
+    h2 {
+      font-size: 5em;
+    }
+  }
+}

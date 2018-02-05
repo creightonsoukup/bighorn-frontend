@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import content from '../content/content';
 import ImageGallery from './image-gallery';
 import Textblock from './textblock';
@@ -7,6 +7,7 @@ import galleries from '../content/images'
 import FullpageImage from './fullpage-image'
 import Button from './button'
 import SubHeader from './subheader'
+import {Link} from 'react-router-dom';
 
 class Home extends React.Component {
     constructor(props) {
@@ -30,11 +31,10 @@ class Home extends React.Component {
             <div className='color-block rotate-right'></div>
 
             <div className='homepage-btn left-homepage-btn'>
-              <Button type={'lrg-btn'} text={'EXPLORE'}/>
+              <Link to='/townhomes'> <Button type={'lrg-btn'} text={'EXPLORE'}/></Link>
             </div>
             <div className='button-group right-btn'>
-              <Button type={'btn'} text={'JOIN THE WAITLIST'}/>
-              <Button type={'btn'} text={'LEARN ABOUT PURCHASE INCENTIVES'}/>
+              <Button type={'btn'} text={'CONTACT A BROKER'}/>
             </div>
           </section>
           <FullpageImage  src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/condos_dhkmg3.jpg'/>
@@ -47,7 +47,6 @@ class Home extends React.Component {
             </div>
             <div className='button-group left-btn'>
               <Button type={'btn'} text={'JOIN THE WATILIST'}/>
-              <Button type={'btn'} text={'LEARN ABOUT PURCHASE INCENTIVES'}/>
             </div>
           </section>
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516463338/B3_jyhir9.jpg'/>

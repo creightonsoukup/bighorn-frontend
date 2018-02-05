@@ -68,8 +68,20 @@
     float: left;
     margin-top: 0;
     height: auto;
-    margin: 5vh 0 10vh 2vw;
+    margin: 5vh 0 10vh 0;
     padding-bottom: 20vh;
+  }
+}
+
+.three-bedroom {
+  .left-block2 {
+    @include respond-to('large') {
+      padding: 5vh;
+      width: 50vw;
+      h3 {
+        padding: 5vh;
+      }
+    }
   }
 }
 
