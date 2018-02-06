@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import ScrollToTop from './ScrollToTop'
 
 class NavMenu extends React.Component {
   render() {
@@ -12,7 +13,6 @@ class NavMenu extends React.Component {
           <li><Link to='/condos'>condos</Link></li>
           <li><Link to='/neighborhood'>the neighborhood</Link></li>
           <li><Link to='/blog'>bighorn blog</Link></li>
-          <li><Link to='/contact'>contact</Link></li>
         </ul>
         <img className='menu-logo'src={require('../assets/bighorn-logo.png')}/>
       </section>

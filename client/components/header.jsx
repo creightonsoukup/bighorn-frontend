@@ -17,6 +17,7 @@ class Header extends React.Component {
   toggleMenu() {
     if(this.state.menu === false) {
       this.setState({menu: true})
+      window.scrollTo(0, 0)
       return
     }
     this.setState({menu: false})

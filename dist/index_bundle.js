@@ -20596,6 +20596,7 @@ var Header = function (_React$Component) {
     value: function toggleMenu() {
       if (this.state.menu === false) {
         this.setState({ menu: true });
+        window.scrollTo(0, 0);
         return;
       }
       this.setState({ menu: false });
@@ -25214,6 +25215,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(7);
 
+var _ScrollToTop = __webpack_require__(102);
+
+var _ScrollToTop2 = _interopRequireDefault(_ScrollToTop);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25284,15 +25289,6 @@ var NavMenu = function (_React$Component) {
               _reactRouterDom.Link,
               { to: '/blog' },
               'bighorn blog'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: '/contact' },
-              'contact'
             )
           )
         ),
