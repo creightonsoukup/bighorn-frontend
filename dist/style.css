@@ -216,6 +216,27 @@ nav {
   .no-margin {
     margin-top: 0; } }
 
+.neighborhood-intro p {
+  background-color: #F7F6F8;
+  padding: 20px;
+  line-height: 24px;
+  font-size: 16px;
+  margin: 20px; }
+  @media (min-width: 600px) {
+    .neighborhood-intro p {
+      padding: 30px; } }
+  @media (min-width: 800px) {
+    .neighborhood-intro p {
+      font-size: 20px;
+      line-height: 30px;
+      padding: 40px;
+      margin: 40px; } }
+  @media (min-width: 1000px) {
+    .neighborhood-intro p {
+      width: 50vw;
+      float: right;
+      margin: 0 0 40px 20px; } }
+
 .subheader h2 {
   font-family: Suisse International, sans-serif;
   font-weight: bold;
@@ -277,6 +298,24 @@ nav {
   .three-bedroom h2 {
     font-size: 5em; } }
 
+.neighborhood .subheader {
+  padding-bottom: 5vw; }
+  .neighborhood .subheader h2 {
+    font-size: 40px;
+    line-height: 50px; }
+    @media (min-width: 600px) {
+      .neighborhood .subheader h2 {
+        text-align: left;
+        line-height: 70px;
+        font-size: 50px; } }
+    @media (min-width: 800px) {
+      .neighborhood .subheader h2 {
+        line-height: 90px;
+        font-size: 70px; } }
+    @media (min-width: 1000px) {
+      .neighborhood .subheader h2 {
+        margin-top: 0; } }
+
 .fullpage-image {
   display: flex;
   justify-content: center;
@@ -300,6 +339,10 @@ nav {
   @media (min-width: 1000px) {
     .fullpage-image {
       min-height: 100vh; } }
+
+@media (min-width: 1000px) {
+  .neighborhood .fullpage-image img {
+    transform: scale(1.2); } }
 
 .button-group {
   display: flex;
@@ -527,6 +570,56 @@ nav {
 .gallery img {
   max-width: 60vw;
   height: auto; }
+
+.list {
+  background-color: #F7F6F8;
+  padding: 20px;
+  margin: 20px; }
+  @media (min-width: 600px) {
+    .list {
+      padding: 30px; } }
+  @media (min-width: 800px) {
+    .list {
+      padding: 40px;
+      margin: 40px; } }
+  .list h3 {
+    font-family: Miller Display, serif;
+    font-size: 20px;
+    line-height: 30px; }
+    @media (min-width: 600px) {
+      .list h3 {
+        font-size: 30px;
+        line-height: 40px; } }
+    @media (min-width: 800px) {
+      .list h3 {
+        font-size: 40px;
+        line-height: 50px; } }
+  .list ul {
+    margin: 20px 0 20px 0; }
+  .list li {
+    margin: 15px 0 15px 0;
+    line-height: 24px;
+    font-size: 16px; }
+    @media (min-width: 800px) {
+      .list li {
+        font-size: 20px;
+        line-height: 30px; } }
+  .list p {
+    margin: 20px 0 30px 0;
+    font-size: 16px;
+    line-height: 20px; }
+    @media (min-width: 800px) {
+      .list p {
+        font-size: 20px;
+        line-height: 30px; } }
+
+@media (min-width: 1000px) {
+  .left-list {
+    margin: 40px 40vw 0 0; } }
+
+@media (min-width: 1000px) {
+  .right-list {
+    margin: 40px 0 0 40vw; } }
 
 @media (min-width: 1000px) {
   .homepage section {

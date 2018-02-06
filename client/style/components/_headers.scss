@@ -85,3 +85,25 @@
     }
   }
 }
+
+.neighborhood {
+  .subheader {
+    padding-bottom: 5vw;
+    h2 {
+      font-size: 40px;
+      line-height: 50px;
+      @include respond-to('small') {
+          text-align: left;
+          line-height: 70px;
+          font-size: 50px;
+      }
+      @include respond-to('medium') {
+        line-height: 90px;
+        font-size: 70px;
+      }
+      @include respond-to('large') {
+        margin-top: 0;
+      }
+    }
+  }
+}

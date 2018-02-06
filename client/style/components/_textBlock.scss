@@ -99,3 +99,27 @@
     margin-top: 0;
   }
 }
+
+.neighborhood-intro {
+  p {
+    background-color: $bighorn-grey;
+    padding: 20px;
+    line-height: 24px;
+    font-size: 16px;
+    margin: 20px;
+    @include respond-to('small') {
+      padding: 30px;
+    }
+    @include respond-to('medium') {
+      font-size: 20px;
+      line-height: 30px;
+      padding: 40px;
+      margin: 40px;
+    }
+    @include respond-to('large') {
+      width: 50vw;
+      float: right;
+      margin: 0 0 40px 20px;
+    }
+  }
+}

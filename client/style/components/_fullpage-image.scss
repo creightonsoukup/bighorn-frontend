@@ -23,3 +23,13 @@
     min-height: 100vh;
   }
 }
+
+.neighborhood {
+  .fullpage-image {
+    img {
+      @include respond-to('large') {
+        transform: scale(1.2)
+      }
+    }
+  }
+}

@@ -1726,11 +1726,29 @@ var content = {
     textBlock1: {
       paragraph1: "Georgetown, Colorado, established in 1859, embodies mountain charm, tradition, and community.  Surrounded by 2,000 pristine acres of preserved land, it is one of the largest protected habitats in America.  This quaint mining town nestled in the Colorados hills offers a glimpse into early America with many renovated homes from the late 1800’s.  Additionally, Georgetown offers a variety of restaurants, shopping, museums, two scenic byways, health/fitness events and dozens of community clubs. Whether enjoying a Creekside tonic on the heated deck of Coopers on the Creek restaurant, snapping a picture of at the  Guanella Pass Scenic and Historic Byway, or hitting the slopes at Loveland Mountain, Georgetown is the perfect escape."
     },
-    textBlock2: {
-      title: "Georgetown, Colorado — Old Town Living",
-      paragraph1: "Georgetown is part of a historic landmark district established all the way back in the 1960’s.  Our Rose Hill community is surrounded by over 2,000 pristine acres managed by preservation societies, which makes it one of the largest protected habitats in the country.  Georgetown’s territorial charter dates back to before Colorado was a state.",
-      paragraph2: "Additionally, Georgetown offers one of the highest rated school districts in the state, three church denominations, two scenic byways, lots of health/fitness events and dozens of community clubs.  Combined with the spectacular skiing and other outdoor activities, it’s an excellent place to visit or raise a family."
+    intro: {
+      title: 'Georgetown, Colorado',
+      paragraph1: "Georgetown, Colorado, established in 1859, embodies mountain charm, tradition, and community.  Surrounded by 2,000 pristine acres of preserved land, it is one of the largest protected habitats in America.  This quaint mining town nestled in the Colorados hills offers a glimpse into early America with many renovated homes from the late 1800’s.  Additionally, Georgetown offers a variety of restaurants, shopping, museums, two scenic byways, health/fitness events and dozens of community clubs. Whether enjoying a Creekside tonic on the heated deck of Coopers on the Creek restaurant, snapping a picture of at the  Guanella Pass Scenic and Historic Byway, or hitting the slopes at Loveland Mountain, Georgetown is the perfect escape."
+    },
+    ski: {
+      title: "Eight Worldclass Ski Resorts. Unlimited Backcountry",
+      paragraph1: '',
+      listItems: ['Loveland Ski Resort', 'Winter Park', 'Arapahoe Basin', 'Keystone', 'Breckenride', 'Copper Mountain', 'Vail', 'Beaver Creek']
+    },
+    recreation: {
+      title: "Winter and Summer Recreation In Your Backyard",
+      paragraph1: 'Georgetown offers a variety of activities to enjoy nature in all of its glory.  From skiing to lounging by the lake, there is something for everyone and of course all of it with a mountain view - we are in Colorado after all!',
+      listItems: ["Lake Fishing - Keep an eye out for the Georgetown Bighorn Sheep Herd! You may also come across Trout, Browns, Rainbows and Brookes fish. ", "Lake Activites - Canoeing, kayaking, paddle boarding right outside your door", "White Water Rafting - Enjoy exhilarating rafting and look out for muskrat, beaver, deer, bighorn sheep, and even an occasional Eagle.", "Ice Fishing - Bundle up for ice fishing on the frozen lake available seasonally.", "Fly Fishing - Visit Clear Creek, a trout river that flows right through Georgetown. Look out for Rainbow and Brown Trout and abundant bug life!", "Hiking and Camping - Explore 1.5 million acres of public recreation in Arapahoe National Forest.  Embark on word class camping and hiking."]
+    },
+    view: {
+      title: 'Explore the Backcountry by Car or Foot',
+      listItems: ["Mt. Evans Scenic and Historic Byway:  14, 0000 foot summit,  the highest paved byway in America!", "Guanella Pass Scenic and Historic Byway: 11,600 summit, pictures don’t do it justice!"]
+    },
+    history: {
+      title: 'Old Town Charm',
+      listItems: ["Georgetown Loop Railroad: Visitors can partake in a round-trip narrow-gauge steam train ride from Georgetown to nearby Silver Plume and back, with an optional stop for a tour of the Lebanon Silver Mine.", "The Hotel de Paris: Visitors can enjoy this European inspired exhibition and soak in the spirit of 1875."]
     }
+
   }
 };
 
@@ -24394,11 +24412,16 @@ var List = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        null,
+        { className: this.props.style },
         _react2.default.createElement(
           'h3',
           null,
-          this.props.title
+          this.props.content.title
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          this.props.content.paragraph1
         ),
         _react2.default.createElement(
           'ul',
@@ -24835,6 +24858,26 @@ var _imageGallery = __webpack_require__(14);
 
 var _imageGallery2 = _interopRequireDefault(_imageGallery);
 
+var _fullpageImage = __webpack_require__(91);
+
+var _fullpageImage2 = _interopRequireDefault(_fullpageImage);
+
+var _subheader = __webpack_require__(26);
+
+var _subheader2 = _interopRequireDefault(_subheader);
+
+var _list = __webpack_require__(90);
+
+var _list2 = _interopRequireDefault(_list);
+
+var _content = __webpack_require__(24);
+
+var _content2 = _interopRequireDefault(_content);
+
+var _textblock = __webpack_require__(25);
+
+var _textblock2 = _interopRequireDefault(_textblock);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24857,8 +24900,62 @@ var Neighborhood = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        null,
-        'Neighborhood'
+        { className: 'neighborhood' },
+        _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516462298/downtown2_affj00.jpg' }),
+        _react2.default.createElement(
+          'section',
+          { className: 'neighborhood-intro' },
+          _react2.default.createElement(_subheader2.default, { text: _content2.default.neighborhood.intro.title.toUpperCase(), style: 'subheader' }),
+          _react2.default.createElement(
+            'p',
+            null,
+            _content2.default.neighborhood.intro.paragraph1
+          )
+        ),
+        _react2.default.createElement(
+          'section',
+          null,
+          _react2.default.createElement(_subheader2.default, { style: 'subheader', text: 'LAKEFRONT TO SLOPESIDE IN MINUTES' }),
+          _react2.default.createElement(
+            'div',
+            { className: 'neighborhood-section' },
+            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517891935/dsds_vac7qw.jpg' }),
+            _react2.default.createElement(_list2.default, { style: 'list left-list', content: _content2.default.neighborhood.ski })
+          )
+        ),
+        _react2.default.createElement(
+          'section',
+          { className: 'neighborhood-section' },
+          _react2.default.createElement(_subheader2.default, { style: 'subheader', text: 'ENDLESS RECREATION' }),
+          _react2.default.createElement(
+            'div',
+            { className: 'neighborhood-section' },
+            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/c_crop,g_west,h_1080,w_1387,x_0/v1514344512/neighborhood-hero_upzlox.jpg' }),
+            _react2.default.createElement(_list2.default, { style: 'list right-list', content: _content2.default.neighborhood.recreation })
+          )
+        ),
+        _react2.default.createElement(
+          'section',
+          { className: 'neighborhood-section' },
+          _react2.default.createElement(_subheader2.default, { style: 'subheader', text: 'JUST LOOKING FOR A VIEW?' }),
+          _react2.default.createElement(
+            'div',
+            { className: 'neighborhood-section' },
+            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517893889/jens-herrndorff-404712_or29xt.jpg' }),
+            _react2.default.createElement(_list2.default, { style: 'list left-list', content: _content2.default.neighborhood.view })
+          )
+        ),
+        _react2.default.createElement(
+          'section',
+          { className: 'neighborhood-section' },
+          _react2.default.createElement(_subheader2.default, { style: 'subheader ', text: 'CALLING ALL HISTORY BUFFS' }),
+          _react2.default.createElement(
+            'div',
+            { className: 'neighborhood-section' },
+            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517892250/marie-hoffman-295580_fuuwhz.jpg' }),
+            _react2.default.createElement(_list2.default, { style: 'list right-list', content: _content2.default.neighborhood.history })
+          )
+        )
       );
     }
   }]);
