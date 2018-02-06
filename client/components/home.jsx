@@ -62,7 +62,7 @@ class Home extends React.Component {
             <SubHeader style={'subheader left-header no-margin'} text={'THE NEIGHBORHOOD'}/>
             <Textblock style={'text-block right-block background'} content={content.homepage.textBlock5} />
             <div className='homepage-btn left-homepage-btn'>
-              <Button type={'lrg-btn'} text={'EXPLORE'}/>
+              <Link to='/neighborhood'><Button type={'lrg-btn'} text={'EXPLORE'}/></Link>
             </div>
           </section>
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460915/sitemap_t0qxrf.jpg'/>

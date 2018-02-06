@@ -20390,7 +20390,7 @@ var Header = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   _reactRouterDom.Link,
-                  { to: '/' },
+                  { to: '/neighborhood' },
                   "NEIGHBORHOOD"
                 )
               )
@@ -24348,7 +24348,11 @@ var Home = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'homepage-btn left-homepage-btn' },
-            _react2.default.createElement(_button2.default, { type: 'lrg-btn', text: 'EXPLORE' })
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { to: '/neighborhood' },
+              _react2.default.createElement(_button2.default, { type: 'lrg-btn', text: 'EXPLORE' })
+            )
           )
         ),
         _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460915/sitemap_t0qxrf.jpg' })
