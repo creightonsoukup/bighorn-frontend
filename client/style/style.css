@@ -97,6 +97,53 @@ nav {
   .nav-menu img {
     width: auto;
     height: 25px; }
+  @media (min-width: 1000px) {
+    .nav-menu {
+      display: none; } }
+
+.menu {
+  background-color: #DBB89E;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: absolute;
+  z-index: 5000;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  font-family: Miller Display, serif;
+  color: black; }
+  .menu ul {
+    min-height: 40vh;
+    font-size: 20px;
+    text-align: right;
+    margin: 5vw;
+    padding: 20px; }
+    @media (min-width: 600px) {
+      .menu ul {
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    .menu ul li {
+      padding: 5px;
+      margin: 20px 0 20px 0; }
+    .menu ul a {
+      text-decoration: none;
+      color: black; }
+  .menu .menu-logo {
+    max-width: 33vw;
+    margin: 0 60vw 10vw 10vw;
+    align-self: flex-start; }
+    @media (min-width: 800px) {
+      .menu .menu-logo {
+        transform: translate(0, -35vh); } }
+
+.menu-icon {
+  max-width: 50px;
+  max-height: 50px;
+  padding: 20px;
+  margin: 5vw; }
 
 .image-gallery {
   width: 100vw;

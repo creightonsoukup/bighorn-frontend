@@ -1,16 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
-import Menu from './menu';
+import NavMenu from './nav-menu';
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       hidden: true,
-      mobile: true
+      mobile: true,
+      menu: false
     }
+    this.toggleMenu = this.toggleMenu.bind(this)
   }
+
+  toggleMenu() {
+    if(this.state.menu === false) {
+      this.setState({menu: true})
+      return
+    }
+    this.setState({menu: false})
+  }
+
   render() {
     return (
         <header>
@@ -22,12 +33,15 @@ class Header extends React.Component {
                 <li><Link to='/condos'>{"CONDOS"}</Link></li>
                 <li><Link to='/neighborhood'>{"NEIGHBORHOOD"}</Link></li>
               </ul>
-              <div className="nav-menu">
+              <div className="nav-menu" onClick={this.toggleMenu}>
                 <span>{'MENU'}</span>
                 <img src={require('../assets/hamburger.png')}/>
               </div>
             </div>
           </nav>
+          { this.state.menu &&
+            <NavMenu toggleMenu={this.toggleMenu} />
+          }
           </header>
           )
           }

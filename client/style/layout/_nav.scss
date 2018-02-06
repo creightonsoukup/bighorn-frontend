@@ -49,4 +49,57 @@ nav {
     width: auto;
     height: 25px;
   }
+  @include respond-to('large') {
+    display: none;
+  }
+}
+
+.menu {
+  background-color: $bighorn-tan;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: absolute;
+  z-index: 5000;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  font-family: $subheader-font;
+  color: black;
+  ul {
+    min-height: 40vh;
+    font-size: 20px;
+    text-align: right;
+    margin: 5vw;
+    padding: 20px;
+    @include respond-to('small') {
+      font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    li {
+      padding: 5px;
+      margin: 20px 0 20px 0;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .menu-logo {
+      max-width: 33vw;
+      margin: 0 60vw 10vw 10vw;
+      align-self: flex-start;
+      @include respond-to('medium') {
+        transform: translate(0,-35vh);
+      }
+  }
+}
+
+.menu-icon {
+  max-width: 50px;
+  max-height: 50px;
+  padding: 20px;
+  margin: 5vw;
 }
