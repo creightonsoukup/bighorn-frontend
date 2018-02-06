@@ -20324,6 +20324,10 @@ var _classnames = __webpack_require__(85);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
+var _menu = __webpack_require__(118);
+
+var _menu2 = _interopRequireDefault(_menu);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24309,7 +24313,7 @@ var Home = function (_React$Component) {
         _react2.default.createElement(
           'section',
           { className: 'overflow' },
-          _react2.default.createElement(_subheader2.default, { style: 'subheader right-header', text: 'CONDOMINIUMS' }),
+          _react2.default.createElement(_subheader2.default, { style: 'subheader right-header', text: 'CONDOS' }),
           _react2.default.createElement(_textblock2.default, { style: 'text-block left-block', content: _content2.default.homepage.textBlock3 }),
           _react2.default.createElement('div', { className: 'color-block rotate-left' }),
           _react2.default.createElement(
@@ -24331,7 +24335,7 @@ var Home = function (_React$Component) {
         _react2.default.createElement(
           'section',
           null,
-          _react2.default.createElement(_subheader2.default, { style: 'subheader right-header no-margin', text: 'THE LODGE' }),
+          _react2.default.createElement(_subheader2.default, { style: 'subheader right-header', text: 'THE LODGE' }),
           _react2.default.createElement(_textblock2.default, { style: 'text-block left-block2 background', content: _content2.default.homepage.textBlock4 }),
           _react2.default.createElement(
             'div',
@@ -24342,7 +24346,7 @@ var Home = function (_React$Component) {
         _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516462298/downtown1_lust3v.jpg' }),
         _react2.default.createElement(
           'section',
-          { className: 'neighborhood' },
+          { className: '' },
           _react2.default.createElement(_subheader2.default, { style: 'subheader left-header no-margin', text: 'THE NEIGHBORHOOD' }),
           _react2.default.createElement(_textblock2.default, { style: 'text-block right-block background', content: _content2.default.homepage.textBlock5 }),
           _react2.default.createElement(
@@ -24909,7 +24913,7 @@ var Neighborhood = function (_React$Component) {
         _react2.default.createElement(
           'section',
           { className: 'neighborhood-intro' },
-          _react2.default.createElement(_subheader2.default, { text: _content2.default.neighborhood.intro.title.toUpperCase(), style: 'subheader' }),
+          _react2.default.createElement(_subheader2.default, { text: _content2.default.neighborhood.intro.title.toUpperCase(), style: 'subheader left-header' }),
           _react2.default.createElement(
             'p',
             null,
@@ -24919,7 +24923,7 @@ var Neighborhood = function (_React$Component) {
         _react2.default.createElement(
           'section',
           null,
-          _react2.default.createElement(_subheader2.default, { style: 'subheader', text: 'LAKEFRONT TO SLOPESIDE IN MINUTES' }),
+          _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'LAKEFRONT TO SLOPESIDE IN MINUTES' }),
           _react2.default.createElement(
             'div',
             { className: 'neighborhood-section' },
@@ -24930,7 +24934,7 @@ var Neighborhood = function (_React$Component) {
         _react2.default.createElement(
           'section',
           { className: 'neighborhood-section' },
-          _react2.default.createElement(_subheader2.default, { style: 'subheader', text: 'ENDLESS RECREATION' }),
+          _react2.default.createElement(_subheader2.default, { style: 'subheader right-header', text: 'ENDLESS RECREATION' }),
           _react2.default.createElement(
             'div',
             { className: 'neighborhood-section' },
@@ -24941,7 +24945,7 @@ var Neighborhood = function (_React$Component) {
         _react2.default.createElement(
           'section',
           { className: 'neighborhood-section' },
-          _react2.default.createElement(_subheader2.default, { style: 'subheader', text: 'JUST LOOKING FOR A VIEW?' }),
+          _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'JUST LOOKING FOR A VIEW?' }),
           _react2.default.createElement(
             'div',
             { className: 'neighborhood-section' },
@@ -24952,7 +24956,7 @@ var Neighborhood = function (_React$Component) {
         _react2.default.createElement(
           'section',
           { className: 'neighborhood-section' },
-          _react2.default.createElement(_subheader2.default, { style: 'subheader ', text: 'CALLING ALL HISTORY BUFFS' }),
+          _react2.default.createElement(_subheader2.default, { style: 'subheader right-header ', text: 'CALLING ALL HISTORY BUFFS' }),
           _react2.default.createElement(
             'div',
             { className: 'neighborhood-section' },
@@ -25192,6 +25196,113 @@ var ScrollToTop = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = (0, _reactRouterDom.withRouter)(ScrollToTop);
+
+/***/ }),
+/* 118 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Mennu = function (_React$Component) {
+  _inherits(Mennu, _React$Component);
+
+  function Mennu() {
+    _classCallCheck(this, Mennu);
+
+    return _possibleConstructorReturn(this, (Mennu.__proto__ || Object.getPrototypeOf(Mennu)).apply(this, arguments));
+  }
+
+  _createClass(Mennu, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'section',
+        null,
+        _react2.default.createElement(
+          'ul',
+          null,
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              Link,
+              { to: '/' },
+              'home'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              Link,
+              { to: '/townhomes' },
+              'townhomes'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              Link,
+              { to: '/condos' },
+              'condos'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              Link,
+              { to: '/neighborhood' },
+              'the neighborhood'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              Link,
+              { to: '/blog' },
+              'bighorn blog'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              Link,
+              { to: '/contact' },
+              'contact'
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Mennu;
+}(_react2.default.Component);
+
+exports.default = Mennu;
 
 /***/ })
 /******/ ]);

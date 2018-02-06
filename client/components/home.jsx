@@ -39,7 +39,7 @@ class Home extends React.Component {
           </section>
           <FullpageImage  src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/condos_dhkmg3.jpg'/>
           <section className='overflow'>
-            <SubHeader style={'subheader right-header'} text={'CONDOMINIUMS'}/>
+            <SubHeader style={'subheader right-header'} text={'CONDOS'}/>
             <Textblock style={'text-block left-block'} content={content.homepage.textBlock3}/>
             <div className='color-block rotate-left'></div>
             <div className='homepage-btn right-homepage-btn'>
@@ -51,14 +51,14 @@ class Home extends React.Component {
           </section>
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516463338/B3_jyhir9.jpg'/>
           <section>
-            <SubHeader style={'subheader right-header no-margin'} text={'THE LODGE'}/>
+            <SubHeader style={'subheader right-header'} text={'THE LODGE'}/>
             <Textblock style={'text-block left-block2 background'} content={content.homepage.textBlock4}/>
             <div className='button-group left-btn2'>
               <Button type={'btn'} text={'COMING SOON'}/>
             </div>
           </section>
           <FullpageImage src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1516462298/downtown1_lust3v.jpg'}/>
-          <section className='neighborhood'>
+          <section className=''>
             <SubHeader style={'subheader left-header no-margin'} text={'THE NEIGHBORHOOD'}/>
             <Textblock style={'text-block right-block background'} content={content.homepage.textBlock5} />
             <div className='homepage-btn left-homepage-btn'>

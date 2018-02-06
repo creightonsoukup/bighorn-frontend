@@ -233,9 +233,10 @@ nav {
       margin: 40px; } }
   @media (min-width: 1000px) {
     .neighborhood-intro p {
-      width: 50vw;
-      float: right;
-      margin: 0 0 40px 20px; } }
+      width: 60vw;
+      margin: 0 0 40px 40vw;
+      box-sizing: border-box;
+      align-content: right; } }
 
 .subheader h2 {
   font-family: Suisse International, sans-serif;
@@ -249,7 +250,8 @@ nav {
   @media (min-width: 1000px) {
     .subheader h2 {
       font-size: 6em;
-      margin-top: 10vh; } }
+      margin-top: 10vh;
+      max-width: 60vw; } }
 
 @media (min-width: 1000px) {
   .left-header h2 {
@@ -257,7 +259,8 @@ nav {
 
 @media (min-width: 1000px) {
   .right-header h2 {
-    text-align: right; } }
+    text-align: right;
+    margin: 0 0 0 40vw; } }
 
 @media (min-width: 1000px) {
   .no-margin h2 {
@@ -305,7 +308,6 @@ nav {
     line-height: 50px; }
     @media (min-width: 600px) {
       .neighborhood .subheader h2 {
-        text-align: left;
         line-height: 70px;
         font-size: 50px; } }
     @media (min-width: 800px) {

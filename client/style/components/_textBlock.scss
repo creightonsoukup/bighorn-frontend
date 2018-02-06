@@ -117,9 +117,10 @@
       margin: 40px;
     }
     @include respond-to('large') {
-      width: 50vw;
-      float: right;
-      margin: 0 0 40px 20px;
+      width: 60vw;
+      margin: 0 0 40px 40vw;
+      box-sizing: border-box;
+      align-content: right;
     }
   }
 }

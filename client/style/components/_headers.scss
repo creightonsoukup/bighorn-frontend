@@ -11,6 +11,7 @@
     @include respond-to('large') {
       font-size: 6em;
       margin-top: 10vh;
+      max-width: 60vw;
     }
   }
 }
@@ -27,6 +28,7 @@
   h2 {
     @include respond-to('large') {
       text-align: right;
+      margin: 0 0 0 40vw;
     }
   }
 }
@@ -93,7 +95,6 @@
       font-size: 40px;
       line-height: 50px;
       @include respond-to('small') {
-          text-align: left;
           line-height: 70px;
           font-size: 50px;
       }
