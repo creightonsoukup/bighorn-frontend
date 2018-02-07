@@ -5,6 +5,7 @@ import Townhomes from './townhomes';
 import Apartments from './apartments';
 import Neighborhood from './neighborhood';
 import ThreeBedroom from './three-bedroom';
+import ErrorPage from './404'
 
 const Main = () => (
   <main>
@@ -13,6 +14,7 @@ const Main = () => (
       <Route path="/townhomes" component={Townhomes}/>
       <Route path="/condos" component={Apartments}/>
       <Route path="/neighborhood" component={Neighborhood}/>
+      <Route path='*' component={ErrorPage}/>
     </div>
   </main>
 )
