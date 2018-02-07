@@ -12,7 +12,7 @@ class Apartments extends React.Component {
     super(props);
     this.state = {
       activeTab: 1,
-      floorplan: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515281948/two-bedroom-floorplan_mno1uu.png'
+      floorplan: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1518024674/twobed_bfo75y.jpg'
     }
     this.oneBedroom = this.oneBedroom.bind(this)
     this.twoBedroom = this.twoBedroom.bind(this)
@@ -21,14 +21,14 @@ class Apartments extends React.Component {
   oneBedroom() {
     this.setState({
       activeTab: 2,
-      floorplan: 'https://res.cloudinary.com/bighorncrossing/image/upload/a_90/v1515281948/one-bedroom-floorplan_tjk8tu.png'
+      floorplan: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1518024678/onebed_a5tyfs.jpg'
     })
   }
 
   twoBedroom() {
     this.setState({
       activeTab: 1,
-      floorplan: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515281948/two-bedroom-floorplan_mno1uu.png'
+      floorplan: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1518024674/twobed_bfo75y.jpg'
     })
   }
   render() {

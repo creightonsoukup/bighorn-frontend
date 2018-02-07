@@ -11,6 +11,11 @@ import FullpageImage from './fullpage-image';
 
 
 export default class ThreeBedroom extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+
   render() {
     return (
       <div className='three-bedroom'>
