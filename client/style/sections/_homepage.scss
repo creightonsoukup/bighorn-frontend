@@ -1,4 +1,5 @@
 .homepage {
+  margin-top: 80px;
   section {
     @include respond-to('large') {
       overflow: hidden;

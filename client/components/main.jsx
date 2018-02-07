@@ -9,13 +9,13 @@ import ErrorPage from './404'
 
 const Main = () => (
   <main>
-    <div>
+    <Switch>
       <Route exact path="/" component={Home}/>
       <Route path="/townhomes" component={Townhomes}/>
       <Route path="/condos" component={Apartments}/>
       <Route path="/neighborhood" component={Neighborhood}/>
-      <Route path='*' component={ErrorPage}/>
-    </div>
+      <Route path='*' exact component={ErrorPage}/>
+    </Switch>
   </main>
 )
 

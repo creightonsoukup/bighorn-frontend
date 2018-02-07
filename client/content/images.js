@@ -18,12 +18,12 @@ const galleries = {
     { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-1_psj229.jpg', position: 2}
   ],
   detachedFloorplans: [
-    { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517436355/detached-bottom_hknkut.png', position: 0},
-    { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517436355/detached-top_qkqjvp.png', position: 1}
+    { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517436355/detached-bottom_hknkut.png', position: 0, caption: 'Bottom Floor'},
+    { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517436355/detached-top_qkqjvp.png', position: 1, caption: 'Top Floor'}
   ],
   attachedFloorplans: [
-    { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517506029/attachedbottom_csjk0r.png', position: 0},
-    { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517506029/attachedtop_gbvqjr.png', position: 1}
+    { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517506029/attachedbottom_csjk0r.png', position: 0, caption: 'Bottom Floor'},
+    { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517506029/attachedtop_gbvqjr.png', position: 1, caption: 'Top Floor'}
   ],
   townhomes: [
     {imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1514344512/homepage3_qbndhr.jpg'}

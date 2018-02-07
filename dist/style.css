@@ -148,7 +148,6 @@ nav {
 .image-gallery {
   width: 100vw;
   height: 350px;
-  margin-top: 80px;
   position: relative;
   overflow: hidden; }
   @media (min-width: 600px) {
@@ -328,13 +327,12 @@ nav {
     .gallery-overlay span:first-of-type {
       font-weight: bold;
       padding: 7vh;
-      margin-top: 5vh;
       color: rgba(255, 255, 255, 0.63);
       font-size: 8em; }
     .gallery-overlay span:last-of-type {
       font-weight: 300;
       align-self: flex-end;
-      padding: 5vh 5vh 10vh 5vh;
+      padding: 5vh 5vh 20vh 5vh;
       color: rgba(255, 255, 255, 0.63);
       font-size: 7em; } }
 
@@ -607,18 +605,32 @@ nav {
     .unit-plans {
       width: 60vw; } }
 
+.images img {
+  max-width: 60vw;
+  height: auto; }
+
 .gallery-controls {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
-  .gallery-controls i {
-    font-size: 2em;
-    padding: 15px; }
+  .gallery-controls .arrows {
+    max-width: 30px;
+    padding: 20px; }
+    @media (min-width: 600px) {
+      .gallery-controls .arrows {
+        padding: 50px; } }
 
-.gallery img {
-  max-width: 60vw;
-  height: auto; }
+.gallery-captions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh 0 2vh 0; }
+  .gallery-captions .caption p {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px; }
 
 .list {
   background-color: #F7F6F8;
@@ -670,22 +682,24 @@ nav {
   .right-list {
     margin: 40px 0 0 40vw; } }
 
-@media (min-width: 1000px) {
-  .homepage section {
-    overflow: hidden; } }
-.homepage .overflow {
-  max-height: 130vh; }
-@media (min-width: 1000px) {
-  .homepage .text-only {
-    height: auto; } }
-.homepage h1 {
-  display: none; }
+.homepage {
+  margin-top: 80px; }
   @media (min-width: 1000px) {
-    .homepage h1 {
-      display: flex; } }
-@media (min-width: 1000px) {
-  .homepage {
-    overflow: hidden; } }
+    .homepage section {
+      overflow: hidden; } }
+  .homepage .overflow {
+    max-height: 130vh; }
+  @media (min-width: 1000px) {
+    .homepage .text-only {
+      height: auto; } }
+  .homepage h1 {
+    display: none; }
+    @media (min-width: 1000px) {
+      .homepage h1 {
+        display: flex; } }
+  @media (min-width: 1000px) {
+    .homepage {
+      overflow: hidden; } }
 
 .unit-intro {
   display: flex;

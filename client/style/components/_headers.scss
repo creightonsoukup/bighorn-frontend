@@ -56,14 +56,13 @@
     span:first-of-type {
       font-weight: $header-weight;
       padding: 7vh;
-      margin-top: 5vh;
       color: rgba(255, 255, 255, 0.63);
       font-size: 8em;
     }
     span:last-of-type {
       font-weight: 300;
       align-self: flex-end;
-      padding: 5vh 5vh 10vh 5vh;
+      padding: 5vh 5vh 20vh 5vh;
       color: rgba(255, 255, 255, 0.63);
       font-size: 7em;
     }

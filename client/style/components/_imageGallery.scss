@@ -1,7 +1,6 @@
 .image-gallery {
   width: 100vw;
   height: 350px;
-  margin-top: 80px;
   position: relative;
   overflow: hidden;
   @include respond-to('small') {

@@ -45,11 +45,7 @@ export default class ImageGallery extends React.Component {
     return (
       <div className='image-gallery'>
         <img src={ this.state.imageUrl } />
-        <div className='image-controls'>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        
       </div>
     )
   }

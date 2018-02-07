@@ -484,8 +484,8 @@ var galleries = {
   townhomesAttached: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460914/attached1_poggfo.jpg', position: 0 }, { imageUrl: 'http://res.cloudinary.com/bighorncrossing/image/upload/v1516460912/attached2_apcppd.jpg', position: 1 }],
   townhomesDetached: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516461072/detached1_mplieu.jpg', position: 0 }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/detached2_fexqus.jpg', position: 1 }],
   neighborhood: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-1_psj229.jpg', position: 0 }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-1_psj229.jpg', position: 1 }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1515094366/detached-elevation-1_psj229.jpg', position: 2 }],
-  detachedFloorplans: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517436355/detached-bottom_hknkut.png', position: 0 }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517436355/detached-top_qkqjvp.png', position: 1 }],
-  attachedFloorplans: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517506029/attachedbottom_csjk0r.png', position: 0 }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517506029/attachedtop_gbvqjr.png', position: 1 }],
+  detachedFloorplans: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517436355/detached-bottom_hknkut.png', position: 0, caption: 'Bottom Floor' }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517436355/detached-top_qkqjvp.png', position: 1, caption: 'Top Floor' }],
+  attachedFloorplans: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517506029/attachedbottom_csjk0r.png', position: 0, caption: 'Bottom Floor' }, { imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517506029/attachedtop_gbvqjr.png', position: 1, caption: 'Top Floor' }],
   townhomes: [{ imageUrl: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1514344512/homepage3_qbndhr.jpg' }]
 };
 
@@ -1145,14 +1145,7 @@ var ImageGallery = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'image-gallery' },
-        _react2.default.createElement('img', { src: this.state.imageUrl }),
-        _react2.default.createElement(
-          'div',
-          { className: 'image-controls' },
-          _react2.default.createElement('span', null),
-          _react2.default.createElement('span', null),
-          _react2.default.createElement('span', null)
-        )
+        _react2.default.createElement('img', { src: this.state.imageUrl })
       );
     }
   }]);
@@ -24433,13 +24426,13 @@ var Main = function Main() {
     'main',
     null,
     _react2.default.createElement(
-      'div',
+      _reactRouterDom.Switch,
       null,
       _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '/townhomes', component: _townhomes2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '/condos', component: _apartments2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '/neighborhood', component: _neighborhood2.default }),
-      _react2.default.createElement(_reactRouterDom.Route, { path: '*', component: _2.default })
+      _react2.default.createElement(_reactRouterDom.Route, { path: '*', exact: true, component: _2.default })
     )
   );
 };
@@ -24704,7 +24697,7 @@ var Gallery = function (_React$Component) {
   _createClass(Gallery, [{
     key: 'componentWillMount',
     value: function componentWillMount() {
-      this.setState({ imageUrl: this.props.images[0].imageUrl, position: this.props.images[0].position });
+      this.setState({ imageUrl: this.props.images[0].imageUrl, position: this.props.images[0].position, caption: this.props.images[0].caption });
     }
   }, {
     key: 'nextImage',
@@ -24713,14 +24706,16 @@ var Gallery = function (_React$Component) {
       if (this.state.position === lastPosition) {
         this.setState({
           imageUrl: this.props.images[0].imageUrl,
-          position: this.props.images[0].position
+          position: this.props.images[0].position,
+          caption: this.props.images[0].caption
         });
         return;
       }
       var nextPosition = this.state.position + 1;
       this.setState({
         imageUrl: this.props.images[nextPosition].imageUrl,
-        position: this.props.images[nextPosition].position
+        position: this.props.images[nextPosition].position,
+        caption: this.props.images[nextPosition].caption
       });
       return;
     }
@@ -24731,14 +24726,16 @@ var Gallery = function (_React$Component) {
       if (this.state.position === 0) {
         this.setState({
           imageUrl: this.props.images[lastPosition].imageUrl,
-          position: this.props.images[lastPosition].position
+          position: this.props.images[lastPosition].position,
+          caption: this.props.images[lastPosition].caption
         });
         return;
       }
       var previousPosition = this.state.position - 1;
       this.setState({
         imageUrl: this.props.images[previousPosition].imageUrl,
-        position: this.props.images[previousPosition].position
+        position: this.props.images[previousPosition].position,
+        caption: this.props.images[previousPosition].caption
       });
       return;
     }
@@ -24747,25 +24744,29 @@ var Gallery = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'gallery' },
+        { className: 'gallery-captions' },
         _react2.default.createElement(
           'div',
           { className: 'gallery-controls' },
           _react2.default.createElement(
             'span',
             { onClick: this.previousImage },
-            _react2.default.createElement('i', { className: 'fa fa-angle-left' })
+            _react2.default.createElement('img', { className: 'arrows', src: __webpack_require__(107) })
           ),
-          _react2.default.createElement('img', { src: this.state.imageUrl }),
+          _react2.default.createElement(
+            'div',
+            { className: 'images' },
+            _react2.default.createElement('img', { src: this.state.imageUrl })
+          ),
           _react2.default.createElement(
             'span',
             { onClick: this.nextImage },
-            _react2.default.createElement('i', { className: 'fa fa-angle-right' })
+            _react2.default.createElement('img', { className: 'arrows', src: __webpack_require__(108) })
           )
         ),
         _react2.default.createElement(
           'div',
-          { className: 'gallery-caption' },
+          { className: 'caption' },
           _react2.default.createElement(
             'p',
             null,
@@ -25344,6 +25345,18 @@ var ErrorPage = function ErrorPage(props) {
 };
 
 exports.default = ErrorPage;
+
+/***/ }),
+/* 107 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAACUCAYAAAGhP5TBAAAAAXNSR0IArs4c6QAAA65JREFUeAHt3cFu2zAMgOFuT9HTgOa21+t9T7HtvMPepG/SnvYSw2YOoEEQFiORUuEsf4DAkiXS8mc2SZu0fXiYfLv05Oua9NST6f+eJAJ/ehh0DpNVQrbrNOxRDttdh2bS2CX6ekjd2Dk0+VsjyeHuW5z8/fBMGjuHJjdy7LulyLsepfeIRkMSdT1xNOL33VNXNO3USLRfoMPGtKsm2SXZ0Jfx4ZIOdkrioUeegxyHu5YmXkZB4n8XUy7e1AdVLZEliR81e3X7c0sgKyzfSHSdECOMrgtcn0EdvaORHOrzdp/yKKnrJqFK5LcY5u00EkOVyG8xzNtp5HRDTVzd6lPtlG/9q4vReF2UPCVN+XGLJq5sWVSv3umlTlPsVopFRfWFVKRjx5CyGlEbqUjHjiFlNaI2UpGOHfu0deQFntx/2IEztfV1uyxyyXsqM06WRc5QlBxIrpBc8g7cjIXay80iK6JIVvRsLJJWo9K+Ocklb89XBDXWSrJIVclsb0oyc4LLYz4uP0LiALIo+Rbh9Uyrk7X8TpzM0hCVEq23pUcaSM6ierGQyki99gatnmcvH4uKtJGKdOwYUlYjaiMV6dgxpKxG1EYq0rFjSFmNqI1UpGPHkLIaURupSMeOIWU1ojZSkY4dQ8pqRG2kIh0/9mvbIT/Jk/vpbiwue0mQQy4rkI2j5pDLCmTjqDnksgLZOGoOuaxANo6aQy4rkI2j5pDLCmTjqDnksgLZOGoOuaxANm6vuQ/ZDAvjZHGn/ZD4wvMeTi1vNcivi8oH8Z6Go+8sQLH03QbdvtyZQ9fptrDetuhLV4Y7mgTWwMUGC6wBgYGpVBZYAwIDU1uVJa+7LgN57mJqhMWLVFcCYDmQqAtWpOPGwHIgUResSMeNgeVAoi5YkY4bA8uBRF2wIh03BpYDibpgRTpuDCwHEnXBinTcGFgOJOqCFem4MbAcSNQFK9JxY2A5kKgLVqTjxsByIFEXrEjHjYHlQKIuWJGOGwPLgURdsCIdNwaWA4m6YEU6bgwsB9LblT/MvH+semvr50tP+08/ek/sPeaBV1AGD7yCQCGUygOvIFAIpfLAKwgUQqk88AoChdBW5Z32H48VznV6KHgFUvDAKwgUQqk88AoChVAqD7yCQCGUygOvIFAIpfLAKwgUQqk88AoChVAqD7yCQCGUygOvIFAIbVUef3WvAxW8DqTWFPBaMh37wetAak0BryXTsR+8DqTWFPBaMh37j/C+dMQxZRMQvGeV+AtdUSsxMtcY/wAAAABJRU5ErkJggg=="
+
+/***/ }),
+/* 108 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAACUCAYAAAGhP5TBAAAAAXNSR0IArs4c6QAAA2dJREFUeAHt3EGOEzEQheEGFmxYwoqDASfiKhwAaRaznBvAnnOwQAIXwpFVsifvFT2KQX9LrY7dzy3nS0Eynp4ch7n9dPKER63zNd6Ml189JnS8XtnQ/78ISP+4CB0SQS8KK9wHKUcufFGC4h+kiPfUU144LnR59ZcPMFrSPN2JH+3SsZ+2ccG/p8QQw4IAZVNAS0Muhs/SiWozLng8r45O41609n3qKzXjQ81daWQaxIUSyKSJ0QQldWGUQCZNjCYoi67L/+OL8zfvjgnGC/r7/eHms1lMgEkuYOxuJG2yxQAkFzB2N5I22WIAkgsYuxtJm2wxAMkFjN2NpE02GdCX9+ND7+fJ+Zt0jZM6ZT3kjGfBpFRFpJBSBdQcNYWUKqDmqCmkVAE1R02pUj330B5s8yGvT6of3/YHOx3ftcnE5/U4brONv0z91Ga11eRC6UPbQ207OSYXAtWNlxW5qkB1HDWHXFWgOm7rmnvfntW2761MrlpzyCFXFaiOo+aQqwpUx1FzyFUFquOoOeSqAtVxW9dcX9Xccn1u68l9a/XQf/qqlsbp474Ok3p5+tWLF/zCpEQ5pESoAymkVAE1R00hpQqoOWoKKVVAzVFTSKkCao6aQkoVUHPUFFKqgJqjppBSBdTcljW15UpeiL5qe6x7brO8GJMat1g1/t727e6FHSe5y+O41Tqw+kp2HONvPMFrCNe2uDus/0FsBwTvmtqf8+CJULMYeDMVsQ88EWoWA2+mIvaBJ0LNYuDNVMQ+8ESoWQy8mYrYB54INYuBN1MR+8AToWYx8GYqYl/c8snCgIiVY+BlEaMNnoGVo+BlEaMNnoGVo+BlEaMNnoGVo+BlEaMNnoGVo+BlEaMNnoGVo+BlEaMNnoGVo+BlEaMNnoGVo+BlEaMNnoGVo+BlEaMNnoGVo3ETI8vwWUVsgydCzWLgzVQe6Ytv8B7vw++30961/m3vNH/k+TzpKbAMXrDAMgSMKJUFliFgRKkssAwBI0plgWUIGFEqCyxDwIhSWWAZAkaUygLLEDCiVBZYhoARpbLAMgSMKJUFliFgRKkssAwBI0plgWUIGFEqCyxDwIhSWWAZAkaUygLLEDCiVBZYhoARjcoav+yWO/+u4MUX8D60vUPFkdskr6D104H3se3cU9pFFsdfjjcpoa6sYY8AAAAASUVORK5CYII="
 
 /***/ })
 /******/ ]);

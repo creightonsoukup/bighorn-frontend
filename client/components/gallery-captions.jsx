@@ -16,7 +16,7 @@ export default class Gallery extends React.Component {
   }
 
   componentWillMount() {
-    this.setState({imageUrl: this.props.images[0].imageUrl, position: this.props.images[0].position})
+    this.setState({imageUrl: this.props.images[0].imageUrl, position: this.props.images[0].position, caption: this.props.images[0].caption})
   }
 
   nextImage() {
@@ -25,6 +25,7 @@ export default class Gallery extends React.Component {
       this.setState({
         imageUrl: this.props.images[0].imageUrl,
         position: this.props.images[0].position,
+        caption: this.props.images[0].caption
       })
       return
     }
@@ -32,6 +33,7 @@ export default class Gallery extends React.Component {
       this.setState({
         imageUrl: this.props.images[nextPosition].imageUrl,
         position: this.props.images[nextPosition].position,
+        caption: this.props.images[nextPosition].caption
       })
     return
   }
@@ -42,6 +44,7 @@ export default class Gallery extends React.Component {
       this.setState({
         imageUrl: this.props.images[lastPosition].imageUrl,
         position: this.props.images[lastPosition].position,
+        caption: this.props.images[lastPosition].caption
       })
     return
     }
@@ -49,6 +52,7 @@ export default class Gallery extends React.Component {
     this.setState({
         imageUrl: this.props.images[previousPosition].imageUrl,
         position: this.props.images[previousPosition].position,
+        caption: this.props.images[previousPosition].caption
     })
     return
   }
@@ -56,13 +60,15 @@ export default class Gallery extends React.Component {
 
   render() {
     return(
-      <div className='gallery'>
+      <div className='gallery-captions'>
         <div className='gallery-controls'>
-          <span onClick={this.previousImage}><i className="fa fa-angle-left"></i></span>
-          <img src={this.state.imageUrl}/>
-          <span onClick={this.nextImage}><i className="fa fa-angle-right"></i></span>
+          <span onClick={this.previousImage}><img  className='arrows' src={require('./../assets/arrow-left.png')}/></span>
+          <div className='images'>
+            <img src={this.state.imageUrl}/>
+          </div>
+          <span onClick={this.nextImage}><img className='arrows'  src={require('./../assets/arrow-right.png')}/></span>
         </div>
-        <div className='gallery-caption'>
+        <div className='caption'>
           <p>{this.state.caption}</p>
         </div>
       </div>
