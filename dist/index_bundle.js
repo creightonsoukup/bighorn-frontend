@@ -20493,6 +20493,10 @@ var _main = __webpack_require__(93);
 
 var _main2 = _interopRequireDefault(_main);
 
+var _footer = __webpack_require__(109);
+
+var _footer2 = _interopRequireDefault(_footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20522,7 +20526,8 @@ var App = function (_React$Component) {
         'div',
         null,
         _react2.default.createElement(_header2.default, null),
-        _react2.default.createElement(_main2.default, null)
+        _react2.default.createElement(_main2.default, null),
+        _react2.default.createElement(_footer2.default, null)
       );
     }
   }]);
@@ -25357,6 +25362,171 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAACUCAYAAAGh
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAACUCAYAAAGhP5TBAAAAAXNSR0IArs4c6QAAA2dJREFUeAHt3EGOEzEQheEGFmxYwoqDASfiKhwAaRaznBvAnnOwQAIXwpFVsifvFT2KQX9LrY7dzy3nS0Eynp4ch7n9dPKER63zNd6Ml189JnS8XtnQ/78ISP+4CB0SQS8KK9wHKUcufFGC4h+kiPfUU144LnR59ZcPMFrSPN2JH+3SsZ+2ccG/p8QQw4IAZVNAS0Muhs/SiWozLng8r45O41609n3qKzXjQ81daWQaxIUSyKSJ0QQldWGUQCZNjCYoi67L/+OL8zfvjgnGC/r7/eHms1lMgEkuYOxuJG2yxQAkFzB2N5I22WIAkgsYuxtJm2wxAMkFjN2NpE02GdCX9+ND7+fJ+Zt0jZM6ZT3kjGfBpFRFpJBSBdQcNYWUKqDmqCmkVAE1R02pUj330B5s8yGvT6of3/YHOx3ftcnE5/U4brONv0z91Ga11eRC6UPbQ207OSYXAtWNlxW5qkB1HDWHXFWgOm7rmnvfntW2761MrlpzyCFXFaiOo+aQqwpUx1FzyFUFquOoOeSqAtVxW9dcX9Xccn1u68l9a/XQf/qqlsbp474Ok3p5+tWLF/zCpEQ5pESoAymkVAE1R00hpQqoOWoKKVVAzVFTSKkCao6aQkoVUHPUFFKqgJqjppBSBdTcljW15UpeiL5qe6x7brO8GJMat1g1/t727e6FHSe5y+O41Tqw+kp2HONvPMFrCNe2uDus/0FsBwTvmtqf8+CJULMYeDMVsQ88EWoWA2+mIvaBJ0LNYuDNVMQ+8ESoWQy8mYrYB54INYuBN1MR+8AToWYx8GYqYl/c8snCgIiVY+BlEaMNnoGVo+BlEaMNnoGVo+BlEaMNnoGVo+BlEaMNnoGVo+BlEaMNnoGVo+BlEaMNnoGVo+BlEaMNnoGVo+BlEaMNnoGVo+BlEaMNnoGVo3ETI8vwWUVsgydCzWLgzVQe6Ytv8B7vw++30961/m3vNH/k+TzpKbAMXrDAMgSMKJUFliFgRKkssAwBI0plgWUIGFEqCyxDwIhSWWAZAkaUygLLEDCiVBZYhoARpbLAMgSMKJUFliFgRKkssAwBI0plgWUIGFEqCyxDwIhSWWAZAkaUygLLEDCiVBZYhoARjcoav+yWO/+u4MUX8D60vUPFkdskr6D104H3se3cU9pFFsdfjjcpoa6sYY8AAAAASUVORK5CYII="
+
+/***/ }),
+/* 109 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Footer = function (_React$Component) {
+  _inherits(Footer, _React$Component);
+
+  function Footer() {
+    _classCallCheck(this, Footer);
+
+    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+  }
+
+  _createClass(Footer, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'section',
+        { className: 'footer' },
+        _react2.default.createElement(
+          'div',
+          { className: 'bottom-nav' },
+          _react2.default.createElement(
+            'ul',
+            null,
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: '/' },
+                'HOME'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: '/townhomes' },
+                'TOWNHOMES'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: '/condos' },
+                'CONDOS'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: '/neighborhood' },
+                'THE NEIGHBORHOOD'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: '/blog' },
+                'BIGHORN BLOG'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'addresses' },
+          _react2.default.createElement(
+            'div',
+            { className: 'address' },
+            _react2.default.createElement(
+              'h4',
+              null,
+              'BIGHORN CROSSING'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Georgetown Lake'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Georgetown, CO '
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'address' },
+            _react2.default.createElement(
+              'h4',
+              null,
+              'SALES CENTER'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Argent Real Estate'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              '612 6th St Unit B'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Georgetown, CO '
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'address' },
+            _react2.default.createElement(
+              'h4',
+              null,
+              'CONTACT US'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'hello@bighorncrossing.com'
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Footer;
+}(_react2.default.Component);
+
+exports.default = Footer;
 
 /***/ })
 /******/ ]);
