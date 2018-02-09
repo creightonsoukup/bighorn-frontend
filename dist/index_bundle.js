@@ -568,7 +568,7 @@ var content = {
     },
     textBlock2: {
       title: "Charming Mountain Living Meets Contemporary Functionality",
-      paragraph1: "The Bighorn Crossing Townhome is the quintessential mountain home.  Units run at 2 or 3 bedrooms/ 2-3 full baths with a personal outdoor courtyard space and a 1- 2 car garage. Each unit also includes mountain/lake views, an option to rent through Wyndham, and a completely customizable interior."
+      paragraph1: "The Bighorn Crossing Townhome is the quintessential mountain home.  Units run at 2 or 3 bedrooms/ 2 and a half baths with a personal outdoor courtyard space and a 1 - 2 car garage. Each unit also includes mountain/lake views, an option to rent through Wyndham, and a completely customizable interior."
     },
     textBlock3: {
       title: "Bighorn Crossing Condos - Redefining Both the Everyday and the Getaway",
