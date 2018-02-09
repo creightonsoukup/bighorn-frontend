@@ -593,10 +593,10 @@ var content = {
       paragraph2: "Not to mention, each townhomes is just 45 minutes from eight world class ski locations and  steps away from hiking, biking, and fishing, kayaking, and swimming in the Georgetown Lake.  Whether interested in a full time residency or as a second home, the Bighorn Crossing townhome is the quintessential mountain home."
     },
     textBlock2: {
-      paragraph1: "The Bighorn Crossing three bedroom layout includes laundry in unit, gas fireplace, three bedrooms, three bathrooms, and the option for an detached two car garage.  The detached two car garage creates an outdoor courtyard space ideal for entertaining and enjoying the mountains and lake right outside your door."
+      paragraph1: "The Bighorn Crossing three bedroom layout includes laundry in unit, gas fireplace, three bedrooms, two and a half bathrooms, and the option for an detached two car garage.  The detached two car garage creates an outdoor courtyard space ideal for entertaining and enjoying the mountains and lake right outside your door."
     },
     textBlock3: {
-      paragraph1: "The Bighorn Crossing two bedroom layout includes laundry in unit, attached porch space, two bedrooms, two bathrooms and an attached one car garage.  The porch space is ideal for soaking in your sprawling surroundings."
+      paragraph1: "The Bighorn Crossing two bedroom layout includes laundry in unit, attached porch space, two bedrooms, two and a half bathrooms and an attached one car garage.  The porch space is ideal for soaking in your sprawling surroundings."
     },
     list1: {
       title: "Amenities",
@@ -24583,7 +24583,7 @@ var Home = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'button-group left-btn' },
-            _react2.default.createElement(_button2.default, { type: 'btn', text: 'JOIN THE WATILIST' })
+            _react2.default.createElement(_button2.default, { type: 'btn', text: 'JOIN THE WAITLIST' })
           )
         ),
         _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516463338/B3_jyhir9.jpg' }),

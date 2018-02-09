@@ -46,7 +46,7 @@ class Home extends React.Component {
               <Link to='/condos'><Button type={'lrg-btn'} text={'EXPLORE'}/></Link>
             </div>
             <div className='button-group left-btn'>
-              <Button type={'btn'} text={'JOIN THE WATILIST'}/>
+              <Button type={'btn'} text={'JOIN THE WAITLIST'}/>
             </div>
           </section>
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516463338/B3_jyhir9.jpg'/>
