@@ -8,11 +8,34 @@ import FullpageImage from './fullpage-image'
 import Button from './button'
 import SubHeader from './subheader'
 import {Link} from 'react-router-dom';
+import ContactBroker from './contact_broker'
 
 class Home extends React.Component {
     constructor(props) {
       super(props);
+
+      this.state = {
+        contactBroker: false
+      }
+
+      this.contactBroker= this.contactBroker.bind(this)
     }
+
+    contactBroker() {
+      console.log('hi')
+      if (this.state.contactBroker === false) {
+        this.setState({
+          contactBroker: true
+        })
+        return
+      }
+      this.setState({
+        contactBroker: false
+      })
+      return
+    }
+
+
     render() {
       if(window.scrollY === 200) {
         console.log('hi')
@@ -34,7 +57,7 @@ class Home extends React.Component {
               <Link to='/townhomes'> <Button type={'lrg-btn'} text={'EXPLORE'}/></Link>
             </div>
             <div className='button-group right-btn'>
-              <Button type={'btn'} text={'CONTACT A BROKER'}/>
+              <Button type={'btn'} text={'CONTACT A BROKER'} action={this.contactBroker}/>
             </div>
           </section>
           <FullpageImage  src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/condos_dhkmg3.jpg'/>
@@ -66,6 +89,9 @@ class Home extends React.Component {
             </div>
           </section>
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460915/sitemap_t0qxrf.jpg'/>
+          { this.state.contactBroker  &&
+            <ContactBroker cancel={this.contactBroker} />
+          }
         </div>
       )
     }

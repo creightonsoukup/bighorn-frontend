@@ -572,7 +572,7 @@ var content = {
     },
     textBlock3: {
       title: "Bighorn Crossing Condos - Redefining Both the Everyday and the Getaway",
-      paragraph1: "Bighorn Crossing Condos are ideal for both the every day or a getaway.  Condos list at either 1 or 2 bedrooms/2 full baths, Each condo offers mountain/lake views and a completely customizable interior."
+      paragraph1: "Bighorn Crossing Condos are ideal for both the every day or a getaway. Condos list at either 1 or 2 bedrooms/2 full baths, Each condo offers mountain/lake views and a completely customizable interior.  Your morning coffee has never been more scenic - each unit includes an attached porch space and shared courtyard space."
     },
     textBlock4: {
       title: "Bighorn Crossing Microtel by Wyndham - Redefining R and R",
@@ -598,14 +598,16 @@ var content = {
     textBlock3: {
       paragraph1: "The Bighorn Crossing two bedroom layout includes laundry in unit, attached porch space, two bedrooms, two and a half bathrooms and an attached one car garage.  The porch space is ideal for soaking in your sprawling surroundings."
     },
-    list1: {
-      title: "Amenities",
-      listItems: ['1', '2']
+    textBlock4: {
+      paragraph1: 'The Townhomes were constructed with the mountains in mind.  There are ten different exterior facades all compatible within the historic landscape of Georgetown yet contemporary in design. The exterior was designed in an effort to capture simplicity with muted earth tones and long building facades.  Each townhome was designed at varying height scale blending into the rolling mountain landscape.  Surrounding each townhome are native trees, grasses, and plants and immediate access to a walkable park.'
     }
   },
   apartments: {
     textBlock1: {
       paragraph1: "The Bighorn Crossing Condo is a spacious, upscale, oasis ideal for couples or small families.  Each condo is framed in glass plated windows, with the option of 1 or 2 bedrooms, 2 full baths, a kitchen, dining and living area, and an attached porch space.  Every unit offers scenic mountain/lake views and access to all Wyndham Hotel amenities. Ideal for year round residents or vacation stays, the Bighorn Condo is your slice of paradise in the Colorado wilderness. Learn more about all the Condos have to offer"
+    },
+    textBlock2: {
+      paragraph1: "The Condos effortlessly integrate into the sprawling Georgetown scenery.  There are three major structures, each compatible with the history of the surrounding area yet offer a contemporary update. The exterior was designed in an effort to capture simplicity with muted earth tones and long building facades. Surrounding each townhome are native trees, grasses, and plants and immediate access to a walkable park."
     }
   },
   neighborhood: {
@@ -24420,6 +24422,10 @@ var _threeBedroom = __webpack_require__(44);
 
 var _threeBedroom2 = _interopRequireDefault(_threeBedroom);
 
+var _contact_broker = __webpack_require__(110);
+
+var _contact_broker2 = _interopRequireDefault(_contact_broker);
+
 var _ = __webpack_require__(106);
 
 var _2 = _interopRequireDefault(_);
@@ -24437,6 +24443,7 @@ var Main = function Main() {
       _react2.default.createElement(_reactRouterDom.Route, { path: '/townhomes', component: _townhomes2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '/condos', component: _apartments2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '/neighborhood', component: _neighborhood2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/form', component: _contact_broker2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '*', exact: true, component: _2.default })
     )
   );
@@ -24495,6 +24502,10 @@ var _subheader2 = _interopRequireDefault(_subheader);
 
 var _reactRouterDom = __webpack_require__(7);
 
+var _contact_broker = __webpack_require__(110);
+
+var _contact_broker2 = _interopRequireDefault(_contact_broker);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24509,10 +24520,32 @@ var Home = function (_React$Component) {
   function Home(props) {
     _classCallCheck(this, Home);
 
-    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+
+    _this.state = {
+      contactBroker: false
+    };
+
+    _this.contactBroker = _this.contactBroker.bind(_this);
+    return _this;
   }
 
   _createClass(Home, [{
+    key: 'contactBroker',
+    value: function contactBroker() {
+      console.log('hi');
+      if (this.state.contactBroker === false) {
+        this.setState({
+          contactBroker: true
+        });
+        return;
+      }
+      this.setState({
+        contactBroker: false
+      });
+      return;
+    }
+  }, {
     key: 'render',
     value: function render() {
       if (window.scrollY === 200) {
@@ -24561,7 +24594,7 @@ var Home = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'button-group right-btn' },
-            _react2.default.createElement(_button2.default, { type: 'btn', text: 'CONTACT A BROKER' })
+            _react2.default.createElement(_button2.default, { type: 'btn', text: 'CONTACT A BROKER', action: this.contactBroker })
           )
         ),
         _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/condos_dhkmg3.jpg' }),
@@ -24614,7 +24647,8 @@ var Home = function (_React$Component) {
             )
           )
         ),
-        _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460915/sitemap_t0qxrf.jpg' })
+        _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460915/sitemap_t0qxrf.jpg' }),
+        this.state.contactBroker && _react2.default.createElement(_contact_broker2.default, { cancel: this.contactBroker })
       );
     }
   }]);
@@ -24644,7 +24678,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Button = function Button(props) {
   return _react2.default.createElement(
     'button',
-    { className: props.type },
+    { className: props.type, onClick: props.action },
     props.text
   );
 };
@@ -25527,6 +25561,169 @@ var Footer = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Footer;
+
+/***/ }),
+/* 110 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ContactBroker = function (_React$Component) {
+  _inherits(ContactBroker, _React$Component);
+
+  function ContactBroker(props) {
+    _classCallCheck(this, ContactBroker);
+
+    var _this = _possibleConstructorReturn(this, (ContactBroker.__proto__ || Object.getPrototypeOf(ContactBroker)).call(this, props));
+
+    _this.state = {
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      text: ''
+    };
+
+    _this.handleInputChange = _this.handleInputChange.bind(_this);
+    _this.handleSubmit = _this.handleSubmit.bind(_this);
+    return _this;
+  }
+
+  _createClass(ContactBroker, [{
+    key: 'handleInputChange',
+    value: function handleInputChange(event) {
+      var target = event.target;
+      var value = target.value;
+      var name = target.name;
+
+      this.setState(_defineProperty({}, name, value));
+    }
+  }, {
+    key: 'handleSubmit',
+    value: function handleSubmit(event) {
+      console.log(this.state);
+      this.props.cancel();
+      event.preventDefault();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'contact-broker' },
+        _react2.default.createElement(
+          'form',
+          { className: 'contact-broker', onSubmit: this.handleSubmit },
+          _react2.default.createElement(
+            'h2',
+            null,
+            'CONTACT A BROKER'
+          ),
+          _react2.default.createElement(
+            'label',
+            null,
+            _react2.default.createElement(
+              'span',
+              null,
+              'First Name'
+            ),
+            _react2.default.createElement('input', {
+              name: 'firstName',
+              value: this.state.firstName,
+              onChange: this.handleInputChange })
+          ),
+          _react2.default.createElement(
+            'label',
+            null,
+            _react2.default.createElement(
+              'span',
+              null,
+              'Last Name'
+            ),
+            _react2.default.createElement('input', {
+              name: 'lastName',
+              value: this.state.lastName,
+              onChange: this.handleInputChange })
+          ),
+          _react2.default.createElement(
+            'label',
+            null,
+            _react2.default.createElement(
+              'span',
+              null,
+              'Email'
+            ),
+            _react2.default.createElement('input', {
+              name: 'email',
+              value: this.state.email,
+              onChange: this.handleInputChange })
+          ),
+          _react2.default.createElement(
+            'label',
+            null,
+            _react2.default.createElement(
+              'span',
+              null,
+              'Phone Number'
+            ),
+            _react2.default.createElement('input', {
+              name: 'phone',
+              value: this.state.phone,
+              onChange: this.handleInputChange })
+          ),
+          _react2.default.createElement(
+            'label',
+            null,
+            _react2.default.createElement(
+              'span',
+              null,
+              'Message'
+            ),
+            _react2.default.createElement('textarea', {
+              name: 'text',
+              value: this.state.text,
+              onChange: this.handleInputChange })
+          ),
+          _react2.default.createElement(
+            'button',
+            { onClick: this.handleSubmit },
+            'Submit'
+          ),
+          _react2.default.createElement(
+            'button',
+            { onClick: this.props.cancel },
+            'Cancel'
+          )
+        )
+      );
+    }
+  }]);
+
+  return ContactBroker;
+}(_react2.default.Component);
+
+exports.default = ContactBroker;
 
 /***/ })
 /******/ ]);

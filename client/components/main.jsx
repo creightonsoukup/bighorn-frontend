@@ -5,6 +5,7 @@ import Townhomes from './townhomes';
 import Apartments from './apartments';
 import Neighborhood from './neighborhood';
 import ThreeBedroom from './three-bedroom';
+import ContactBroker from './contact_broker';
 import ErrorPage from './404'
 
 const Main = () => (
@@ -14,6 +15,7 @@ const Main = () => (
       <Route path="/townhomes" component={Townhomes}/>
       <Route path="/condos" component={Apartments}/>
       <Route path="/neighborhood" component={Neighborhood}/>
+      <Route path="/form" component={ContactBroker}/>
       <Route path='*' exact component={ErrorPage}/>
     </Switch>
   </main>

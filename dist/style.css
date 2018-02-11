@@ -783,6 +783,61 @@ nav {
   .contact .contact-item {
     margin: 5vw; }
 
+.contact-broker {
+  height: 80vh;
+  z-index: 4000;
+  bottom: 0;
+  position: fixed; }
+  .contact-broker form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F7F6F8;
+    padding: 20px;
+    border: 8px solid #A97C50;
+    position: absolute;
+    margin-bottom: 5vh;
+    width: 100vw;
+    box-sizing: border-box; }
+    .contact-broker form label {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: auto;
+      font-size: 12px;
+      color: black; }
+      .contact-broker form label span {
+        padding-bottom: 5px; }
+    .contact-broker form input {
+      background-color: #F7F6F8;
+      font-size: 14px;
+      height: 30px;
+      color: black;
+      border: 2px solid #A97C50; }
+    .contact-broker form input:focus {
+      height: 40px;
+      border: 4px solid #A97C50;
+      outline-width: 0; }
+    .contact-broker form textarea {
+      background-color: #F7F6F8;
+      font-size: 14px;
+      height: 100px;
+      color: black;
+      border: 2px solid #A97C50; }
+    .contact-broker form textarea:focus {
+      border: 4px solid #A97C50;
+      outline-width: 0; }
+    .contact-broker form span {
+      display: flex; }
+    .contact-broker form h2 {
+      color: #A97C50;
+      font-weight: bold;
+      font-size: 26px;
+      text-align: center; }
+    .contact-broker form button {
+      border: 2px solid #A97C50;
+      background-color: transparent; }
+
 .homepage {
   margin-top: 80px; }
   @media (min-width: 1000px) {

@@ -13,7 +13,7 @@ const content = {
     },
     textBlock3: {
       title: "Bighorn Crossing Condos - Redefining Both the Everyday and the Getaway",
-      paragraph1: "Bighorn Crossing Condos are ideal for both the every day or a getaway.  Condos list at either 1 or 2 bedrooms/2 full baths, Each condo offers mountain/lake views and a completely customizable interior."
+      paragraph1: "Bighorn Crossing Condos are ideal for both the every day or a getaway. Condos list at either 1 or 2 bedrooms/2 full baths, Each condo offers mountain/lake views and a completely customizable interior.  Your morning coffee has never been more scenic - each unit includes an attached porch space and shared courtyard space."
     },
     textBlock4: {
       title: "Bighorn Crossing Microtel by Wyndham - Redefining R and R",
@@ -39,14 +39,16 @@ const content = {
     textBlock3: {
       paragraph1: "The Bighorn Crossing two bedroom layout includes laundry in unit, attached porch space, two bedrooms, two and a half bathrooms and an attached one car garage.  The porch space is ideal for soaking in your sprawling surroundings."
     },
-    list1: {
-      title: "Amenities",
-      listItems: ['1','2']
+    textBlock4: {
+      paragraph1: 'The Townhomes were constructed with the mountains in mind.  There are ten different exterior facades all compatible within the historic landscape of Georgetown yet contemporary in design. The exterior was designed in an effort to capture simplicity with muted earth tones and long building facades.  Each townhome was designed at varying height scale blending into the rolling mountain landscape.  Surrounding each townhome are native trees, grasses, and plants and immediate access to a walkable park.'
     }
   },
   apartments: {
     textBlock1: {
       paragraph1: "The Bighorn Crossing Condo is a spacious, upscale, oasis ideal for couples or small families.  Each condo is framed in glass plated windows, with the option of 1 or 2 bedrooms, 2 full baths, a kitchen, dining and living area, and an attached porch space.  Every unit offers scenic mountain/lake views and access to all Wyndham Hotel amenities. Ideal for year round residents or vacation stays, the Bighorn Condo is your slice of paradise in the Colorado wilderness. Learn more about all the Condos have to offer"
+    },
+    textBlock2:  {
+      paragraph1: "The Condos effortlessly integrate into the sprawling Georgetown scenery.  There are three major structures, each compatible with the history of the surrounding area yet offer a contemporary update. The exterior was designed in an effort to capture simplicity with muted earth tones and long building facades. Surrounding each townhome are native trees, grasses, and plants and immediate access to a walkable park."
     }
   },
   neighborhood: {
