@@ -24947,7 +24947,7 @@ var TwoBedroom = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'two-bedroom' },
-        _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'TWO BEDROOM' }),
+        _react2.default.createElement(_subheader2.default, { style: 'subheader right-townhome', text: 'TWO BEDROOM' }),
         _react2.default.createElement(_textblock2.default, { style: 'text-block right-block background', content: _content2.default.townhomes.textBlock3 }),
         _react2.default.createElement(
           'div',

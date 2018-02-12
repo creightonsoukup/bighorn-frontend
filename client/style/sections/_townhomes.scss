@@ -32,7 +32,7 @@
     }
     h2 {
       font-size: 2em;
-      margin: 2vh 0 5vh 0;
+      margin-bottom: 5vh;
     }
   }
   .right-block {
@@ -46,19 +46,23 @@
   }
 }
 
-.two-bedroom {
-  h2 {
-    float: none;
-    text-align: right;
-    margin: 10vh 0 10vh 0;
+
+.three-bedroom {
+  @include respond-to('large') {
+    h2 {
+      float: none;
+      text-align: left;
+      margin: 10vh 0 10vh 0;
+
+    }
   }
 }
 
-.three-bedroom {
-  h2 {
-    float: none;
-    text-align: left;
-    margin: 10vh 0 10vh 0;
-
+.right-townhome {
+  @include respond-to('large') {
+      h2 {
+        text-align: right;
+        margin: 0 0 0 40vw;
+      }
   }
 }
