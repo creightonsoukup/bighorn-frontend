@@ -41,6 +41,9 @@ const content = {
     },
     textBlock4: {
       paragraph1: 'The Townhomes were constructed with the mountains in mind.  There are ten different exterior facades all compatible within the historic landscape of Georgetown yet contemporary in design. The exterior was designed in an effort to capture simplicity with muted earth tones and long building facades.  Each townhome was designed at varying height scale blending into the rolling mountain landscape.  Surrounding each townhome are native trees, grasses, and plants and immediate access to a walkable park.'
+    },
+    textBlock5: {
+      paragraph1: 'Each townhome is the epitome of contemporary luxury. Framed in plated glass bay windows and sprawling wood floors, each unit showcases sleek simplicity.  From white quartz countertops to the stainless steel refrigerator and appliances, the unit’s kitchen is modern and elegant. Every kitchen also includes a stainless steel undermount sink, dishwasher and a garbage disposal.   There are powder rooms in both units with sleek porcelain tile and stainless steel faucets.  Each unit is equipped with individually zoned HVAC systems in the bedrooms and living areas, LED lighting, ample storage space throughout the home and garage, and a washer and dryer included on the bedroom level. Every modern amenity is not only within reach, it is in your home.'
     }
   },
   apartments: {

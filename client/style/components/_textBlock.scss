@@ -124,3 +124,20 @@
     }
   }
 }
+
+.outline {
+  width: 90vw;
+  margin: 0 0 0 5vw;;
+  position: relative;
+  height: auto;
+}
+
+.outline:after {
+  content: '';
+  position: absolute;
+  left: 10;
+  top: -5;
+  width: 8px;
+  height: 90%;
+  background-color: $bighorn-brown;
+}

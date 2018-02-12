@@ -75,12 +75,14 @@ export default class ContactBroker extends React.Component {
               value={this.state.text}
               onChange={this.handleInputChange}/>
           </label>
-          <button onClick={this.handleSubmit}>
-            Submit
-          </button>
-          <button onClick={this.props.close}>
-            Cancel
-          </button>
+          <div className='form-btns'>
+            <button  onClick={this.handleSubmit}>
+              SUBMIT
+            </button>
+            <button onClick={this.props.close}>
+              CANCEL
+            </button>
+          </div>
         </form>
       </div>
     )

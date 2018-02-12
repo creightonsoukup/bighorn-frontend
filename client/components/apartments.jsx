@@ -40,6 +40,7 @@ class Apartments extends React.Component {
           <Textblock style={'text-block right-block background'} content={content.apartments.textBlock1}/>
         </section>
         <FullpageImage src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460912/condoelevation_jl1n8b.jpg'}/>
+        <Textblock style={'text-block outline'} content={content.apartments.textBlock2} />
         <SubHeader style={'left-header subheader'} text={'SELECT A UNIT'}/>
         <div className='condo-buttons'>
           <button onClick={this.twoBedroom}>{'TWO BEDROOM'}</button>

@@ -96,19 +96,41 @@ class Home extends React.Component {
             </div>
           </section>
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460915/sitemap_t0qxrf.jpg'/>
-          <Modal
-            style={{
-              content: {
-                padding: '0',
-                top: '100px'
-              }
-            }}
-            isOpen={this.state.contactBroker}
-            ariaHideApp={false}
-            shouldCloseOnOverlayClick={true}
-            onRequestClose={this.state.closeModal}>
-            <ContactBroker close={this.closeModal}/>
-          </Modal>
+          { window.innerWidth < 999 ? (
+            <Modal
+              style={{
+                content: {
+                  padding: '0',
+                  top: '100px'
+                }
+              }}
+              isOpen={this.state.contactBroker}
+              ariaHideApp={false}
+              shouldCloseOnOverlayClick={true}
+              onRequestClose={this.state.closeModal}>
+              <ContactBroker close={this.closeModal}/>
+            </Modal>
+          ) : (
+            <Modal
+              style={{
+                content : {
+                  top: '55%',
+                  left: '50%',
+                  right: 'auto',
+                  bottom: 'auto',
+                  marginRight: '-50%',
+                  transform: 'translate(-50%, -50%)',
+                  padding: '0',
+                }
+              }}
+              isOpen={this.state.contactBroker}
+              ariaHideApp={false}
+              shouldCloseOnOverlayClick={true}
+              onRequestClose={this.state.closeModal}>
+              <ContactBroker close={this.closeModal}/>
+            </Modal>
+          )}
+
         </div>
       )
     }
