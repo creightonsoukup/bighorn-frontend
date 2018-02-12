@@ -802,8 +802,7 @@ nav {
 
 .contact-broker {
   height: 100%;
-  width: 100%;
-  margin-top: 80px; }
+  width: 100%; }
   @media (min-width: 600px) {
     .contact-broker {
       margin-top: 0; } }
@@ -886,6 +885,9 @@ nav {
           .contact-broker form .form-btns button {
             width: 23vw; } }
 
+.no-margin {
+  margin-top: 0; }
+
 .homepage {
   margin-top: 80px; }
   @media (min-width: 1000px) {
@@ -957,6 +959,38 @@ nav {
 .condos {
   margin-top: 75px; }
 
+.next-steps {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 1000px) {
+    .next-steps {
+      flex-direction: row;
+      align-items: center;
+      margin: 5vw; } }
+
+.steps-header {
+  font-weight: bold;
+  font-size: 30px;
+  width: 60vw;
+  margin: 5vw 5vw 0 5vw;
+  position: relative; }
+  @media (min-width: 1000px) {
+    .steps-header {
+      margin: 0; } }
+  .steps-header h2 {
+    padding: 5vw;
+    line-height: 40px;
+    text-align: left; }
+
+.steps-header:after {
+  content: '';
+  position: absolute;
+  top: 5%;
+  left: 0;
+  height: 90%;
+  width: 6px;
+  background-color: #A97C50; }
+
 .error {
   background-color: #DBB89E;
   min-height: 100vh;
@@ -977,5 +1011,8 @@ nav {
     max-width: 300px;
     height: auto;
     margin: 20vh; }
+
+main {
+  margin-top: 80px; }
 
 /*# sourceMappingURL=style.css.map */

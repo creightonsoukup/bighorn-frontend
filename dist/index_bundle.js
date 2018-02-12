@@ -1935,6 +1935,10 @@ var _fullpageImage = __webpack_require__(10);
 
 var _fullpageImage2 = _interopRequireDefault(_fullpageImage);
 
+var _next_steps = __webpack_require__(121);
+
+var _next_steps2 = _interopRequireDefault(_next_steps);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20504,6 +20508,10 @@ var _footer = __webpack_require__(109);
 
 var _footer2 = _interopRequireDefault(_footer);
 
+var _next_steps = __webpack_require__(121);
+
+var _next_steps2 = _interopRequireDefault(_next_steps);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20534,6 +20542,7 @@ var App = function (_React$Component) {
         null,
         _react2.default.createElement(_header2.default, null),
         _react2.default.createElement(_main2.default, null),
+        _react2.default.createElement(_next_steps2.default, null),
         _react2.default.createElement(_footer2.default, null)
       );
     }
@@ -24515,6 +24524,10 @@ var _reactModal = __webpack_require__(114);
 
 var _reactModal2 = _interopRequireDefault(_reactModal);
 
+var _next_steps = __webpack_require__(121);
+
+var _next_steps2 = _interopRequireDefault(_next_steps);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24677,7 +24690,7 @@ var Home = function (_React$Component) {
             isOpen: this.state.contactBroker,
             ariaHideApp: false,
             shouldCloseOnOverlayClick: true,
-            onRequestClose: this.state.closeModal },
+            onRequestClose: this.closeModal },
           _react2.default.createElement(_contact_broker2.default, { close: this.closeModal })
         ) : _react2.default.createElement(
           _reactModal2.default,
@@ -24696,7 +24709,7 @@ var Home = function (_React$Component) {
             isOpen: this.state.contactBroker,
             ariaHideApp: false,
             shouldCloseOnOverlayClick: true,
-            onRequestClose: this.state.closeModal },
+            onRequestClose: this.closeModal },
           _react2.default.createElement(_contact_broker2.default, { close: this.closeModal })
         )
       );
@@ -25766,12 +25779,12 @@ var ContactBroker = function (_React$Component) {
             { className: 'form-btns' },
             _react2.default.createElement(
               'button',
-              { onClick: this.handleSubmit },
+              { className: 'btn', onClick: this.handleSubmit },
               'SUBMIT'
             ),
             _react2.default.createElement(
               'button',
-              { onClick: this.props.close },
+              { className: 'btn', onClick: this.props.close },
               'CANCEL'
             )
           )
@@ -26902,6 +26915,359 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 }());
 
+
+/***/ }),
+/* 121 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _contact_broker = __webpack_require__(110);
+
+var _contact_broker2 = _interopRequireDefault(_contact_broker);
+
+var _button = __webpack_require__(95);
+
+var _button2 = _interopRequireDefault(_button);
+
+var _reactModal = __webpack_require__(114);
+
+var _reactModal2 = _interopRequireDefault(_reactModal);
+
+var _stay_updated = __webpack_require__(122);
+
+var _stay_updated2 = _interopRequireDefault(_stay_updated);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var NextSteps = function (_React$Component) {
+  _inherits(NextSteps, _React$Component);
+
+  function NextSteps(props) {
+    _classCallCheck(this, NextSteps);
+
+    var _this = _possibleConstructorReturn(this, (NextSteps.__proto__ || Object.getPrototypeOf(NextSteps)).call(this, props));
+
+    _this.state = {
+      contactBrokerModal: false,
+      signupModal: false,
+      contactBrokerComp: false,
+      signupComp: false,
+      showButtons: true
+    };
+    _this.openSignup = _this.openSignup.bind(_this);
+    _this.closeSignup = _this.closeSignup.bind(_this);
+    _this.openContact = _this.openContact.bind(_this);
+    _this.closeContact = _this.closeContact.bind(_this);
+    return _this;
+  }
+
+  _createClass(NextSteps, [{
+    key: 'openContact',
+    value: function openContact() {
+      if (window.innerWidth < 600) {
+        this.setState({
+          contactBrokerComp: true,
+          showButtons: false
+        });
+        return;
+      }
+      this.setState({
+        contactBrokerModal: true,
+        showButtons: false
+      });
+      return;
+    }
+  }, {
+    key: 'openSignup',
+    value: function openSignup() {
+      if (window.innerWidth < 600) {
+        this.setState({
+          signupComp: true,
+          showButtons: false
+        });
+        return;
+      }
+      this.setState({
+        signupModal: true,
+        showButtons: false
+      });
+      return;
+    }
+  }, {
+    key: 'closeContact',
+    value: function closeContact() {
+      if (window.innerWidth < 600) {
+        this.setState({
+          contactBrokerComp: false,
+          showButtons: true
+
+        });
+        return;
+      }
+      this.setState({
+        contactBrokerModal: false,
+        showButtons: true
+      });
+      return;
+    }
+  }, {
+    key: 'closeSignup',
+    value: function closeSignup() {
+      if (window.innerWidth < 600) {
+        this.setState({
+          signupComp: false,
+          showButtons: true
+        });
+        return;
+      }
+      this.setState({
+        signupModal: false,
+        showButtons: true
+
+      });
+      return;
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var largeModal = {
+        content: {
+          top: '55%',
+          left: '50%',
+          right: 'auto',
+          bottom: 'auto',
+          marginRight: '-50%',
+          transform: 'translate(-50%, -50%)',
+          padding: '0'
+        }
+      };
+      var smallModal = {
+        content: {
+          padding: '0',
+          top: '100px'
+        }
+      };
+      return _react2.default.createElement(
+        'div',
+        { className: 'next-steps' },
+        _react2.default.createElement(
+          'div',
+          { className: 'steps-header' },
+          _react2.default.createElement(
+            'h2',
+            null,
+            'INTERESTED? HERE ARE THE NEXT STEPS'
+          )
+        ),
+        this.state.showButtons && _react2.default.createElement(
+          'div',
+          { className: 'button-group' },
+          _react2.default.createElement(_button2.default, { type: 'btn', text: 'CONTACT A BROKER', action: this.openContact }),
+          _react2.default.createElement(_button2.default, { type: 'btn', text: 'GET UPDATES', action: this.openSignup })
+        ),
+        this.state.contactBrokerComp && _react2.default.createElement(_contact_broker2.default, { close: this.closeContact }),
+        this.state.signupComp && _react2.default.createElement(_stay_updated2.default, { close: this.closeSignup }),
+        window.innerWidth < 999 && this.state.contactBrokerModal ? _react2.default.createElement(
+          _reactModal2.default,
+          {
+            style: smallModal,
+            isOpen: this.state.contactBrokerModal,
+            ariaHideApp: false,
+            shouldCloseOnOverlayClick: true,
+            onRequestClose: this.closeContact },
+          _react2.default.createElement(_contact_broker2.default, { close: this.closeContact })
+        ) : _react2.default.createElement(
+          _reactModal2.default,
+          {
+            style: largeModal,
+            isOpen: this.state.contactBrokerModal,
+            ariaHideApp: false,
+            shouldCloseOnOverlayClick: true,
+            onRequestClose: this.closeContact },
+          _react2.default.createElement(_contact_broker2.default, { close: this.closeContact })
+        ),
+        window.innerWidth < 999 && this.state.signupModal ? _react2.default.createElement(
+          _reactModal2.default,
+          {
+            style: smallModal,
+            isOpen: this.state.signupModal,
+            ariaHideApp: false,
+            shouldCloseOnOverlayClick: true,
+            onRequestClose: this.closeSignup },
+          _react2.default.createElement(_stay_updated2.default, { close: this.closeSignup })
+        ) : _react2.default.createElement(
+          _reactModal2.default,
+          {
+            style: largeModal,
+            isOpen: this.state.signupModal,
+            ariaHideApp: false,
+            shouldCloseOnOverlayClick: true,
+            onRequestClose: this.closeSignup },
+          _react2.default.createElement(_stay_updated2.default, { close: this.closeSignup })
+        )
+      );
+    }
+  }]);
+
+  return NextSteps;
+}(_react2.default.Component);
+
+exports.default = NextSteps;
+
+/***/ }),
+/* 122 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var StayUpdated = function (_React$Component) {
+  _inherits(StayUpdated, _React$Component);
+
+  function StayUpdated(props) {
+    _classCallCheck(this, StayUpdated);
+
+    var _this = _possibleConstructorReturn(this, (StayUpdated.__proto__ || Object.getPrototypeOf(StayUpdated)).call(this, props));
+
+    _this.state = {
+      email: '',
+      lastName: '',
+      firstName: ''
+    };
+    _this.handleInputChange = _this.handleInputChange.bind(_this);
+    _this.handleSubmit = _this.handleSubmit.bind(_this);
+    return _this;
+  }
+
+  _createClass(StayUpdated, [{
+    key: 'handleInputChange',
+    value: function handleInputChange(event) {
+      var target = event.target;
+      var value = target.value;
+      var name = target.name;
+
+      this.setState(_defineProperty({}, name, value));
+    }
+  }, {
+    key: 'handleSubmit',
+    value: function handleSubmit(event) {
+      this.props.close();
+      event.preventDefault();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'contact-broker' },
+        _react2.default.createElement(
+          'form',
+          { className: 'contact-broker', onSubmit: this.handleSubmit },
+          _react2.default.createElement(
+            'h2',
+            null,
+            'SUBSRIBE TO STAY UPDATED'
+          ),
+          _react2.default.createElement(
+            'label',
+            null,
+            _react2.default.createElement(
+              'span',
+              null,
+              'First Name'
+            ),
+            _react2.default.createElement('input', {
+              name: 'firstName',
+              value: this.state.firstName,
+              onChange: this.handleInputChange })
+          ),
+          _react2.default.createElement(
+            'label',
+            null,
+            _react2.default.createElement(
+              'span',
+              null,
+              'Last Name'
+            ),
+            _react2.default.createElement('input', {
+              name: 'lastName',
+              value: this.state.lastName,
+              onChange: this.handleInputChange })
+          ),
+          _react2.default.createElement(
+            'label',
+            null,
+            _react2.default.createElement(
+              'span',
+              null,
+              'Email'
+            ),
+            _react2.default.createElement('input', {
+              name: 'email',
+              value: this.state.email,
+              onChange: this.handleInputChange })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'form-btns' },
+            _react2.default.createElement(
+              'button',
+              { onClick: this.handleSubmit },
+              'SUBMIT'
+            ),
+            _react2.default.createElement(
+              'button',
+              { onClick: this.props.close },
+              'CANCEL'
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return StayUpdated;
+}(_react2.default.Component);
+
+exports.default = StayUpdated;
 
 /***/ })
 /******/ ]);

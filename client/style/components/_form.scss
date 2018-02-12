@@ -1,7 +1,6 @@
 .contact-broker {
   height: 100%;
   width: 100%;
-  margin-top: 80px;
   @include respond-to('small') {
     margin-top: 0;
   }
@@ -95,4 +94,8 @@
       }
     }
   }
+}
+
+.no-margin {
+  margin-top: 0;
 }

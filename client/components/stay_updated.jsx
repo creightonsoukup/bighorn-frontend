@@ -1,36 +1,29 @@
 import React from 'react';
 
-export default class ContactBroker extends React.Component {
+export default class StayUpdated extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      firstName: '',
-      lastName: '',
       email: '',
-      phone: '',
-      text: ''
+      lastName: '',
+      firstName: ''
     }
-
-    this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleInputChange(event) {
-    const target = event.target;
-    const value = target.value;
+    const target = event.target
+    const value = target.value
     const name = target.name
 
     this.setState({
       [name]:value
-    });
+    })
   }
 
   handleSubmit(event) {
-    if(window.innerWidth < 600) {
-      this.props.history.push('/')
-      return
-    }
     this.props.close()
     event.preventDefault()
   }
@@ -39,7 +32,7 @@ export default class ContactBroker extends React.Component {
     return (
       <div className='contact-broker'>
         <form className='contact-broker' onSubmit={this.handleSubmit}>
-          <h2>{'CONTACT A BROKER'}</h2>
+          <h2>{'SUBSRIBE TO STAY UPDATED'}</h2>
           <label>
             <span>{'First Name'}</span>
             <input
@@ -61,30 +54,16 @@ export default class ContactBroker extends React.Component {
               value={this.state.email}
               onChange={this.handleInputChange}/>
           </label>
-          <label>
-            <span>{'Phone Number'}</span>
-            <input
-              name='phone'
-              value={this.state.phone}
-              onChange={this.handleInputChange}/>
-          </label>
-          <label>
-            <span>{'Message'}</span>
-            <textarea
-              name='text'
-              value={this.state.text}
-              onChange={this.handleInputChange}/>
-          </label>
           <div className='form-btns'>
-            <button className='btn' onClick={this.handleSubmit}>
+            <button  onClick={this.handleSubmit}>
               SUBMIT
             </button>
-            <button className='btn' onClick={this.props.close}>
+            <button onClick={this.props.close}>
               CANCEL
             </button>
           </div>
-
         </form>
+
       </div>
     )
   }

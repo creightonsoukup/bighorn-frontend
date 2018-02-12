@@ -8,6 +8,7 @@ import SubHeader from './subheader';
 import ThreeBedroom from './three-bedroom';
 import TwoBedroom from './two_bedroom';
 import FullpageImage from './fullpage-image'
+import NextSteps from './next_steps';
 
 class Townhomes extends React.Component {
   constructor(props) {
@@ -56,6 +57,7 @@ class Townhomes extends React.Component {
             <TwoBedroom />
           }
         </section>
+        
       </div>
     )
   }

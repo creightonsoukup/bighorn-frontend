@@ -10,6 +10,7 @@ import SubHeader from './subheader'
 import {Link} from 'react-router-dom';
 import ContactBroker from './contact_broker';
 import Modal from 'react-modal';
+import NextSteps from './next_steps';
 
 
 class Home extends React.Component {
@@ -107,7 +108,7 @@ class Home extends React.Component {
               isOpen={this.state.contactBroker}
               ariaHideApp={false}
               shouldCloseOnOverlayClick={true}
-              onRequestClose={this.state.closeModal}>
+              onRequestClose={this.closeModal}>
               <ContactBroker close={this.closeModal}/>
             </Modal>
           ) : (
@@ -126,11 +127,11 @@ class Home extends React.Component {
               isOpen={this.state.contactBroker}
               ariaHideApp={false}
               shouldCloseOnOverlayClick={true}
-              onRequestClose={this.state.closeModal}>
+              onRequestClose={this.closeModal}>
               <ContactBroker close={this.closeModal}/>
             </Modal>
           )}
-
+          
         </div>
       )
     }
