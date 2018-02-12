@@ -131,7 +131,7 @@ class Home extends React.Component {
               <ContactBroker close={this.closeModal}/>
             </Modal>
           )}
-          
+          <NextSteps/>
         </div>
       )
     }

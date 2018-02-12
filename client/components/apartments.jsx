@@ -5,6 +5,7 @@ import images from '../content/images'
 import FullpageImage from './fullpage-image';
 import Logo from './logo';
 import SubHeader from './subheader';
+import NextSteps from './next_steps'
 
 
 class Apartments extends React.Component {
@@ -47,6 +48,7 @@ class Apartments extends React.Component {
           <button onClick={this.oneBedroom}>{'ONE BEDROOM'}</button>
         </div>
         <img className='unit-plans' src={this.state.floorplan} />
+        <NextSteps/>
       </div>
     )
   }

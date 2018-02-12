@@ -2017,7 +2017,8 @@ var Townhomes = function (_React$Component) {
           ),
           this.state.activeTab === 'three' && _react2.default.createElement(_threeBedroom2.default, null),
           this.state.activeTab === 'two' && _react2.default.createElement(_two_bedroom2.default, null)
-        )
+        ),
+        _react2.default.createElement(_next_steps2.default, null)
       );
     }
   }]);
@@ -20508,10 +20509,6 @@ var _footer = __webpack_require__(109);
 
 var _footer2 = _interopRequireDefault(_footer);
 
-var _next_steps = __webpack_require__(121);
-
-var _next_steps2 = _interopRequireDefault(_next_steps);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20542,7 +20539,6 @@ var App = function (_React$Component) {
         null,
         _react2.default.createElement(_header2.default, null),
         _react2.default.createElement(_main2.default, null),
-        _react2.default.createElement(_next_steps2.default, null),
         _react2.default.createElement(_footer2.default, null)
       );
     }
@@ -24711,7 +24707,8 @@ var Home = function (_React$Component) {
             shouldCloseOnOverlayClick: true,
             onRequestClose: this.closeModal },
           _react2.default.createElement(_contact_broker2.default, { close: this.closeModal })
-        )
+        ),
+        _react2.default.createElement(_next_steps2.default, null)
       );
     }
   }]);
@@ -25031,6 +25028,10 @@ var _subheader = __webpack_require__(11);
 
 var _subheader2 = _interopRequireDefault(_subheader);
 
+var _next_steps = __webpack_require__(121);
+
+var _next_steps2 = _interopRequireDefault(_next_steps);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25102,7 +25103,8 @@ var Apartments = function (_React$Component) {
             'ONE BEDROOM'
           )
         ),
-        _react2.default.createElement('img', { className: 'unit-plans', src: this.state.floorplan })
+        _react2.default.createElement('img', { className: 'unit-plans', src: this.state.floorplan }),
+        _react2.default.createElement(_next_steps2.default, null)
       );
     }
   }]);
@@ -25159,6 +25161,10 @@ var _textblock = __webpack_require__(9);
 
 var _textblock2 = _interopRequireDefault(_textblock);
 
+var _next_steps = __webpack_require__(121);
+
+var _next_steps2 = _interopRequireDefault(_next_steps);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25182,11 +25188,15 @@ var Neighborhood = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'neighborhood' },
-        _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516462298/downtown2_affj00.jpg' }),
+        _react2.default.createElement('img', { className: 'main-image', src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1518472998/georgetown_zicfk8.jpg' }),
         _react2.default.createElement(
           'section',
           { className: 'neighborhood-intro' },
-          _react2.default.createElement(_subheader2.default, { text: _content2.default.neighborhood.intro.title.toUpperCase(), style: 'subheader left-header' }),
+          _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(_subheader2.default, { text: _content2.default.neighborhood.intro.title.toUpperCase(), style: 'neighborhood-header' })
+          ),
           _react2.default.createElement(
             'p',
             null,
@@ -25200,7 +25210,7 @@ var Neighborhood = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'neighborhood-section' },
-            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517891935/dsds_vac7qw.jpg' }),
+            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1518472032/ski_map_2_ztf9fy.jpg' }),
             _react2.default.createElement(_list2.default, { style: 'list left-list', content: _content2.default.neighborhood.ski })
           )
         ),
@@ -25222,7 +25232,7 @@ var Neighborhood = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'neighborhood-section' },
-            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517893889/jens-herrndorff-404712_or29xt.jpg' }),
+            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1518472998/guanella_xva5br.jpg' }),
             _react2.default.createElement(_list2.default, { style: 'list left-list', content: _content2.default.neighborhood.view })
           )
         ),
@@ -25233,10 +25243,11 @@ var Neighborhood = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'neighborhood-section' },
-            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1517892250/marie-hoffman-295580_fuuwhz.jpg' }),
+            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1518473004/train_doa4jj.jpg' }),
             _react2.default.createElement(_list2.default, { style: 'list right-list', content: _content2.default.neighborhood.history })
           )
-        )
+        ),
+        _react2.default.createElement(_next_steps2.default, null)
       );
     }
   }]);
