@@ -784,10 +784,8 @@ nav {
     margin: 5vw; }
 
 .contact-broker {
-  height: 80vh;
-  z-index: 4000;
-  bottom: 0;
-  position: fixed; }
+  height: 100%;
+  width: 100%; }
   .contact-broker form {
     display: flex;
     flex-direction: column;
@@ -795,9 +793,6 @@ nav {
     background-color: #F7F6F8;
     padding: 20px;
     border: 8px solid #A97C50;
-    position: absolute;
-    margin-bottom: 5vh;
-    width: 100vw;
     box-sizing: border-box; }
     .contact-broker form label {
       display: flex;

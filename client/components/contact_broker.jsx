@@ -28,7 +28,7 @@ export default class ContactBroker extends React.Component {
 
   handleSubmit(event) {
     console.log(this.state)
-    this.props.cancel()
+    this.props.close()
     event.preventDefault()
   }
 
@@ -75,7 +75,7 @@ export default class ContactBroker extends React.Component {
           <button onClick={this.handleSubmit}>
             Submit
           </button>
-          <button onClick={this.props.cancel}>
+          <button onClick={this.props.close}>
             Cancel
           </button>
         </form>

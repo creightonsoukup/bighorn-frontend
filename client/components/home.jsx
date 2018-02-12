@@ -8,7 +8,9 @@ import FullpageImage from './fullpage-image'
 import Button from './button'
 import SubHeader from './subheader'
 import {Link} from 'react-router-dom';
-import ContactBroker from './contact_broker'
+import ContactBroker from './contact_broker';
+import Modal from 'react-modal';
+
 
 class Home extends React.Component {
     constructor(props) {
@@ -18,23 +20,22 @@ class Home extends React.Component {
         contactBroker: false
       }
 
-      this.contactBroker= this.contactBroker.bind(this)
+      this.closeModal= this.closeModal.bind(this)
+      this.openModal = this.openModal.bind(this)
     }
 
-    contactBroker() {
-      console.log('hi')
-      if (this.state.contactBroker === false) {
-        this.setState({
-          contactBroker: true
-        })
-        return
-      }
+    openModal() {
+      this.setState({
+        contactBroker: true
+      })
+      return
+    }
+    closeModal() {
       this.setState({
         contactBroker: false
       })
       return
     }
-
 
     render() {
       if(window.scrollY === 200) {
@@ -57,7 +58,7 @@ class Home extends React.Component {
               <Link to='/townhomes'> <Button type={'lrg-btn'} text={'EXPLORE'}/></Link>
             </div>
             <div className='button-group right-btn'>
-              <Button type={'btn'} text={'CONTACT A BROKER'} action={this.contactBroker}/>
+              <Button type={'btn'} text={'CONTACT A BROKER'} action={this.openModal}/>
             </div>
           </section>
           <FullpageImage  src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/condos_dhkmg3.jpg'/>
@@ -69,7 +70,7 @@ class Home extends React.Component {
               <Link to='/condos'><Button type={'lrg-btn'} text={'EXPLORE'}/></Link>
             </div>
             <div className='button-group left-btn'>
-              <Button type={'btn'} text={'JOIN THE WAITLIST'}/>
+              <Button type={'btn'} text={'CONTACT A BROKER'} action={this.openModal}/>
             </div>
           </section>
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516463338/B3_jyhir9.jpg'/>
@@ -89,9 +90,19 @@ class Home extends React.Component {
             </div>
           </section>
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460915/sitemap_t0qxrf.jpg'/>
-          { this.state.contactBroker  &&
-            <ContactBroker cancel={this.contactBroker} />
-          }
+          <Modal
+            style={{
+              content: {
+                padding: '0',
+                top: '100px'
+              }
+            }}
+            isOpen={this.state.contactBroker}
+            ariaHideApp={false}
+            shouldCloseOnOverlayClick={true}
+            onRequestClose={this.state.closeModal}>
+            <ContactBroker close={this.closeModal}/>
+          </Modal>
         </div>
       )
     }

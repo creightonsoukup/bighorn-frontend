@@ -1,8 +1,6 @@
 .contact-broker {
-  height: 80vh;
-  z-index: 4000;
-  bottom: 0;
-  position: fixed;
+  height: 100%;
+  width: 100%;
   form {
     display: flex;
     flex-direction: column;
@@ -10,9 +8,6 @@
     background-color: $bighorn-grey;
     padding: 20px;
     border: 8px solid $bighorn-brown;
-    position: absolute;
-    margin-bottom: 5vh;
-    width: 100vw;
     box-sizing: border-box;
     label {
       display: flex;
