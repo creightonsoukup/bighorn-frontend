@@ -25,6 +25,7 @@ export default class Footer extends React.Component {
             <p>{'Argent Real Estate'}</p>
             <p>{'612 6th St Unit B'}</p>
             <p>{'Georgetown, CO '}</p>
+            <p>{'(303) 569 2699'}</p>
           </div>
           <div className='address'>
             <h4>{'CONTACT US'}</h4>

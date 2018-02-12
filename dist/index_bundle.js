@@ -25602,6 +25602,11 @@ var Footer = function (_React$Component) {
               'p',
               null,
               'Georgetown, CO '
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              '(303) 569 2699'
             )
           ),
           _react2.default.createElement(
