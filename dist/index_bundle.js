@@ -24443,7 +24443,7 @@ var Main = function Main() {
       _react2.default.createElement(_reactRouterDom.Route, { path: '/townhomes', component: _townhomes2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '/condos', component: _apartments2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '/neighborhood', component: _neighborhood2.default }),
-      _react2.default.createElement(_reactRouterDom.Route, { path: '/form', component: _contact_broker2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/contact-broker', component: _contact_broker2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '*', exact: true, component: _2.default })
     )
   );
@@ -24538,6 +24538,9 @@ var Home = function (_React$Component) {
   _createClass(Home, [{
     key: 'openModal',
     value: function openModal() {
+      if (window.innerWidth < 600) {
+        this.props.history.push('/contact-broker');
+      }
       this.setState({
         contactBroker: true
       });
@@ -24546,6 +24549,9 @@ var Home = function (_React$Component) {
   }, {
     key: 'closeModal',
     value: function closeModal() {
+      if (window.innerWidth < 600) {
+        this.props.history.push('/');
+      }
       this.setState({
         contactBroker: false
       });
@@ -25642,7 +25648,10 @@ var ContactBroker = function (_React$Component) {
   }, {
     key: 'handleSubmit',
     value: function handleSubmit(event) {
-      console.log(this.state);
+      if (window.innerWidth < 600) {
+        this.props.history.push('/');
+        return;
+      }
       this.props.close();
       event.preventDefault();
     }

@@ -27,7 +27,10 @@ export default class ContactBroker extends React.Component {
   }
 
   handleSubmit(event) {
-    console.log(this.state)
+    if(window.innerWidth < 600) {
+      this.props.history.push('/')
+      return
+    }
     this.props.close()
     event.preventDefault()
   }

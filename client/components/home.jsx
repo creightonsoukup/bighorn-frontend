@@ -25,12 +25,18 @@ class Home extends React.Component {
     }
 
     openModal() {
+      if(window.innerWidth < 600) {
+        this.props.history.push('/contact-broker');
+      }
       this.setState({
         contactBroker: true
       })
       return
     }
     closeModal() {
+      if(window.innerWidth < 600) {
+        this.props.history.push('/');
+      }
       this.setState({
         contactBroker: false
       })

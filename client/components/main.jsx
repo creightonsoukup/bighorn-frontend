@@ -15,7 +15,7 @@ const Main = () => (
       <Route path="/townhomes" component={Townhomes}/>
       <Route path="/condos" component={Apartments}/>
       <Route path="/neighborhood" component={Neighborhood}/>
-      <Route path="/form" component={ContactBroker}/>
+      <Route path="/contact-broker" component={ContactBroker}/>
       <Route path='*' exact component={ErrorPage}/>
     </Switch>
   </main>
