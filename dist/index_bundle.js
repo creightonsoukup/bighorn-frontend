@@ -580,7 +580,7 @@ var content = {
     },
     textBlock5: {
       title: "Georgetown: Quintessential Mountain Town",
-      paragraph1: "Georgetown, Colorado, established in 1859, embodies mountain charm, tradition, and community.  Surrounded by 2,000 pristine acres of preserved land, it is one of the largest protected habitats in America.  This quaint mining town nestled in the Colorados hills offers a glimpse into early America with many renovated homes from the late 1800’s.  Additionally, Georgetown offers a variety of restaurants, shopping, museums, two scenic byways, health/fitness events and dozens of community clubs. Whether enjoying a Creekside tonic on the heated deck of Coopers on the Creek restaurant, snapping a picture of at the  Guanella Pass Scenic and Historic Byway, or hitting the slopes at Loveland Mountain, Georgetown is the perfect escape."
+      paragraph1: "Georgetown, Colorado, established in 1859, embodies mountain charm, tradition, and community.  Surrounded by 2,000 pristine acres of preserved land, it is one of the largest protected habitats in America.  This quaint mining town nestled in the Colorados hills showcases a glimpse into early America with many renovated homes from the late 1800’s.  You can immerse in history all the while strolling through downtown Georgetown, indulging in dining and shopping,  and exploring some of Colorado’s finest skiing, snowboarding, fishing and camping.  Georgetown, Colorado is more than just a mountain town - it is your perfect winter escape."
     },
     list1: {
       title: "Neighborhood Amenities",
@@ -615,7 +615,7 @@ var content = {
   },
   neighborhood: {
     textBlock1: {
-      paragraph1: "Georgetown, Colorado, established in 1859, embodies mountain charm, tradition, and community.  Surrounded by 2,000 pristine acres of preserved land, it is one of the largest protected habitats in America.  This quaint mining town nestled in the Colorados hills offers a glimpse into early America with many renovated homes from the late 1800’s.  Additionally, Georgetown offers a variety of restaurants, shopping, museums, two scenic byways, health/fitness events and dozens of community clubs. Whether enjoying a Creekside tonic on the heated deck of Coopers on the Creek restaurant, snapping a picture of at the  Guanella Pass Scenic and Historic Byway, or hitting the slopes at Loveland Mountain, Georgetown is the perfect escape."
+      paragraph1: "Georgetown offers a variety of restaurants, shopping, museums, two scenic byways, access,  endless outdoor recreation, health/fitness events and dozens of community clubs. Whether enjoying a Creekside tonic on the heated deck of Coopers on the Creek restaurant, snapping a picture of at the Guanella Pass Scenic and Historic Byway, or hitting the slopes at Loveland Mountain, Georgetown will be your new go to wintry destination."
     },
     intro: {
       title: 'Georgetown, Colorado',
@@ -624,7 +624,7 @@ var content = {
     ski: {
       title: "Eight Worldclass Ski Resorts. Unlimited Backcountry",
       paragraph1: '',
-      listItems: ['Loveland Ski Resort', 'Winter Park', 'Arapahoe Basin', 'Keystone', 'Breckenride', 'Copper Mountain', 'Vail', 'Beaver Creek']
+      listItems: ['Loveland Ski Resort - 13 Miles', 'Winter Park - 33 Miles', 'Arapahoe Basin - 20 Miles', 'Keystone 31 Miles', 'Breckenride 38 Miles', 'Copper Mountain 34 Miles', 'Vail 53 Miles', 'Beaver Creek 65 Miles']
     },
     recreation: {
       title: "Winter and Summer Recreation In Your Backyard",
@@ -3044,7 +3044,7 @@ var ThreeBedroom = function (_React$Component) {
           _react2.default.createElement(_FloorplansMobile2.default, { images: _images2.default.detachedFloorplans }),
           _react2.default.createElement(_floorplans2.default, { images: _images2.default.detachedFloorplans }),
           _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'INTERIOR' }),
-          _react2.default.createElement(_textblock2.default, { style: 'text-block outline', content: _content2.default.townhomes.textBlock4 }),
+          _react2.default.createElement(_textblock2.default, { style: 'text-block outline', content: _content2.default.townhomes.textBlock5 }),
           _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460914/interior_i1y2r3.jpg' })
         )
       );
@@ -24969,7 +24969,7 @@ var TwoBedroom = function (_React$Component) {
           _react2.default.createElement(_FloorplansMobile2.default, { images: _images2.default.attachedFloorplans }),
           _react2.default.createElement(_floorplans2.default, { images: _images2.default.attachedFloorplans }),
           _react2.default.createElement(_subheader2.default, { style: 'subheader left-header', text: 'INTERIOR' }),
-          _react2.default.createElement(_textblock2.default, { style: 'text-block outline', content: _content2.default.townhomes.textBlock4 }),
+          _react2.default.createElement(_textblock2.default, { style: 'text-block outline', content: _content2.default.townhomes.textBlock5 }),
           _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460914/interior_i1y2r3.jpg' })
         )
       );

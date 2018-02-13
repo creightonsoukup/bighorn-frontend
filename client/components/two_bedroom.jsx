@@ -24,7 +24,7 @@ export default class TwoBedroom extends React.Component {
           <FloorplansMobile images={galleries.attachedFloorplans}/>
           <Floorplans images={galleries.attachedFloorplans}/>
           <Subheader style={'subheader left-header'} text={'INTERIOR'}/>
-          <Textblock style={'text-block outline'} content={content.townhomes.textBlock4}/>
+          <Textblock style={'text-block outline'} content={content.townhomes.textBlock5}/>
           <FullpageImage src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460914/interior_i1y2r3.jpg'}/>
         </div>
       </div>
