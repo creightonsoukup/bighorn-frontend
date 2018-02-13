@@ -25210,7 +25210,7 @@ var Neighborhood = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'neighborhood-section' },
-            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1518472032/ski_map_2_ztf9fy.jpg' }),
+            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1518536877/ski_areas_xarevc.jpg' }),
             _react2.default.createElement(_list2.default, { style: 'list left-list', content: _content2.default.neighborhood.ski })
           )
         ),
