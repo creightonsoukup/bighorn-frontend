@@ -23,7 +23,7 @@ class Neighborhood extends React.Component {
           <Subheader style={'subheader left-header'} text={'LAKEFRONT TO SLOPESIDE IN MINUTES'}/>
           <div className='neighborhood-section'>
             <img src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1518536877/ski_areas_xarevc.jpg'}/>
-            <List style={'list left-list'}content={content.neighborhood.ski}/>
+            <List style={'list left-list'} content={content.neighborhood.ski}/>
           </div>
         </section>
         <section className='neighborhood-section'>
