@@ -3,7 +3,8 @@ require('dotenv').config()
 const path = require("path"),
     express = require("express"),
     logger = require("morgan"),
-    bodyParser = require("body-parser");
+    bodyParser = require("body-parser"),
+    routes = require("./routes");
 
 
 const DIST_DIR = path.join(__dirname, "dist"),
@@ -19,6 +20,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(DIST_DIR));
+
+app.use('/database', routes);
 
 app.get("*", function (req, res) {
   res.sendFile(path.join(DIST_DIR, "index.html"));

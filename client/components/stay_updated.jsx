@@ -1,6 +1,8 @@
 import React from 'react';
+import { addSubscription } from '../actions/index'
+import { connect } from 'react-redux'
 
-export default class StayUpdated extends React.Component {
+class StayUpdated extends React.Component {
   constructor(props) {
     super(props);
 
@@ -24,8 +26,13 @@ export default class StayUpdated extends React.Component {
   }
 
   handleSubmit(event) {
-    this.props.close()
     event.preventDefault()
+    console.log('hi')
+    this.props.addSubscription(
+      this.props.firstName,
+      this.props.lastName, 
+      this.props.email )
+
   }
 
   render() {
@@ -68,3 +75,6 @@ export default class StayUpdated extends React.Component {
     )
   }
 }
+
+
+export default connect(null, {addSubscription})(StayUpdated)
