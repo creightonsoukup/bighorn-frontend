@@ -15,7 +15,7 @@ class Townhomes extends React.Component {
     super(props);
 
     this.state = {
-      activeTab: ''
+      activeTab: 'three'
     }
     this.threeBedroom = this.threeBedroom.bind(this)
     this.twoBedroom = this.twoBedroom.bind(this)

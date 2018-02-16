@@ -158,16 +158,21 @@ nav {
       height: 80vh; } }
   @media (min-width: 1000px) {
     .image-gallery {
-      height: 100vh; } }
+      height: calc(100vh - 80px); } }
   .image-gallery img {
-    min-width: 100%;
-    transform: scale(1.5);
-    height: auto;
-    margin-top: 50px; }
+    width: auto;
+    transform: scale(1);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
     @media (min-width: 1000px) {
       .image-gallery img {
-        transform: scale(1);
+        transform: scale(1.3);
         margin-top: 0; } }
+    @media (min-width: 1200px) {
+      .image-gallery img {
+        transform: scale(1.4); } }
 
 .image-controls {
   display: flex;
@@ -319,6 +324,9 @@ nav {
 @media (min-width: 800px) {
   .left-header h2 {
     text-align: left; } }
+@media (min-width: 1000px) {
+  .left-header h2 {
+    margin: 0 0 0 0; } }
 
 @media (min-width: 1000px) {
   .right-header h2 {
@@ -335,7 +343,7 @@ nav {
     position: absolute;
     z-index: 101;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     display: block;
     display: flex;
@@ -349,7 +357,7 @@ nav {
     .gallery-overlay span:last-of-type {
       font-weight: 300;
       align-self: flex-end;
-      padding: 5vh 5vh 20vh 5vh;
+      padding: 50px 50px 50px 50px;
       color: rgba(255, 255, 255, 0.63);
       font-size: 7em; } }
 
@@ -387,13 +395,19 @@ nav {
   flex-direction: column;
   min-width: 100vw;
   min-height: 45vh;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #F7F6F8; }
   .fullpage-image img {
     width: 100vw;
     transform: scale(1.4); }
     @media (min-width: 1000px) {
       .fullpage-image img {
-        transform: scale(1); } }
+        transform: scale(1);
+        height: 100%;
+        width: auto; } }
+    @media (min-width: 1200px) {
+      .fullpage-image img {
+        transform: scale(1.15); } }
   @media (min-width: 600px) {
     .fullpage-image {
       min-height: 70vh; } }
@@ -407,6 +421,10 @@ nav {
 @media (min-width: 1000px) {
   .neighborhood .fullpage-image img {
     transform: scale(1.2); } }
+
+@media (min-width: 1000px) {
+  .condos .fullpage-image {
+    margin-bottom: 75px; } }
 
 .button-group {
   display: flex;
@@ -440,11 +458,18 @@ nav {
 @media (min-width: 1000px) {
   .right-btn {
     margin-left: 45vw;
-    transform: translate(0, 25vh); } }
+    transform: translate(0, 200px); } }
+@media (min-width: 1200px) {
+  .right-btn {
+    margin-left: 45vw;
+    transform: translate(0, 100px); } }
 
 @media (min-width: 1000px) {
   .left-btn {
-    transform: translate(-55vw, 20vh); } }
+    transform: translate(-55vw, 200px); } }
+@media (min-width: 1200px) {
+  .left-btn {
+    transform: translate(-55vw, 200px); } }
 
 @media (min-width: 1000px) {
   .left-btn2 {
@@ -926,7 +951,7 @@ nav {
     .homepage section {
       overflow: hidden; } }
   .homepage .overflow {
-    max-height: 130vh; }
+    max-height: 900px; }
   @media (min-width: 1000px) {
     .homepage .text-only {
       height: auto; } }

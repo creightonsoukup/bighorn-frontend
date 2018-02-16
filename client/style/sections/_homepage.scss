@@ -6,7 +6,8 @@
     }
   }
   .overflow {
-    max-height: 130vh;
+    max-height: 900px;
+
   }
  .text-only {
    @include respond-to('large') {
