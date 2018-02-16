@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev-start": "webpack-dev-server",
-    "migrate": "knex migrate:latest",
     "dev-server": "webpack && npm start",
     "watch": "webpack --watch",
     "start": "node index.js",

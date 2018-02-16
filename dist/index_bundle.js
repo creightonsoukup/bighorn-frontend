@@ -2121,6 +2121,10 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _index = __webpack_require__(167);
+
+var _reactRedux = __webpack_require__(133);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -2144,7 +2148,9 @@ var ContactBroker = function (_React$Component) {
       lastName: '',
       email: '',
       phone: '',
-      text: ''
+      message: '',
+      success: false,
+      error: false
     };
 
     _this.handleInputChange = _this.handleInputChange.bind(_this);
@@ -2164,12 +2170,28 @@ var ContactBroker = function (_React$Component) {
   }, {
     key: 'handleSubmit',
     value: function handleSubmit(event) {
-      if (window.innerWidth < 600) {
-        this.props.history.push('/');
-        return;
-      }
-      this.props.close();
+      var _this2 = this;
+
       event.preventDefault();
+      this.props.contactBroker(this.state.firstName, this.state.lastName, this.state.email, this.state.phone, this.state.message).then(function (data) {
+
+        if (data.payload.status == 200) {
+          _this2.setState({
+            email: '',
+            lastName: '',
+            firstName: '',
+            success: true,
+            phone: '',
+            message: ''
+          });
+          return;
+        }
+        if (data.payload.status == 500) {
+          _this2.setState({
+            error: true
+          });
+        }
+      });
     }
   }, {
     key: 'render',
@@ -2177,7 +2199,7 @@ var ContactBroker = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'contact-broker' },
-        _react2.default.createElement(
+        !this.state.success && _react2.default.createElement(
           'form',
           { className: 'contact-broker', onSubmit: this.handleSubmit },
           _react2.default.createElement(
@@ -2246,7 +2268,7 @@ var ContactBroker = function (_React$Component) {
               'Message'
             ),
             _react2.default.createElement('textarea', {
-              name: 'text',
+              name: 'message',
               value: this.state.text,
               onChange: this.handleInputChange })
           ),
@@ -2264,6 +2286,44 @@ var ContactBroker = function (_React$Component) {
               'CANCEL'
             )
           )
+        ),
+        this.state.success && _react2.default.createElement(
+          'div',
+          { className: 'success' },
+          _react2.default.createElement(
+            'h2',
+            null,
+            'THANK YOU!'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'You will hear from us shortly...'
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'btn', onClick: this.props.close },
+            'RETURN'
+          )
+        ),
+        this.state.error && _react2.default.createElement(
+          'div',
+          { className: 'success' },
+          _react2.default.createElement(
+            'h2',
+            null,
+            'WE ARE SORRY!'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Something is wrong. Try again later.'
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'btn', onClick: this.props.close },
+            'RETURN'
+          )
         )
       );
     }
@@ -2272,7 +2332,7 @@ var ContactBroker = function (_React$Component) {
   return ContactBroker;
 }(_react2.default.Component);
 
-exports.default = ContactBroker;
+exports.default = (0, _reactRedux.connect)(null, { contactBroker: _index.contactBroker })(ContactBroker);
 
 /***/ }),
 /* 31 */
@@ -27402,7 +27462,9 @@ var StayUpdated = function (_React$Component) {
     _this.state = {
       email: '',
       lastName: '',
-      firstName: ''
+      firstName: '',
+      success: false,
+      error: false
     };
     _this.handleInputChange = _this.handleInputChange.bind(_this);
     _this.handleSubmit = _this.handleSubmit.bind(_this);
@@ -27421,9 +27483,27 @@ var StayUpdated = function (_React$Component) {
   }, {
     key: 'handleSubmit',
     value: function handleSubmit(event) {
+      var _this2 = this;
+
       event.preventDefault();
-      console.log('hi');
-      this.props.addSubscription(this.props.firstName, this.props.lastName, this.props.email);
+      this.props.addSubscription(this.state.firstName, this.state.lastName, this.state.email).then(function (data) {
+        console.log(_this2.props);
+        if (data.payload.status == 200) {
+          _this2.setState({
+            email: '',
+            lastName: '',
+            firstName: '',
+            success: true
+          });
+          return;
+        }
+        if (data.payload.status == 500) {
+          _this2.setState({
+            error: true
+          });
+        }
+        return;
+      });
     }
   }, {
     key: 'render',
@@ -27431,7 +27511,7 @@ var StayUpdated = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'contact-broker' },
-        _react2.default.createElement(
+        !this.state.success && _react2.default.createElement(
           'form',
           { className: 'contact-broker', onSubmit: this.handleSubmit },
           _react2.default.createElement(
@@ -27491,6 +27571,44 @@ var StayUpdated = function (_React$Component) {
               { onClick: this.props.close },
               'CANCEL'
             )
+          )
+        ),
+        this.state.success && _react2.default.createElement(
+          'div',
+          { className: 'success' },
+          _react2.default.createElement(
+            'h2',
+            null,
+            'THANK YOU!'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'You will hear from us shortly...'
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'btn', onClick: this.props.close },
+            'CANCEL'
+          )
+        ),
+        this.state.error && _react2.default.createElement(
+          'div',
+          { className: 'success' },
+          _react2.default.createElement(
+            'h2',
+            null,
+            'WE ARE SORRY!'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Something is wrong. Try again later.'
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'btn', onClick: this.props.close },
+            'RETURN'
           )
         )
       );
@@ -29406,10 +29524,15 @@ var _signupReducer = __webpack_require__(158);
 
 var _signupReducer2 = _interopRequireDefault(_signupReducer);
 
+var _contactReducer = __webpack_require__(194);
+
+var _contactReducer2 = _interopRequireDefault(_contactReducer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var rootReducer = (0, _redux.combineReducers)({
-  signup: _signupReducer2.default
+  signup: _signupReducer2.default,
+  contactBroker: _contactReducer2.default
 });
 
 exports.default = rootReducer;
@@ -30138,8 +30261,9 @@ module.exports = Cancel;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.SUBSCRIBE = undefined;
+exports.CONTACT_BROKER = exports.SUBSCRIBE = undefined;
 exports.addSubscription = addSubscription;
+exports.contactBroker = contactBroker;
 
 var _axios = __webpack_require__(168);
 
@@ -30148,9 +30272,11 @@ var _axios2 = _interopRequireDefault(_axios);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SUBSCRIBE = exports.SUBSCRIBE = 'subscribe';
+var CONTACT_BROKER = exports.CONTACT_BROKER = 'contact_broker';
 
 function addSubscription(firstName, lastName, email) {
-  var url = 'http://www.bighorncrossing.com/database/signups';
+  var url = 'https://morning-anchorage-34966.herokuapp.com/signups';
+  console.log(firstName, lastName, email);
   var request = _axios2.default.post(url, {
     firstName: firstName,
     lastName: lastName,
@@ -30159,6 +30285,23 @@ function addSubscription(firstName, lastName, email) {
 
   return {
     type: SUBSCRIBE,
+    payload: request
+  };
+}
+
+function contactBroker(firstName, lastName, email, phone, message) {
+  var url = 'https://morning-anchorage-34966.herokuapp.com/contact_broker';
+  console.log(firstName, lastName, email, phone, message);
+  var request = _axios2.default.post(url, {
+    firstName: firstName,
+    lastName: lastName,
+    email: email,
+    phone: phone,
+    message: message
+  });
+
+  return {
+    type: CONTACT_BROKER,
     payload: request
   };
 }
@@ -31844,6 +31987,35 @@ function isNative(value) {
 
 module.exports = isArray;
 
+
+/***/ }),
+/* 194 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function () {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : INITAL_STATE;
+  var action = arguments[1];
+
+  switch (action.type) {
+    case _index.CONTACT_BROKER:
+      return [action.payload.data].concat(_toConsumableArray(state));
+    default:
+      return state;
+  }
+};
+
+var _index = __webpack_require__(167);
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+var INITAL_STATE = [];
 
 /***/ })
 /******/ ]);
