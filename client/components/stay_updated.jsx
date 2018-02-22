@@ -34,7 +34,7 @@ class StayUpdated extends React.Component {
       this.state.lastName,
       this.state.email )
       .then((data) => {
-        console.log(this.props)
+        console.log(data)
         if (data.payload.status == 200) {
           this.setState({
             email: '',
