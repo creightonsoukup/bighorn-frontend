@@ -1664,11 +1664,17 @@ var CONTACT_BROKER = exports.CONTACT_BROKER = 'contact_broker';
 
 function addSubscription(firstName, lastName, email) {
   var url = 'https://morning-anchorage-34966.herokuapp.com/signups';
+  //  const url = 'http://localhost:3000/signups'
   console.log(firstName, lastName, email);
-  var request = _axios2.default.post(url, {
-    firstName: firstName,
-    lastName: lastName,
-    email: email
+  var request = (0, _axios2.default)({
+    method: 'post',
+    url: '' + url,
+    data: {
+      firstName: firstName,
+      lastName: lastName,
+      email: email
+    },
+    withCredentials: true
   });
 
   return {
@@ -1679,6 +1685,7 @@ function addSubscription(firstName, lastName, email) {
 
 function contactBroker(firstName, lastName, email, phone, message) {
   var url = 'https://morning-anchorage-34966.herokuapp.com/contact_broker';
+  //  const url = 'http://localhost:3000/contact_broker'
   console.log(firstName, lastName, email, phone, message);
   var request = _axios2.default.post(url, {
     firstName: firstName,
@@ -30512,7 +30519,7 @@ var StayUpdated = function (_React$Component) {
 
       event.preventDefault();
       this.props.addSubscription(this.state.firstName, this.state.lastName, this.state.email).then(function (data) {
-        console.log(_this2.props);
+        console.log(data);
         if (data.payload.status == 200) {
           _this2.setState({
             email: '',
