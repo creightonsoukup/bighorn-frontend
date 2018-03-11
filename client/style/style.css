@@ -148,7 +148,7 @@ nav {
 .fixed-contact-btn {
   position: fixed;
   top: 50%;
-  z-index: 1000;
+  z-index: 9;
   background-color: #DBB89E;
   transform: rotate(90deg) translate(0, 45px);
   left: 0;
@@ -160,7 +160,8 @@ nav {
   width: 100vw;
   height: 350px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 10; }
   @media (min-width: 600px) {
     .image-gallery {
       height: 70vh; } }
@@ -253,7 +254,7 @@ nav {
   .right-block2 {
     margin-top: 0;
     height: auto;
-    margin: 5vh 8vw 10vh 0;
+    margin: 5vh 8vw 10vh 25vw;
     padding-bottom: 20vh; } }
 
 @media (min-width: 1000px) {
@@ -334,6 +335,9 @@ nav {
 
 .margin-bottom {
   margin-bottom: 5vw; }
+  @media (min-width: 1000px) {
+    .margin-bottom {
+      margin-bottom: 0; } }
 
 .subheader h2 {
   font-family: Suisse International, sans-serif;
@@ -489,31 +493,17 @@ nav {
 
 @media (min-width: 1000px) {
   .right-btn {
-    margin-left: 45vw;
-    transform: translate(0, 200px); } }
+    transform: translate(30vw, -30vh); } }
 @media (min-width: 1200px) {
   .right-btn {
-    margin-left: 35vw;
-    transform: translate(0, 100px); } }
-@media (min-width: 1800px) {
-  .right-btn {
-    transform: translate(0, 0); } }
+    transform: translate(30vw, -27vh); } }
 
 @media (min-width: 1000px) {
   .left-btn {
-    transform: translate(-55vw, 200px); } }
+    transform: translate(13vw, -30vh); } }
 @media (min-width: 1200px) {
   .left-btn {
-    transform: translate(-55vw, 150px); } }
-@media (min-width: 1300px) {
-  .left-btn {
-    transform: translate(-55vw, 100px); } }
-@media (min-width: 1400px) {
-  .left-btn {
-    transform: translate(-73vw, 100px); } }
-@media (min-width: 1800px) {
-  .left-btn {
-    transform: translate(-73vw, 0); } }
+    transform: translate(13vw, -27vh); } }
 
 .lrg-btn {
   font-weight: bold;
@@ -549,12 +539,18 @@ nav {
 @media (min-width: 1000px) {
   .left-homepage-btn {
     justify-content: flex-start;
-    margin-top: 30vh; } }
+    margin-top: 75vh; } }
+@media (min-width: 1200px) {
+  .left-homepage-btn {
+    margin-top: 50vh; } }
 
 @media (min-width: 1000px) {
   .right-homepage-btn {
     justify-content: flex-end;
-    margin-top: 30vh; } }
+    margin-top: 70vh; } }
+@media (min-width: 1200px) {
+  .right-homepage-btn {
+    margin-top: 55vh; } }
 
 .model-buttons {
   display: flex;
@@ -1035,7 +1031,8 @@ nav {
   margin-top: 75px; }
   @media (min-width: 1000px) {
     .townhomes .subheader {
-      font-size: 3em; } }
+      font-size: 3em;
+      margin-left: 5vw; } }
   .townhomes .subheader h2 {
     font-size: 2em;
     margin-bottom: 5vh; }

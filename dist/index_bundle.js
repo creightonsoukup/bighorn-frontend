@@ -23354,7 +23354,6 @@ var Header = function (_React$Component) {
   }, {
     key: 'openModal',
     value: function openModal() {
-
       this.setState({
         contactBroker: true
       });
@@ -23439,7 +23438,15 @@ var Header = function (_React$Component) {
           )
         ),
         this.state.menu && _react2.default.createElement(_navMenu2.default, { toggleMenu: this.toggleMenu }),
-        _react2.default.createElement(
+        window.innerWidth < 600 ? _react2.default.createElement(
+          _reactRouterDom.Link,
+          { to: '/contact-broker' },
+          _react2.default.createElement(
+            'div',
+            { className: 'fixed-contact-btn' },
+            "CONTACT US"
+          )
+        ) : _react2.default.createElement(
           'div',
           { className: 'fixed-contact-btn', onClick: this.openModal },
           "CONTACT US"

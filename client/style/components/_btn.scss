@@ -31,35 +31,22 @@
 
 .right-btn {
   @include respond-to('large') {
-    margin-left: 45vw;
-    transform: translate(0, 200px);
+    transform: translate(30vw, -30vh);
   }
   @include respond-to('huge') {
-    margin-left: 35vw;
-    transform: translate(0, 100px);
-  }
-  @include respond-to('massive') {
-    transform: translate(0, 0);
+    transform: translate(30vw, -27vh);
   }
 
 }
 
 .left-btn {
   @include respond-to('large') {
-    transform: translate(-55vw, 200px);
+    transform: translate(13vw, -30vh);
   }
   @include respond-to('huge') {
-    transform: translate(-55vw, 150px);
+    transform: translate(13vw, -27vh);
   }
-  @include respond-to('standard') {
-    transform: translate(-55vw, 100px);
-  }
-  @media (min-width:1400px) {
-    transform: translate(-73vw, 100px);
-  }
-  @include respond-to('massive') {
-    transform: translate(-73vw, 0);
-  }
+
 }
 
 .lrg-btn {
@@ -98,14 +85,20 @@
 .left-homepage-btn {
   @include respond-to('large') {
     justify-content: flex-start;
-    margin-top: 30vh;
+    margin-top: 75vh;
+  }
+  @include respond-to('huge') {
+    margin-top: 50vh;
   }
 }
 
 .right-homepage-btn {
   @include respond-to('large') {
     justify-content: flex-end;
-    margin-top: 30vh;
+    margin-top: 70vh;
+  }
+  @include respond-to('huge') {
+    margin-top: 55vh;
   }
 }
 

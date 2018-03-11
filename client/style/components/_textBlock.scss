@@ -58,7 +58,7 @@
   @include respond-to('large') {
     margin-top: 0;
     height: auto;
-    margin: 5vh 8vw 10vh 0;
+    margin: 5vh 8vw 10vh 25vw;
     padding-bottom: 20vh;
   }
 }
@@ -167,4 +167,7 @@
 
 .margin-bottom {
   margin-bottom: 5vw;
+  @include respond-to('large') {
+    margin-bottom: 0;
+  }
 }

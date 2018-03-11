@@ -29,7 +29,6 @@ class Header extends React.Component {
   }
 
   openModal() {
-
     this.setState({
       contactBroker: true
     })
@@ -64,9 +63,15 @@ class Header extends React.Component {
           { this.state.menu &&
             <NavMenu toggleMenu={this.toggleMenu} />
           }
-          <div className='fixed-contact-btn' onClick={this.openModal}>
-            {"CONTACT US"}
-          </div>
+          { window.innerWidth < 600 ? (
+            <Link to='/contact-broker'><div className='fixed-contact-btn'>
+              {"CONTACT US"}
+            </div></Link>
+          ) : (
+            <div className='fixed-contact-btn' onClick={this.openModal}>
+              {"CONTACT US"}
+            </div>
+          )}
           { window.innerWidth < 999 ? (
             <Modal
               style={{
