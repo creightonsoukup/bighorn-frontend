@@ -64,7 +64,7 @@ class ContactBroker extends React.Component {
       <div className='contact-broker'>
         { !this.state.success &&
           <form className='contact-broker' onSubmit={this.handleSubmit}>
-            <h2>{'CONTACT A BROKER'}</h2>
+            <h2>{'CONTACT US'}</h2>
             <label>
               <span>{'First Name'}</span>
               <input

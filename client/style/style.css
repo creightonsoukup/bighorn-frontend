@@ -145,6 +145,17 @@ nav {
   padding: 20px;
   margin: 5vw; }
 
+.fixed-contact-btn {
+  position: fixed;
+  top: 50%;
+  z-index: 1000;
+  background-color: #DBB89E;
+  transform: rotate(90deg) translate(0, 45px);
+  left: 0;
+  color: black;
+  font-weight: bold;
+  padding: 15px; }
+
 .image-gallery {
   width: 100vw;
   height: 350px;
@@ -190,7 +201,7 @@ nav {
 .text-block {
   width: 80vw;
   height: auto;
-  margin: 5vw 5vw 5vw 5vw;
+  margin: 5vw 5vw 0 5vw;
   padding: 5vw 5vw 5vw 5vw;
   background-color: #F7F6F8; }
   @media (min-width: 600px) {
@@ -240,7 +251,6 @@ nav {
 
 @media (min-width: 1000px) {
   .right-block2 {
-    float: right;
     margin-top: 0;
     height: auto;
     margin: 5vh 8vw 10vh 0;
@@ -256,7 +266,6 @@ nav {
 
 @media (min-width: 1000px) {
   .left-block2 {
-    float: left;
     margin-top: 0;
     height: auto;
     margin: 5vh 0 10vh 8vw;
@@ -318,6 +327,13 @@ nav {
     width: 8px;
     height: 90%;
     background-color: #A97C50; } }
+
+@media (min-width: 1000px) {
+  .margin-block {
+    margin: 5vh 5vw 5vh 5vw; } }
+
+.margin-bottom {
+  margin-bottom: 5vw; }
 
 .subheader h2 {
   font-family: Suisse International, sans-serif;
@@ -498,23 +514,6 @@ nav {
 @media (min-width: 1800px) {
   .left-btn {
     transform: translate(-73vw, 0); } }
-
-@media (min-width: 1000px) {
-  .left-btn2 {
-    transform: translate(-55vw, 525px); } }
-@media (min-width: 1800px) {
-  .left-btn2 {
-    transform: translate(-55vw, 600px); } }
-
-@media (min-width: 1000px) {
-  .right-btn2 {
-    transform: translate(27vw, 675px); } }
-@media (min-width: 1400px) {
-  .right-btn2 {
-    transform: translate(27vw, 600px); } }
-@media (min-width: 1800px) {
-  .right-btn2 {
-    transform: translate(27vw, 600px); } }
 
 .lrg-btn {
   font-weight: bold;
@@ -768,7 +767,9 @@ nav {
   justify-content: space-around;
   align-items: flex-start;
   background-color: #DBB89E;
-  padding: 10px; }
+  padding: 10px;
+  position: relative;
+  z-index: 2000; }
   @media (min-width: 600px) {
     .footer {
       padding: 40px; } }
@@ -1014,8 +1015,11 @@ nav {
   align-items: center; }
   @media (min-width: 1000px) {
     .unit-intro {
+      margin-bottom: 0;
       flex-direction: row;
       justify-content: space-around; } }
+  .unit-intro h3 {
+    padding: 10px; }
   .unit-intro img {
     margin-top: 5vh;
     width: 200px; }

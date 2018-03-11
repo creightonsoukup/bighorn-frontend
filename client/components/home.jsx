@@ -53,7 +53,7 @@ class Home extends React.Component {
           <h1 className='gallery-overlay'><span>{'BIGHORN'}</span><span>{'CROSSING'}</span></h1>
           <ImageGallery images={galleries.homepage}/>
           <section className='text-only'>
-            <Textblock style={'text-block background right-block'} content={content.homepage.textBlock1}/>
+            <Textblock style={'text-block background right-block margin-bottom'} content={content.homepage.textBlock1}/>
           </section>
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/backyard_o2zp5r.jpg'/>
           <section className='overflow'>
@@ -64,9 +64,7 @@ class Home extends React.Component {
             <div className='homepage-btn left-homepage-btn'>
               <Link to='/townhomes'> <Button type={'lrg-btn'} text={'EXPLORE'}/></Link>
             </div>
-            <div className='button-group right-btn'>
-              <Button type={'btn'} text={'CONTACT A BROKER'} action={this.openModal}/>
-            </div>
+
           </section>
           <FullpageImage  src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/condos_dhkmg3.jpg'/>
           <section className='overflow'>
@@ -76,15 +74,13 @@ class Home extends React.Component {
             <div className='homepage-btn right-homepage-btn'>
               <Link to='/condos'><Button type={'lrg-btn'} text={'EXPLORE'}/></Link>
             </div>
-            <div className='button-group left-btn'>
-              <Button type={'btn'} text={'CONTACT A BROKER'} action={this.openModal}/>
-            </div>
+
           </section>
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516463338/B3_jyhir9.jpg'/>
           <section>
             <SubHeader style={'subheader right-header'} text={'THE LODGE'}/>
             <Textblock style={'text-block left-block2 background'} content={content.homepage.textBlock4}/>
-            <div className='button-group left-btn2'>
+            <div className='button-group left-btn'>
               <Button type={'btn'} text={'COMING SOON'}/>
             </div>
           </section>
@@ -92,7 +88,7 @@ class Home extends React.Component {
           <section className=''>
             <SubHeader style={'subheader left-header no-margin'} text={'THE NEIGHBORHOOD'}/>
             <Textblock style={'text-block right-block2 background'} content={content.homepage.textBlock5} />
-            <div className='button-group right-btn2'>
+            <div className='button-group right-btn'>
               <Button type={'btn'} text={'LEARN MORE'}/>
             </div>
           </section>

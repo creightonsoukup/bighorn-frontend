@@ -5,6 +5,8 @@
   align-items: flex-start;
   background-color: $bighorn-tan;
   padding: 10px;
+  position: relative;
+  z-index: 2000;
   @include respond-to('small') {
     padding: 40px;
   }

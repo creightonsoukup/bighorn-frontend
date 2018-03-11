@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import NavMenu from './nav-menu';
+import ContactBroker from './contact_broker';
+import Modal from 'react-modal';
 
 class Header extends React.Component {
   constructor(props) {
@@ -9,9 +11,12 @@ class Header extends React.Component {
     this.state = {
       hidden: true,
       mobile: true,
-      menu: false
+      menu: false,
+      contactBroker: false
     }
     this.toggleMenu = this.toggleMenu.bind(this)
+    this.openModal = this.openModal.bind(this)
+    this.closeModal = this.closeModal.bind(this)
   }
 
   toggleMenu() {
@@ -21,6 +26,21 @@ class Header extends React.Component {
       return
     }
     this.setState({menu: false})
+  }
+
+  openModal() {
+
+    this.setState({
+      contactBroker: true
+    })
+    return
+  }
+  closeModal() {
+
+    this.setState({
+      contactBroker: false
+    })
+    return
   }
 
   render() {
@@ -44,9 +64,46 @@ class Header extends React.Component {
           { this.state.menu &&
             <NavMenu toggleMenu={this.toggleMenu} />
           }
-          </header>
-          )
-          }
+          <div className='fixed-contact-btn' onClick={this.openModal}>
+            {"CONTACT US"}
+          </div>
+          { window.innerWidth < 999 ? (
+            <Modal
+              style={{
+                content: {
+                  padding: '0',
+                  top: '100px'
+                }
+              }}
+              isOpen={this.state.contactBroker}
+              ariaHideApp={false}
+              shouldCloseOnOverlayClick={true}
+              onRequestClose={this.closeModal}>
+              <ContactBroker close={this.closeModal}/>
+            </Modal>
+          ) : (
+            <Modal
+              style={{
+                content : {
+                  top: '55%',
+                  left: '50%',
+                  right: 'auto',
+                  bottom: 'auto',
+                  marginRight: '-50%',
+                  transform: 'translate(-50%, -50%)',
+                  padding: '0',
+                }
+              }}
+              isOpen={this.state.contactBroker}
+              ariaHideApp={false}
+              shouldCloseOnOverlayClick={true}
+              onRequestClose={this.closeModal}>
+              <ContactBroker close={this.closeModal}/>
+            </Modal>
+          )}
+        </header>
+    )
+  }
 }
 
 export default Header

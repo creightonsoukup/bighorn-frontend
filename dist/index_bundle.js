@@ -2577,7 +2577,7 @@ var ContactBroker = function (_React$Component) {
           _react2.default.createElement(
             'h2',
             null,
-            'CONTACT A BROKER'
+            'CONTACT US'
           ),
           _react2.default.createElement(
             'label',
@@ -3064,7 +3064,7 @@ var Townhomes = function (_React$Component) {
           'section',
           { className: 'unit-intro' },
           _react2.default.createElement(_logo2.default, { src: __webpack_require__(179) }),
-          _react2.default.createElement(_textblock2.default, { style: 'text-block right-block top-margin background', content: _content2.default.townhomes.textBlock1 })
+          _react2.default.createElement(_textblock2.default, { style: 'text-block right-block background margin-block', content: _content2.default.townhomes.textBlock1 })
         ),
         _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460916/vqu4stpehzaq83rwcia0.jpg' }),
         _react2.default.createElement(
@@ -23305,6 +23305,14 @@ var _navMenu = __webpack_require__(121);
 
 var _navMenu2 = _interopRequireDefault(_navMenu);
 
+var _contact_broker = __webpack_require__(32);
+
+var _contact_broker2 = _interopRequireDefault(_contact_broker);
+
+var _reactModal = __webpack_require__(71);
+
+var _reactModal2 = _interopRequireDefault(_reactModal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23324,9 +23332,12 @@ var Header = function (_React$Component) {
     _this.state = {
       hidden: true,
       mobile: true,
-      menu: false
+      menu: false,
+      contactBroker: false
     };
     _this.toggleMenu = _this.toggleMenu.bind(_this);
+    _this.openModal = _this.openModal.bind(_this);
+    _this.closeModal = _this.closeModal.bind(_this);
     return _this;
   }
 
@@ -23339,6 +23350,24 @@ var Header = function (_React$Component) {
         return;
       }
       this.setState({ menu: false });
+    }
+  }, {
+    key: 'openModal',
+    value: function openModal() {
+
+      this.setState({
+        contactBroker: true
+      });
+      return;
+    }
+  }, {
+    key: 'closeModal',
+    value: function closeModal() {
+
+      this.setState({
+        contactBroker: false
+      });
+      return;
     }
   }, {
     key: 'render',
@@ -23409,7 +23438,46 @@ var Header = function (_React$Component) {
             )
           )
         ),
-        this.state.menu && _react2.default.createElement(_navMenu2.default, { toggleMenu: this.toggleMenu })
+        this.state.menu && _react2.default.createElement(_navMenu2.default, { toggleMenu: this.toggleMenu }),
+        _react2.default.createElement(
+          'div',
+          { className: 'fixed-contact-btn', onClick: this.openModal },
+          "CONTACT US"
+        ),
+        window.innerWidth < 999 ? _react2.default.createElement(
+          _reactModal2.default,
+          {
+            style: {
+              content: {
+                padding: '0',
+                top: '100px'
+              }
+            },
+            isOpen: this.state.contactBroker,
+            ariaHideApp: false,
+            shouldCloseOnOverlayClick: true,
+            onRequestClose: this.closeModal },
+          _react2.default.createElement(_contact_broker2.default, { close: this.closeModal })
+        ) : _react2.default.createElement(
+          _reactModal2.default,
+          {
+            style: {
+              content: {
+                top: '55%',
+                left: '50%',
+                right: 'auto',
+                bottom: 'auto',
+                marginRight: '-50%',
+                transform: 'translate(-50%, -50%)',
+                padding: '0'
+              }
+            },
+            isOpen: this.state.contactBroker,
+            ariaHideApp: false,
+            shouldCloseOnOverlayClick: true,
+            onRequestClose: this.closeModal },
+          _react2.default.createElement(_contact_broker2.default, { close: this.closeModal })
+        )
       );
     }
   }]);
@@ -27369,7 +27437,7 @@ var Home = function (_React$Component) {
         _react2.default.createElement(
           'section',
           { className: 'text-only' },
-          _react2.default.createElement(_textblock2.default, { style: 'text-block background right-block', content: _content2.default.homepage.textBlock1 })
+          _react2.default.createElement(_textblock2.default, { style: 'text-block background right-block margin-bottom', content: _content2.default.homepage.textBlock1 })
         ),
         _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/backyard_o2zp5r.jpg' }),
         _react2.default.createElement(
@@ -27387,11 +27455,6 @@ var Home = function (_React$Component) {
               ' ',
               _react2.default.createElement(_button2.default, { type: 'lrg-btn', text: 'EXPLORE' })
             )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'button-group right-btn' },
-            _react2.default.createElement(_button2.default, { type: 'btn', text: 'CONTACT A BROKER', action: this.openModal })
           )
         ),
         _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/condos_dhkmg3.jpg' }),
@@ -27409,11 +27472,6 @@ var Home = function (_React$Component) {
               { to: '/condos' },
               _react2.default.createElement(_button2.default, { type: 'lrg-btn', text: 'EXPLORE' })
             )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'button-group left-btn' },
-            _react2.default.createElement(_button2.default, { type: 'btn', text: 'CONTACT A BROKER', action: this.openModal })
           )
         ),
         _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516463338/B3_jyhir9.jpg' }),
@@ -27424,7 +27482,7 @@ var Home = function (_React$Component) {
           _react2.default.createElement(_textblock2.default, { style: 'text-block left-block2 background', content: _content2.default.homepage.textBlock4 }),
           _react2.default.createElement(
             'div',
-            { className: 'button-group left-btn2' },
+            { className: 'button-group left-btn' },
             _react2.default.createElement(_button2.default, { type: 'btn', text: 'COMING SOON' })
           )
         ),
@@ -27436,7 +27494,7 @@ var Home = function (_React$Component) {
           _react2.default.createElement(_textblock2.default, { style: 'text-block right-block2 background', content: _content2.default.homepage.textBlock5 }),
           _react2.default.createElement(
             'div',
-            { className: 'button-group right-btn2' },
+            { className: 'button-group right-btn' },
             _react2.default.createElement(_button2.default, { type: 'btn', text: 'LEARN MORE' })
           )
         ),
@@ -31003,7 +31061,7 @@ var Apartments = function (_React$Component) {
           'section',
           { className: 'unit-intro' },
           _react2.default.createElement(_logo2.default, { src: __webpack_require__(181) }),
-          _react2.default.createElement(_textblock2.default, { style: 'text-block right-block background', content: _content2.default.apartments.textBlock1 })
+          _react2.default.createElement(_textblock2.default, { style: 'text-block right-block background margin-block', content: _content2.default.apartments.textBlock1 })
         ),
         _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460912/condoelevation_jl1n8b.jpg' }),
         _react2.default.createElement(_textblock2.default, { style: 'text-block outline', content: _content2.default.apartments.textBlock2 }),

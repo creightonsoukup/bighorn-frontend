@@ -62,29 +62,6 @@
   }
 }
 
-.left-btn2 {
-  @include respond-to('large') {
-    transform: translate(-55vw, 525px)
-  }
-  @include respond-to('massive') {
-    transform: translate(-55vw, 600px)
-  }
-
-}
-
-.right-btn2 {
-  @include respond-to('large') {
-    transform: translate(27vw, 675px)
-  }
-  @include respond-to('extra-huge') {
-    transform: translate(27vw, 600px)
-
-  }
-  @include respond-to('massive') {
-    transform: translate(27vw, 600px)
-  }
-}
-
 .lrg-btn {
   font-weight: bold;
   color: black;

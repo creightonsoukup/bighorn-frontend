@@ -38,7 +38,7 @@ class Apartments extends React.Component {
         <img src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1514344511/apartment-hero_uhsy64.jpg'} />
         <section className='unit-intro'>
           <Logo src={require('../assets/apartments-logo.png')}/>
-          <Textblock style={'text-block right-block background'} content={content.apartments.textBlock1}/>
+          <Textblock style={'text-block right-block background margin-block'} content={content.apartments.textBlock1}/>
         </section>
         <FullpageImage src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460912/condoelevation_jl1n8b.jpg'}/>
         <Textblock style={'text-block outline'} content={content.apartments.textBlock2} />

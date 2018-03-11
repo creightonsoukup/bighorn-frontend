@@ -5,8 +5,12 @@
   justify-content: space-between;
   align-items: center;
   @include respond-to('large') {
+    margin-bottom: 0;
     flex-direction: row;
     justify-content: space-around;
+  }
+  h3 {
+    padding: 10px;
   }
   img {
     margin-top: 5vh;
