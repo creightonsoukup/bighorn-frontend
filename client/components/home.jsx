@@ -58,7 +58,7 @@ class Home extends React.Component {
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/backyard_o2zp5r.jpg'/>
           <section className='overflow'>
             <SubHeader style={'subheader left-header'} text={'TOWNHOMES'}/>
-            <Textblock style={'text-block right-block no-margin'} content={content.homepage.textBlock2}/>
+            <Textblock style={'text-block right-block'} content={content.homepage.textBlock2}/>
             <div className='color-block rotate-right'></div>
 
             <div className='homepage-btn left-homepage-btn'>
@@ -91,9 +91,9 @@ class Home extends React.Component {
           <FullpageImage src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1516462298/downtown1_lust3v.jpg'}/>
           <section className=''>
             <SubHeader style={'subheader left-header no-margin'} text={'THE NEIGHBORHOOD'}/>
-            <Textblock style={'text-block right-block background'} content={content.homepage.textBlock5} />
-            <div className='homepage-btn left-homepage-btn'>
-              <Link to='/neighborhood'><Button type={'lrg-btn'} text={'EXPLORE'}/></Link>
+            <Textblock style={'text-block right-block2 background'} content={content.homepage.textBlock5} />
+            <div className='button-group right-btn2'>
+              <Button type={'btn'} text={'LEARN MORE'}/>
             </div>
           </section>
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460915/sitemap_t0qxrf.jpg'/>

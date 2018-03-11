@@ -33,6 +33,7 @@ class Header extends React.Component {
                 <li><Link to='/townhomes'>{'TOWNHOMES'}</Link></li>
                 <li><Link to='/condos'>{"CONDOS"}</Link></li>
                 <li><Link to='/neighborhood'>{"NEIGHBORHOOD"}</Link></li>
+                <li><a href='http://living.bighorncrossing.com/blog'>{"BLOG"}</a></li>
               </ul>
               <div className="nav-menu" onClick={this.toggleMenu}>
                 <span>{'MENU'}</span>

@@ -8,6 +8,9 @@
     @include respond-to('small') {
       font-size: 3em;
     }
+    @include respond-to('medium') {
+      font-size: 3.5em;
+    }
     @include respond-to('large') {
       font-size: 6em;
       margin-top: 10vh;
@@ -29,6 +32,9 @@
 
 .right-header {
   h2 {
+    @include respond-to('medium') {
+      text-align: left;
+    }
     @include respond-to('large') {
       text-align: right;
       margin: 0 0 0 40vw;

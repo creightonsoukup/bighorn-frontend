@@ -17,7 +17,6 @@
     }
   }
   .text-block {
-    margin-top: 5vh;
     @include respond-to('large') {
       padding: 5vw;
     }
@@ -40,7 +39,7 @@
       padding: 5vh 5vw 5vh 5vw;
       width: 50vw;
       h3 {
-        padding: 5vw;
+        padding: 20px;
       }
     }
   }

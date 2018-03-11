@@ -35,8 +35,11 @@
     transform: translate(0, 200px);
   }
   @include respond-to('huge') {
-    margin-left: 45vw;
+    margin-left: 35vw;
     transform: translate(0, 100px);
+  }
+  @include respond-to('massive') {
+    transform: translate(0, 0);
   }
 
 }
@@ -46,13 +49,39 @@
     transform: translate(-55vw, 200px);
   }
   @include respond-to('huge') {
-    transform: translate(-55vw, 200px);
+    transform: translate(-55vw, 150px);
+  }
+  @include respond-to('standard') {
+    transform: translate(-55vw, 100px);
+  }
+  @media (min-width:1400px) {
+    transform: translate(-73vw, 100px);
+  }
+  @include respond-to('massive') {
+    transform: translate(-73vw, 0);
   }
 }
 
 .left-btn2 {
   @include respond-to('large') {
-    transform: translate(-55vw, 550px)
+    transform: translate(-55vw, 525px)
+  }
+  @include respond-to('massive') {
+    transform: translate(-55vw, 600px)
+  }
+
+}
+
+.right-btn2 {
+  @include respond-to('large') {
+    transform: translate(27vw, 675px)
+  }
+  @include respond-to('extra-huge') {
+    transform: translate(27vw, 600px)
+
+  }
+  @include respond-to('massive') {
+    transform: translate(27vw, 600px)
   }
 }
 
@@ -78,7 +107,6 @@
   height: 10vh;
   margin: 0vw 5vw 5vw 5vw;
   padding: 0vw 5vw 5vw 5vw;
-  transform: translate(0,-5vw);
   background-color: $bighorn-grey;
   display: flex;
   justify-content: flex-end;
@@ -94,7 +122,6 @@
   @include respond-to('large') {
     justify-content: flex-start;
     margin-top: 30vh;
-    transform: translate(0, 10vh);
   }
 }
 
@@ -102,7 +129,6 @@
   @include respond-to('large') {
     justify-content: flex-end;
     margin-top: 30vh;
-    transform: translate(0, 10vh);
   }
 }
 

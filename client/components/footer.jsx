@@ -11,7 +11,7 @@ export default class Footer extends React.Component {
             <li><Link to='/townhomes'>TOWNHOMES</Link></li>
             <li><Link to='/condos'>CONDOS</Link></li>
             <li><Link to='/neighborhood'>THE NEIGHBORHOOD</Link></li>
-            <li><Link to='/blog'>BIGHORN BLOG</Link></li>
+            <li><a href='http://living.bighorncrossing.com/blog'>{"BLOG"}</a></li>
           </ul>
         </div>
         <div className='addresses'>
@@ -25,7 +25,7 @@ export default class Footer extends React.Component {
             <p>{'Argent Real Estate'}</p>
             <p>{'612 6th St Unit B'}</p>
             <p>{'Georgetown, CO '}</p>
-            <p>{'(303) 569 2699'}</p>
+            <p>{'(303) 569 2575'}</p>
           </div>
           <div className='address'>
             <h4>{'CONTACT US'}</h4>

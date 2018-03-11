@@ -20,7 +20,7 @@
    };
   }
   @include respond-to('small') {
-    min-height: 70vh;
+    
   }
   @include respond-to('medium') {
     min-height: 80vh;

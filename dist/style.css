@@ -225,13 +225,26 @@ nav {
         padding: 1vh 5vw 5vw 5vw;
         font-size: 1.2em;
         line-height: 1.9em; } }
+    @media (min-width: 1200px) {
+      .text-block h3 {
+        padding-bottom: 2vh; } }
 
 @media (min-width: 1000px) {
   .right-block {
     float: right;
     margin-top: 0;
+    height: auto; } }
+@media (min-width: 1200px) {
+  .right-block {
+    padding-bottom: 10vh; } }
+
+@media (min-width: 1000px) {
+  .right-block2 {
+    float: right;
+    margin-top: 0;
     height: auto;
-    margin: 10vh 0 10vh 0; } }
+    margin: 5vh 8vw 10vh 0;
+    padding-bottom: 20vh; } }
 
 @media (min-width: 1000px) {
   .background {
@@ -246,7 +259,7 @@ nav {
     float: left;
     margin-top: 0;
     height: auto;
-    margin: 5vh 0 10vh 0;
+    margin: 5vh 0 10vh 8vw;
     padding-bottom: 20vh; } }
 
 @media (min-width: 1000px) {
@@ -315,6 +328,9 @@ nav {
   @media (min-width: 600px) {
     .subheader h2 {
       font-size: 3em; } }
+  @media (min-width: 800px) {
+    .subheader h2 {
+      font-size: 3.5em; } }
   @media (min-width: 1000px) {
     .subheader h2 {
       font-size: 6em;
@@ -328,6 +344,9 @@ nav {
   .left-header h2 {
     margin: 0 0 0 0; } }
 
+@media (min-width: 800px) {
+  .right-header h2 {
+    text-align: left; } }
 @media (min-width: 1000px) {
   .right-header h2 {
     text-align: right;
@@ -408,9 +427,6 @@ nav {
     @media (min-width: 1200px) {
       .fullpage-image img {
         transform: scale(1.15); } }
-  @media (min-width: 600px) {
-    .fullpage-image {
-      min-height: 70vh; } }
   @media (min-width: 800px) {
     .fullpage-image {
       min-height: 80vh; } }
@@ -461,19 +477,44 @@ nav {
     transform: translate(0, 200px); } }
 @media (min-width: 1200px) {
   .right-btn {
-    margin-left: 45vw;
+    margin-left: 35vw;
     transform: translate(0, 100px); } }
+@media (min-width: 1800px) {
+  .right-btn {
+    transform: translate(0, 0); } }
 
 @media (min-width: 1000px) {
   .left-btn {
     transform: translate(-55vw, 200px); } }
 @media (min-width: 1200px) {
   .left-btn {
-    transform: translate(-55vw, 200px); } }
+    transform: translate(-55vw, 150px); } }
+@media (min-width: 1300px) {
+  .left-btn {
+    transform: translate(-55vw, 100px); } }
+@media (min-width: 1400px) {
+  .left-btn {
+    transform: translate(-73vw, 100px); } }
+@media (min-width: 1800px) {
+  .left-btn {
+    transform: translate(-73vw, 0); } }
 
 @media (min-width: 1000px) {
   .left-btn2 {
-    transform: translate(-55vw, 550px); } }
+    transform: translate(-55vw, 525px); } }
+@media (min-width: 1800px) {
+  .left-btn2 {
+    transform: translate(-55vw, 600px); } }
+
+@media (min-width: 1000px) {
+  .right-btn2 {
+    transform: translate(27vw, 675px); } }
+@media (min-width: 1400px) {
+  .right-btn2 {
+    transform: translate(27vw, 600px); } }
+@media (min-width: 1800px) {
+  .right-btn2 {
+    transform: translate(27vw, 600px); } }
 
 .lrg-btn {
   font-weight: bold;
@@ -496,7 +537,6 @@ nav {
   height: 10vh;
   margin: 0vw 5vw 5vw 5vw;
   padding: 0vw 5vw 5vw 5vw;
-  transform: translate(0, -5vw);
   background-color: #F7F6F8;
   display: flex;
   justify-content: flex-end; }
@@ -510,14 +550,12 @@ nav {
 @media (min-width: 1000px) {
   .left-homepage-btn {
     justify-content: flex-start;
-    margin-top: 30vh;
-    transform: translate(0, 10vh); } }
+    margin-top: 30vh; } }
 
 @media (min-width: 1000px) {
   .right-homepage-btn {
     justify-content: flex-end;
-    margin-top: 30vh;
-    transform: translate(0, 10vh); } }
+    margin-top: 30vh; } }
 
 .model-buttons {
   display: flex;
@@ -949,9 +987,13 @@ nav {
   margin-top: 80px; }
   @media (min-width: 1000px) {
     .homepage section {
-      overflow: hidden; } }
+      overflow: hidden;
+      padding: 0 5vw 0 5vw; } }
   .homepage .overflow {
     max-height: 900px; }
+    @media (min-width: 1200px) {
+      .homepage .overflow {
+        max-height: 850px; } }
   @media (min-width: 1000px) {
     .homepage .text-only {
       height: auto; } }
@@ -981,11 +1023,9 @@ nav {
       .unit-intro img {
         transform: rotate(-90deg);
         width: 400px; } }
-  .unit-intro .text-block {
-    margin-top: 5vh; }
-    @media (min-width: 1000px) {
-      .unit-intro .text-block {
-        padding: 5vw; } }
+  @media (min-width: 1000px) {
+    .unit-intro .text-block {
+      padding: 5vw; } }
 
 .townhomes {
   margin-top: 75px; }
@@ -1000,7 +1040,7 @@ nav {
       padding: 5vh 5vw 5vh 5vw;
       width: 50vw; }
       .townhomes .right-block h3 {
-        padding: 5vw; } }
+        padding: 20px; } }
 
 @media (min-width: 1000px) {
   .three-bedroom h2 {
