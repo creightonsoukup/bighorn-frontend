@@ -12,7 +12,7 @@ class NavMenu extends React.Component {
           <li><Link to='/townhomes'>townhomes</Link></li>
           <li><Link to='/condos'>condos</Link></li>
           <li><Link to='/neighborhood'>the neighborhood</Link></li>
-          <li><Link to='/blog'>bighorn blog</Link></li>
+          <li><a to='http://living.bighorncrossing.com/blog'>bighorn blog</a></li>
         </ul>
         <img className='menu-logo'src={require('../assets/bighorn-logo.png')}/>
       </section>

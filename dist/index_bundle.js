@@ -27138,8 +27138,8 @@ var NavMenu = function (_React$Component) {
             'li',
             null,
             _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: '/blog' },
+              'a',
+              { to: 'http://living.bighorncrossing.com/blog' },
               'bighorn blog'
             )
           )
