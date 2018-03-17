@@ -117,9 +117,15 @@
     @include respond-to('small') {
       font-size: 18px;
     }
+    @include respond-to('huge') {
+      width: 300px;
+    }
   }
   img {
     width: 35vw;
+    @include respond-to('large') {
+      width: 300px;
+    }
   }
   button:first-of-type {
     img {

@@ -50,9 +50,10 @@ class Header extends React.Component {
             <div className='nav-items'>
               <ul className='nav-links'>
                 <li><Link to='/townhomes'>{'TOWNHOMES'}</Link></li>
-                <li><Link to='/condos'>{"CONDOS"}</Link></li>
+                <li><Link to='/apartments'>{"APARTMENTS"}</Link></li>
                 <li><Link to='/neighborhood'>{"NEIGHBORHOOD"}</Link></li>
-                <li><a href='http://living.bighorncrossing.com/blog'>{"BLOG"}</a></li>
+                <li><Link to='/lodge'>{'LODGE'}</Link></li>
+                <li><a href='http://living.bighorncrossing.com/'>{"LIFESTYLE"}</a></li>
               </ul>
               <div className="nav-menu" onClick={this.toggleMenu}>
                 <span>{'MENU'}</span>

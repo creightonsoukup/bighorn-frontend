@@ -42,7 +42,8 @@
   .right-block {
     @include respond-to('large') {
       padding: 5vh 5vw 5vh 5vw;
-      width: 50vw;
+      margin: 0 5vw 5vh 0;
+      width: 40vw;
       h3 {
         padding: 20px;
       }

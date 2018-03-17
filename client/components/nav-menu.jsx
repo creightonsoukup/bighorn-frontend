@@ -10,9 +10,10 @@ class NavMenu extends React.Component {
         <ul onClick={this.props.toggleMenu}>
           <li><Link to='/'>home</Link></li>
           <li><Link to='/townhomes'>townhomes</Link></li>
-          <li><Link to='/condos'>condos</Link></li>
+          <li><Link to='/condos'>apartments</Link></li>
+          <li><Link to='/condos'>the lodge</Link></li>
           <li><Link to='/neighborhood'>the neighborhood</Link></li>
-          <li><a to='http://living.bighorncrossing.com/blog'>bighorn blog</a></li>
+          <li><a to='http://living.bighorncrossing.com/blog'>lifestyle</a></li>
         </ul>
         <img className='menu-logo'src={require('../assets/bighorn-logo.png')}/>
       </section>

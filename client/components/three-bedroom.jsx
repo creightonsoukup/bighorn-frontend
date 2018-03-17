@@ -19,8 +19,11 @@ export default class ThreeBedroom extends React.Component {
   render() {
     return (
       <div className='three-bedroom'>
-        <Subheader style={'subheader left-header center'} text={'THREE BEDROOM'}/>
-        <Textblock style={'text-block left-block2 background'} content={content.townhomes.textBlock2}/>
+        <div>
+          <Subheader style={'subheader left-header center'} text={'THREE BEDROOM'}/>
+          <Textblock style={'text-block left-block2 background'} content={content.townhomes.textBlock2}/>
+        </div>
+
         <div className='mobile'>
           <Subheader style={'subheader left-header'} text={'EXTERIOR'}/>
           <Textblock style={'text-block outline'} content={content.townhomes.textBlock4}/>
