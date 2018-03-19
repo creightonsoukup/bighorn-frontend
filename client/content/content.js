@@ -4,20 +4,20 @@ const content = {
   homepage : {
     textBlock1 : {
       title : "Bighorn Crossing - Redefining Mountain Living",
-      paragraph1: "Bighorn Crossing is refining the idea of mountain living.  There is no need to compromise on luxury indoors in order to feel at one with the outdoors.  We created Bighorn Crossing with this very principle in mind. Bighorn Crossing is a community of 64 townhomes, 72 condos, and a full service Wyndham Microtel. With access to Arapahoe and Roosevelt National Forest, the Georgetown Lake, local trails and byways, and eight world class ski areas - nature’s finest is at your fingertips",
-      paragraph2: "Whether interested in a full time residence, a vacation home or a weekend getaway,  there are a variety of townhome layouts, condo layouts and even a full service hotel to fit your every need.  Of course, you’re thinking where is this mountain oasis? Bighorn Crossing is steps away from the charming, historic town of Georgetown, Colorado and just 40 miles outside of Denver"
+      paragraph1: "Bighorn Crossing is refining the idea of mountain living.  There is no need to compromise on luxury indoors in order to feel at one with the outdoors.  We created Bighorn Crossing with this very principle in mind. Bighorn Crossing is a community of 64 townhomes, 72 apartments, and a full service Wyndham Microtel. With access to Arapahoe and Roosevelt National Forest, the Georgetown Lake, local trails and byways, and eight world class ski areas - nature’s finest is at your fingertips",
+      paragraph2: "Whether interested in a full time residence, a vacation home or a weekend getaway,  there are a variety of townhome layouts, apartment layouts and even a full service hotel to fit your every need.  Of course, you’re thinking where is this mountain oasis? Bighorn Crossing is steps away from the charming, historic town of Georgetown, Colorado and just 40 miles outside of Denver"
     },
     textBlock2 : {
       title: "Charming Mountain Living Meets Contemporary Functionality",
       paragraph1: "The Bighorn Crossing Townhome is the quintessential mountain home.  Units run at 2 or 3 bedrooms/ 2 and a half baths with a personal outdoor courtyard space and a 1 - 2 car garage. Each unit also includes mountain/lake views, an option to rent through Wyndham, and a completely customizable interior."
     },
     textBlock3: {
-      title: "Bighorn Crossing Condos - Redefining Both the Everyday and the Getaway",
-      paragraph1: "Bighorn Crossing Condos are ideal for both the every day or a getaway. Condos list at either 1 or 2 bedrooms/2 full baths, Each condo offers mountain/lake views and a completely customizable interior.  Your morning coffee has never been more scenic - each unit includes an attached porch space and shared courtyard space."
+      title: "Bighorn Crossing Apartments - Redefining Both the Everyday and the Getaway",
+      paragraph1: "Bighorn Crossing Apartments are ideal for both the every day or a getaway. Apartments list at either 1 or 2 bedrooms/2 full baths, Each apartment offers mountain/lake views and a completely customizable interior.  Your morning coffee has never been more scenic - each unit includes an attached porch space and shared courtyard space."
     },
     textBlock4: {
       title: "Bighorn Crossing Microtel by Wyndham - Redefining R and R",
-      paragraph1: " In need of some R and R?  The Bighorn Crossing community also offers a full service Wyndham Microtel.   The hotel offers 77 rooms designed with the same contemporary touch as the Townhomes and Condos.  The Bighorn Crossing Wyndham is a destination for those seeking an outdoor retreat with access to fishing, camping, hiking, skiing, etc."
+      paragraph1: " In need of some R and R?  The Bighorn Crossing community also offers a full service Wyndham Microtel.   The hotel offers 77 rooms designed with the same contemporary touch as the Townhomes and Apartments.  The Bighorn Crossing Wyndham is a destination for those seeking an outdoor retreat with access to fishing, camping, hiking, skiing, etc."
     },
     textBlock5: {
       title: "Georgetown: Quintessential Mountain Town",
@@ -48,10 +48,10 @@ const content = {
   },
   apartments: {
     textBlock1: {
-      paragraph1: "The Bighorn Crossing Condo is a spacious, upscale, oasis ideal for couples or small families.  Each condo is framed in glass plated windows, with the option of 1 or 2 bedrooms, 2 full baths, a kitchen, dining and living area, and an attached porch space.  Every unit offers scenic mountain/lake views and access to all Wyndham Hotel amenities. Ideal for year round residents or vacation stays, the Bighorn Condo is your slice of paradise in the Colorado wilderness. Learn more about all the Condos have to offer"
+      paragraph1: "The Bighorn Crossing Apartment is a spacious, upscale, oasis ideal for couples or small families.  Each apartment is framed in glass plated windows, with the option of 1 or 2 bedrooms, 2 full baths, a kitchen, dining and living area, and an attached porch space.  Every unit offers scenic mountain/lake views and access to all Wyndham Hotel amenities. Ideal for year round residents or vacation stays, the Bighorn Aparment is your slice of paradise in the Colorado wilderness. Learn more about all the apartments have to offer"
     },
     textBlock2:  {
-      paragraph1: "The Condos effortlessly integrate into the sprawling Georgetown scenery.  There are three major structures, each compatible with the history of the surrounding area yet offer a contemporary update. The exterior was designed in an effort to capture simplicity with muted earth tones and long building facades. Surrounding each townhome are native trees, grasses, and plants and immediate access to a walkable park."
+      paragraph1: "The Apartments effortlessly integrate into the sprawling Georgetown scenery.  There are three major structures, each compatible with the history of the surrounding area yet offer a contemporary update. The exterior was designed in an effort to capture simplicity with muted earth tones and long building facades. Surrounding each townhome are native trees, grasses, and plants and immediate access to a walkable park."
     }
   },
   neighborhood: {
