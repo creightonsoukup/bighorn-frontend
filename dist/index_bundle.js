@@ -30457,7 +30457,7 @@ var Home = function (_React$Component) {
         _react2.default.createElement(
           'section',
           { className: 'overflow' },
-          _react2.default.createElement(_subheader2.default, { style: 'subheader right-header', text: 'CONDOS' }),
+          _react2.default.createElement(_subheader2.default, { style: 'subheader right-header', text: 'APARTMENTS' }),
           _react2.default.createElement(_textblock2.default, { style: 'text-block left-block', content: _content2.default.homepage.textBlock3 }),
           _react2.default.createElement('div', { className: 'color-block rotate-left' }),
           _react2.default.createElement(
@@ -30465,7 +30465,7 @@ var Home = function (_React$Component) {
             { className: 'homepage-btn right-homepage-btn' },
             _react2.default.createElement(
               _reactRouterDom.Link,
-              { to: '/condos' },
+              { to: '/apartments' },
               _react2.default.createElement(_button2.default, { type: 'lrg-btn', text: 'EXPLORE' })
             )
           )

@@ -68,11 +68,11 @@ class Home extends React.Component {
           </section>
           <FullpageImage  src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/condos_dhkmg3.jpg'/>
           <section className='overflow'>
-            <SubHeader style={'subheader right-header'} text={'CONDOS'}/>
+            <SubHeader style={'subheader right-header'} text={'APARTMENTS'}/>
             <Textblock style={'text-block left-block'} content={content.homepage.textBlock3}/>
             <div className='color-block rotate-left'></div>
             <div className='homepage-btn right-homepage-btn'>
-              <Link to='/condos'><Button type={'lrg-btn'} text={'EXPLORE'}/></Link>
+              <Link to='/apartments'><Button type={'lrg-btn'} text={'EXPLORE'}/></Link>
             </div>
 
           </section>

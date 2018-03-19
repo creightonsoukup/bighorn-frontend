@@ -37,7 +37,8 @@
     }
     @include respond-to('large') {
       text-align: right;
-      margin: 0 0 0 40vw;
+      margin: 0 0 0 0;
+      max-width: 100vw;
     }
   }
 }
