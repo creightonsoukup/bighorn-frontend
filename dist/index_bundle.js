@@ -27209,7 +27209,7 @@ var NavMenu = function (_React$Component) {
             null,
             _react2.default.createElement(
               _reactRouterDom.Link,
-              { to: '/condos' },
+              { to: '/apartments' },
               'apartments'
             )
           ),
@@ -27218,7 +27218,7 @@ var NavMenu = function (_React$Component) {
             null,
             _react2.default.createElement(
               _reactRouterDom.Link,
-              { to: '/condos' },
+              { to: '/lodge' },
               'the lodge'
             )
           ),
@@ -27236,7 +27236,7 @@ var NavMenu = function (_React$Component) {
             null,
             _react2.default.createElement(
               'a',
-              { to: 'http://living.bighorncrossing.com/blog' },
+              { href: 'http://living.bighorncrossing.com/blog' },
               'lifestyle'
             )
           )
