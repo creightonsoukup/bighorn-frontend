@@ -27236,7 +27236,7 @@ var NavMenu = function (_React$Component) {
             null,
             _react2.default.createElement(
               'a',
-              { href: 'http://living.bighorncrossing.com/blog' },
+              { href: 'http://living.bighorncrossing.com' },
               'lifestyle'
             )
           )
