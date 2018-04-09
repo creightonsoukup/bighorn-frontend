@@ -108,7 +108,7 @@ nav {
 .fixed-contact-btn {
   position: fixed;
   top: 50%;
-  z-index: 9;
+  z-index: 10000;
   background-color: $bighorn-tan;
   transform: rotate(90deg) translate(0, 45px);
   left: 0;
