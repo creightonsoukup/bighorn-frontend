@@ -1,5 +1,5 @@
 node_modules
-bundle.js
+dist/index_bundle.js
 .babelrc
 .DS_Store
 npm-debug.log
