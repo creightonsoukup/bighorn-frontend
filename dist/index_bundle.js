@@ -1725,13 +1725,11 @@ var _button = __webpack_require__(74);
 
 var _button2 = _interopRequireDefault(_button);
 
-var _reactModal = __webpack_require__(37);
-
-var _reactModal2 = _interopRequireDefault(_reactModal);
-
 var _stay_updated = __webpack_require__(174);
 
 var _stay_updated2 = _interopRequireDefault(_stay_updated);
+
+var _reactRouterDom = __webpack_require__(7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1749,106 +1747,13 @@ var NextSteps = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (NextSteps.__proto__ || Object.getPrototypeOf(NextSteps)).call(this, props));
 
-    _this.state = {
-      contactBrokerModal: false,
-      signupModal: false,
-      contactBrokerComp: false,
-      signupComp: false,
-      showButtons: true
-    };
-    _this.openSignup = _this.openSignup.bind(_this);
-    _this.closeSignup = _this.closeSignup.bind(_this);
-    _this.openContact = _this.openContact.bind(_this);
-    _this.closeContact = _this.closeContact.bind(_this);
+    _this.state = {};
     return _this;
   }
 
   _createClass(NextSteps, [{
-    key: 'openContact',
-    value: function openContact() {
-      if (window.innerWidth < 600) {
-        this.setState({
-          contactBrokerComp: true,
-          showButtons: false
-        });
-        return;
-      }
-      this.setState({
-        contactBrokerModal: true,
-        showButtons: false
-      });
-      return;
-    }
-  }, {
-    key: 'openSignup',
-    value: function openSignup() {
-      if (window.innerWidth < 600) {
-        this.setState({
-          signupComp: true,
-          showButtons: false
-        });
-        return;
-      }
-      this.setState({
-        signupModal: true,
-        showButtons: false
-      });
-      return;
-    }
-  }, {
-    key: 'closeContact',
-    value: function closeContact() {
-      if (window.innerWidth < 600) {
-        this.setState({
-          contactBrokerComp: false,
-          showButtons: true
-
-        });
-        return;
-      }
-      this.setState({
-        contactBrokerModal: false,
-        showButtons: true
-      });
-      return;
-    }
-  }, {
-    key: 'closeSignup',
-    value: function closeSignup() {
-      if (window.innerWidth < 600) {
-        this.setState({
-          signupComp: false,
-          showButtons: true
-        });
-        return;
-      }
-      this.setState({
-        signupModal: false,
-        showButtons: true
-
-      });
-      return;
-    }
-  }, {
     key: 'render',
     value: function render() {
-      var largeModal = {
-        content: {
-          top: '55%',
-          left: '50%',
-          right: 'auto',
-          bottom: 'auto',
-          marginRight: '-50%',
-          transform: 'translate(-50%, -50%)',
-          padding: '0'
-        }
-      };
-      var smallModal = {
-        content: {
-          padding: '0',
-          top: '100px'
-        }
-      };
       return _react2.default.createElement(
         'div',
         { className: 'next-steps' },
@@ -1859,53 +1764,13 @@ var NextSteps = function (_React$Component) {
             'h2',
             null,
             'INTERESTED? HERE ARE THE NEXT STEPS'
-          )
+          ),
+          _react2.default.createElement(_reactRouterDom.Link, { to: '/contact' })
         ),
-        this.state.showButtons && _react2.default.createElement(
+        _react2.default.createElement(
           'div',
-          { className: 'button-group' },
-          _react2.default.createElement(_button2.default, { type: 'btn', text: 'CONTACT A BROKER', action: this.openContact }),
-          _react2.default.createElement(_button2.default, { type: 'btn', text: 'GET UPDATES', action: this.openSignup })
-        ),
-        this.state.contactBrokerComp && _react2.default.createElement(_contact_broker2.default, { close: this.closeContact }),
-        this.state.signupComp && _react2.default.createElement(_stay_updated2.default, { close: this.closeSignup }),
-        window.innerWidth < 999 && this.state.contactBrokerModal ? _react2.default.createElement(
-          _reactModal2.default,
-          {
-            style: smallModal,
-            isOpen: this.state.contactBrokerModal,
-            ariaHideApp: false,
-            shouldCloseOnOverlayClick: true,
-            onRequestClose: this.closeContact },
-          _react2.default.createElement(_contact_broker2.default, { close: this.closeContact })
-        ) : _react2.default.createElement(
-          _reactModal2.default,
-          {
-            style: largeModal,
-            isOpen: this.state.contactBrokerModal,
-            ariaHideApp: false,
-            shouldCloseOnOverlayClick: true,
-            onRequestClose: this.closeContact },
-          _react2.default.createElement(_contact_broker2.default, { close: this.closeContact })
-        ),
-        window.innerWidth < 999 && this.state.signupModal ? _react2.default.createElement(
-          _reactModal2.default,
-          {
-            style: smallModal,
-            isOpen: this.state.signupModal,
-            ariaHideApp: false,
-            shouldCloseOnOverlayClick: true,
-            onRequestClose: this.closeSignup },
-          _react2.default.createElement(_stay_updated2.default, { close: this.closeSignup })
-        ) : _react2.default.createElement(
-          _reactModal2.default,
-          {
-            style: largeModal,
-            isOpen: this.state.signupModal,
-            ariaHideApp: false,
-            shouldCloseOnOverlayClick: true,
-            onRequestClose: this.closeSignup },
-          _react2.default.createElement(_stay_updated2.default, { close: this.closeSignup })
+          { className: 'contact-forms' },
+          _react2.default.createElement(_stay_updated2.default, null)
         )
       );
     }
@@ -3174,8 +3039,7 @@ var Townhomes = function (_React$Component) {
           ),
           this.state.activeTab === 'three' && _react2.default.createElement(_threeBedroom2.default, null),
           this.state.activeTab === 'two' && _react2.default.createElement(_two_bedroom2.default, null)
-        ),
-        _react2.default.createElement(_next_steps2.default, null)
+        )
       );
     }
   }]);
@@ -30380,43 +30244,13 @@ var Home = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
 
-    _this.state = {
-      contactBroker: false
-    };
-
-    _this.closeModal = _this.closeModal.bind(_this);
-    _this.openModal = _this.openModal.bind(_this);
+    _this.state = {};
     return _this;
   }
 
   _createClass(Home, [{
-    key: 'openModal',
-    value: function openModal() {
-      if (window.innerWidth < 600) {
-        this.props.history.push('/contact-broker');
-      }
-      this.setState({
-        contactBroker: true
-      });
-      return;
-    }
-  }, {
-    key: 'closeModal',
-    value: function closeModal() {
-      if (window.innerWidth < 600) {
-        this.props.history.push('/');
-      }
-      this.setState({
-        contactBroker: false
-      });
-      return;
-    }
-  }, {
     key: 'render',
     value: function render() {
-      if (window.scrollY === 200) {
-        console.log('hi');
-      }
       return _react2.default.createElement(
         'div',
         { className: 'homepage' },
@@ -30499,42 +30333,7 @@ var Home = function (_React$Component) {
             _react2.default.createElement(_button2.default, { type: 'btn', text: 'LEARN MORE' })
           )
         ),
-        _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460915/sitemap_t0qxrf.jpg' }),
-        window.innerWidth < 999 ? _react2.default.createElement(
-          _reactModal2.default,
-          {
-            style: {
-              content: {
-                padding: '0',
-                top: '100px'
-              }
-            },
-            isOpen: this.state.contactBroker,
-            ariaHideApp: false,
-            shouldCloseOnOverlayClick: true,
-            onRequestClose: this.closeModal },
-          _react2.default.createElement(_contact_broker2.default, { close: this.closeModal })
-        ) : _react2.default.createElement(
-          _reactModal2.default,
-          {
-            style: {
-              content: {
-                top: '55%',
-                left: '50%',
-                right: 'auto',
-                bottom: 'auto',
-                marginRight: '-50%',
-                transform: 'translate(-50%, -50%)',
-                padding: '0'
-              }
-            },
-            isOpen: this.state.contactBroker,
-            ariaHideApp: false,
-            shouldCloseOnOverlayClick: true,
-            onRequestClose: this.closeModal },
-          _react2.default.createElement(_contact_broker2.default, { close: this.closeModal })
-        ),
-        _react2.default.createElement(_next_steps2.default, null)
+        _react2.default.createElement(_fullpageImage2.default, { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1516460915/sitemap_t0qxrf.jpg' })
       );
     }
   }]);
@@ -30585,8 +30384,6 @@ var StayUpdated = function (_React$Component) {
 
     _this.state = {
       email: '',
-      lastName: '',
-      firstName: '',
       success: false,
       error: false
     };
@@ -30615,8 +30412,6 @@ var StayUpdated = function (_React$Component) {
         if (data.payload.status == 200) {
           _this2.setState({
             email: '',
-            lastName: '',
-            firstName: '',
             success: true
           });
           return;
@@ -30649,32 +30444,6 @@ var StayUpdated = function (_React$Component) {
             _react2.default.createElement(
               'span',
               null,
-              'First Name'
-            ),
-            _react2.default.createElement('input', {
-              name: 'firstName',
-              value: this.state.firstName,
-              onChange: this.handleInputChange })
-          ),
-          _react2.default.createElement(
-            'label',
-            null,
-            _react2.default.createElement(
-              'span',
-              null,
-              'Last Name'
-            ),
-            _react2.default.createElement('input', {
-              name: 'lastName',
-              value: this.state.lastName,
-              onChange: this.handleInputChange })
-          ),
-          _react2.default.createElement(
-            'label',
-            null,
-            _react2.default.createElement(
-              'span',
-              null,
               'Email'
             ),
             _react2.default.createElement('input', {
@@ -30689,11 +30458,6 @@ var StayUpdated = function (_React$Component) {
               'button',
               { onClick: this.handleSubmit },
               'SUBMIT'
-            ),
-            _react2.default.createElement(
-              'button',
-              { onClick: this.props.close },
-              'CANCEL'
             )
           )
         ),
@@ -31544,27 +31308,21 @@ var Footer = function (_React$Component) {
             _react2.default.createElement(
               'h4',
               null,
-              'SALES CENTER'
+              'SALES'
             ),
             _react2.default.createElement(
               'p',
               null,
-              'Argent Real Estate'
+              _react2.default.createElement(
+                'a',
+                { href: 'mailto:sales@bighorncrossing.com?Subject=BighornCrossing' },
+                'sales@bighorncrossing.com'
+              )
             ),
             _react2.default.createElement(
               'p',
               null,
-              '612 6th St Unit B'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'Georgetown, CO '
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              '(303) 569 2575'
+              '(970) 376 7670'
             )
           ),
           _react2.default.createElement(
@@ -31576,8 +31334,8 @@ var Footer = function (_React$Component) {
               'CONTACT US'
             ),
             _react2.default.createElement(
-              'p',
-              null,
+              'a',
+              { href: 'mailto:hello@bighorncrossing.com?Subject=BighornCrossing' },
               'hello@bighorncrossing.com'
             )
           )

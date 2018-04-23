@@ -57,7 +57,6 @@ class Townhomes extends React.Component {
             <TwoBedroom />
           }
         </section>
-        <NextSteps/>
       </div>
     )
   }
