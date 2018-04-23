@@ -18,36 +18,10 @@ class Home extends React.Component {
       super(props);
 
       this.state = {
-        contactBroker: false
       }
-
-      this.closeModal= this.closeModal.bind(this)
-      this.openModal = this.openModal.bind(this)
-    }
-
-    openModal() {
-      if(window.innerWidth < 600) {
-        this.props.history.push('/contact-broker');
-      }
-      this.setState({
-        contactBroker: true
-      })
-      return
-    }
-    closeModal() {
-      if(window.innerWidth < 600) {
-        this.props.history.push('/');
-      }
-      this.setState({
-        contactBroker: false
-      })
-      return
     }
 
     render() {
-      if(window.scrollY === 200) {
-        console.log('hi')
-      }
       return (
         <div className="homepage">
           <h1 className='gallery-overlay'><span>{'BIGHORN'}</span><span>{'CROSSING'}</span></h1>
@@ -93,41 +67,6 @@ class Home extends React.Component {
             </div>
           </section>
           <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460915/sitemap_t0qxrf.jpg'/>
-          { window.innerWidth < 999 ? (
-            <Modal
-              style={{
-                content: {
-                  padding: '0',
-                  top: '100px'
-                }
-              }}
-              isOpen={this.state.contactBroker}
-              ariaHideApp={false}
-              shouldCloseOnOverlayClick={true}
-              onRequestClose={this.closeModal}>
-              <ContactBroker close={this.closeModal}/>
-            </Modal>
-          ) : (
-            <Modal
-              style={{
-                content : {
-                  top: '55%',
-                  left: '50%',
-                  right: 'auto',
-                  bottom: 'auto',
-                  marginRight: '-50%',
-                  transform: 'translate(-50%, -50%)',
-                  padding: '0',
-                }
-              }}
-              isOpen={this.state.contactBroker}
-              ariaHideApp={false}
-              shouldCloseOnOverlayClick={true}
-              onRequestClose={this.closeModal}>
-              <ContactBroker close={this.closeModal}/>
-            </Modal>
-          )}
-          <NextSteps/>
         </div>
       )
     }

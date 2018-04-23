@@ -89,7 +89,15 @@
       margin-bottom: 4px;
       @include respond-to('medium') {
         font-size: 18px;
-        margin-bottom: 8px;
+        margin-bottom: 12px;
+      };
+    }
+    a {
+      margin-bottom: 4px;
+      color: black;
+      @include respond-to('medium') {
+        font-size: 18px;
+        margin-bottom: 12px;
       };
     }
   }
