@@ -64,49 +64,12 @@ class Header extends React.Component {
           { this.state.menu &&
             <NavMenu toggleMenu={this.toggleMenu} />
           }
-          { window.innerWidth < 600 ? (
-            <Link to='/contact-broker'><div className='fixed-contact-btn'>
-              {"CONTACT US"}
-            </div></Link>
-          ) : (
-            <div className='fixed-contact-btn' onClick={this.openModal}>
-              {"CONTACT US"}
-            </div>
-          )}
-          { window.innerWidth < 999 ? (
-            <Modal
-              style={{
-                content: {
-                  padding: '0',
-                  top: '100px'
-                }
-              }}
-              isOpen={this.state.contactBroker}
-              ariaHideApp={false}
-              shouldCloseOnOverlayClick={true}
-              onRequestClose={this.closeModal}>
-              <ContactBroker close={this.closeModal}/>
-            </Modal>
-          ) : (
-            <Modal
-              style={{
-                content : {
-                  top: '55%',
-                  left: '50%',
-                  right: 'auto',
-                  bottom: 'auto',
-                  marginRight: '-50%',
-                  transform: 'translate(-50%, -50%)',
-                  padding: '0',
-                }
-              }}
-              isOpen={this.state.contactBroker}
-              ariaHideApp={false}
-              shouldCloseOnOverlayClick={true}
-              onRequestClose={this.closeModal}>
-              <ContactBroker close={this.closeModal}/>
-            </Modal>
-          )}
+
+          <a href='https://mailchi.mp/3ca59e0cbf86/contact-broker'><div className='fixed-contact-btn'>
+            {"CONTACT US"}
+          </div></a>
+
+          
         </header>
     )
   }
