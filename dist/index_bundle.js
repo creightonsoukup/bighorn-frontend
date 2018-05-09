@@ -30849,8 +30849,7 @@ var Apartments = function (_React$Component) {
             'ONE BEDROOM'
           )
         ),
-        _react2.default.createElement('img', { className: 'unit-plans', src: this.state.floorplan }),
-        _react2.default.createElement(_next_steps2.default, null)
+        _react2.default.createElement('img', { className: 'unit-plans', src: this.state.floorplan })
       );
     }
   }]);
@@ -30992,8 +30991,7 @@ var Neighborhood = function (_React$Component) {
             _react2.default.createElement('img', { src: 'https://res.cloudinary.com/bighorncrossing/image/upload/v1518473004/train_doa4jj.jpg' }),
             _react2.default.createElement(_list2.default, { style: 'list right-list', content: _content2.default.neighborhood.history })
           )
-        ),
-        _react2.default.createElement(_next_steps2.default, null)
+        )
       );
     }
   }]);
@@ -31076,8 +31074,7 @@ var Lodge = function (_React$Component) {
           'section',
           null,
           _react2.default.createElement('div', null)
-        ),
-        _react2.default.createElement(_next_steps2.default, null)
+        )
       );
     }
   }]);
@@ -31245,7 +31242,7 @@ var Footer = function (_React$Component) {
               null,
               _react2.default.createElement(
                 'a',
-                { href: 'http://living.bighorncrossing.com/blog' },
+                { href: 'http://living.bighorncrossing.com' },
                 "BLOG"
               )
             )

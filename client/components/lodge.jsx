@@ -15,10 +15,10 @@ class Lodge extends React.Component {
         <FullpageImage src={'https://res.cloudinary.com/bighorncrossing/image/upload/v1516463338/B3_jyhir9.jpg'}/>
         <section>
           <div>
-            
+
           </div>
         </section>
-        <NextSteps/>
+        
       </div>
     )
   }

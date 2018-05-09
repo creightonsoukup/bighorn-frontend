@@ -47,7 +47,7 @@ class Neighborhood extends React.Component {
             <List style={'list right-list'} content={content.neighborhood.history}/>
           </div>
         </section>
-        <NextSteps/>
+
       </div>
     )
   }

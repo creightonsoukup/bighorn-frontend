@@ -48,7 +48,7 @@ class Apartments extends React.Component {
           <button onClick={this.oneBedroom}>{'ONE BEDROOM'}</button>
         </div>
         <img className='unit-plans' src={this.state.floorplan} />
-        <NextSteps/>
+
       </div>
     )
   }

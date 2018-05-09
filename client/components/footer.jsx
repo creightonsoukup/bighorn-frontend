@@ -42,7 +42,7 @@ export default class Footer extends React.Component {
             <li><Link to='/townhomes'>TOWNHOMES</Link></li>
             <li><Link to='/apartments'>APARTMENTS</Link></li>
             <li><Link to='/neighborhood'>THE NEIGHBORHOOD</Link></li>
-            <li><a href='http://living.bighorncrossing.com/blog'>{"BLOG"}</a></li>
+            <li><a href='http://living.bighorncrossing.com'>{"BLOG"}</a></li>
           </ul>
         </div>
         <div className='addresses'>
