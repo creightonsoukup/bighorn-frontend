@@ -31281,6 +31281,11 @@ var Footer = function (_React$Component) {
             _react2.default.createElement(
               'p',
               null,
+              'Tiffany Hammond'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
               _react2.default.createElement(
                 'a',
                 { href: 'mailto:sales@bighorncrossing.com?Subject=BighornCrossing' },
@@ -31290,7 +31295,7 @@ var Footer = function (_React$Component) {
             _react2.default.createElement(
               'p',
               null,
-              '(970) 376 7670'
+              '(720) 355 6527'
             )
           ),
           _react2.default.createElement(
