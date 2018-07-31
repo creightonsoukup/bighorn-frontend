@@ -42,7 +42,7 @@ export default class Footer extends React.Component {
             <li><Link to='/townhomes'>TOWNHOMES</Link></li>
             <li><Link to='/apartments'>APARTMENTS</Link></li>
             <li><Link to='/neighborhood'>THE NEIGHBORHOOD</Link></li>
-            <li><a href='http://living.bighorncrossing.com'>{"BLOG"}</a></li>
+            <li><a href='http://lifestyle.bighorncrossing.com'>{"BLOG"}</a></li>
           </ul>
         </div>
         <div className='addresses'>
@@ -50,14 +50,13 @@ export default class Footer extends React.Component {
             <h4>{'BIGHORN CROSSING'}</h4>
             <p>{'Georgetown Lake'}</p>
             <p>{'Georgetown, CO '}</p>
-          </div>
-          <div className='address'>
-            <h4>{'SALES'}</h4>
-            <p><a href="mailto:sales@bighorncrossing.com?Subject=BighornCrossing">{'sales@bighorncrossing.com'}</a></p>
-          </div>
-          <div className='address'>
-            <h4>{'CONTACT US'}</h4>
             <a href="mailto:hello@bighorncrossing.com?Subject=BighornCrossing">{'hello@bighorncrossing.com'}</a>
+          </div>
+          <div className='address'>
+
+          </div>
+          <div className='address'>
+            <h4><a href="https://living.bighorncrossing.com/contact-us">{'CONTACT US'}</a></h4>
           </div>
         </div>
         { window.innerWidth < 999 ? (

@@ -53,7 +53,7 @@ class Header extends React.Component {
                 <li><Link to='/apartments'>{"APARTMENTS"}</Link></li>
                 <li><Link to='/neighborhood'>{"NEIGHBORHOOD"}</Link></li>
                 <li><Link to='/lodge'>{'LODGE'}</Link></li>
-                <li><a href='http://living.bighorncrossing.com/'>{"LIFESTYLE"}</a></li>
+                <li><a href='http://living.bighorncrossing.com/'>{"BLOG"}</a></li>
               </ul>
               <div className="nav-menu" onClick={this.toggleMenu}>
                 <span>{'MENU'}</span>
@@ -65,11 +65,11 @@ class Header extends React.Component {
             <NavMenu toggleMenu={this.toggleMenu} />
           }
 
-          <a href='https://mailchi.mp/3ca59e0cbf86/contact-broker'><div className='fixed-contact-btn'>
+          <a href='https://living.bighorncrossing.com/contact-us'><div className='fixed-contact-btn'>
             {"CONTACT US"}
           </div></a>
 
-          
+
         </header>
     )
   }

@@ -23298,7 +23298,7 @@ var Header = function (_React$Component) {
                 _react2.default.createElement(
                   'a',
                   { href: 'http://living.bighorncrossing.com/' },
-                  "LIFESTYLE"
+                  "BLOG"
                 )
               )
             ),
@@ -23317,7 +23317,7 @@ var Header = function (_React$Component) {
         this.state.menu && _react2.default.createElement(_navMenu2.default, { toggleMenu: this.toggleMenu }),
         _react2.default.createElement(
           'a',
-          { href: 'https://mailchi.mp/3ca59e0cbf86/contact-broker' },
+          { href: 'https://living.bighorncrossing.com/contact-us' },
           _react2.default.createElement(
             'div',
             { className: 'fixed-contact-btn' },
@@ -27062,8 +27062,8 @@ var NavMenu = function (_React$Component) {
             null,
             _react2.default.createElement(
               'a',
-              { href: 'http://living.bighorncrossing.com' },
-              'lifestyle'
+              { href: 'http://lifestyle.bighorncrossing.com' },
+              'lifestyle blog'
             )
           ),
           _react2.default.createElement(
@@ -27071,7 +27071,7 @@ var NavMenu = function (_React$Component) {
             null,
             _react2.default.createElement(
               'a',
-              { href: 'https://mailchi.mp/3ca59e0cbf86/contact-broker' },
+              { href: 'https://living.bighorncrossing.com/contact-us' },
               'contact'
             )
           )
@@ -31242,7 +31242,7 @@ var Footer = function (_React$Component) {
               null,
               _react2.default.createElement(
                 'a',
-                { href: 'http://living.bighorncrossing.com' },
+                { href: 'http://lifestyle.bighorncrossing.com' },
                 "BLOG"
               )
             )
@@ -31268,38 +31268,25 @@ var Footer = function (_React$Component) {
               'p',
               null,
               'Georgetown, CO '
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'address' },
-            _react2.default.createElement(
-              'h4',
-              null,
-              'SALES'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: 'mailto:sales@bighorncrossing.com?Subject=BighornCrossing' },
-                'sales@bighorncrossing.com'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'address' },
-            _react2.default.createElement(
-              'h4',
-              null,
-              'CONTACT US'
             ),
             _react2.default.createElement(
               'a',
               { href: 'mailto:hello@bighorncrossing.com?Subject=BighornCrossing' },
               'hello@bighorncrossing.com'
+            )
+          ),
+          _react2.default.createElement('div', { className: 'address' }),
+          _react2.default.createElement(
+            'div',
+            { className: 'address' },
+            _react2.default.createElement(
+              'h4',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'https://living.bighorncrossing.com/contact-us' },
+                'CONTACT US'
+              )
             )
           )
         ),

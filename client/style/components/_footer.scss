@@ -65,7 +65,7 @@
 .addresses {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;
   width: 100%;
   position: relative;
@@ -77,12 +77,22 @@
     margin: 15px;
     text-align: right;
     padding-right: 20px;
+    padding-left: 25px;
     h4 {
       margin-bottom: 8px;
       font-size: 18px;
       @include respond-to('medium') {
         font-size: 24px;
         margin-bottom: 12px;
+      };
+    }
+    h4 a {
+      margin-bottom: 8px;
+      font-size: 18px;
+      @include respond-to('medium') {
+        font-size: 24px;
+        margin-bottom: 12px;
+        text-align: left;
       };
     }
     p {
