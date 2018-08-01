@@ -31270,6 +31270,11 @@ var Footer = function (_React$Component) {
               'Georgetown, CO '
             ),
             _react2.default.createElement(
+              'p',
+              null,
+              '720-526-0617'
+            ),
+            _react2.default.createElement(
               'a',
               { href: 'mailto:hello@bighorncrossing.com?Subject=BighornCrossing' },
               'hello@bighorncrossing.com'

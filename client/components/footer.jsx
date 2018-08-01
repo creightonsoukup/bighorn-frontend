@@ -50,6 +50,7 @@ export default class Footer extends React.Component {
             <h4>{'BIGHORN CROSSING'}</h4>
             <p>{'Georgetown Lake'}</p>
             <p>{'Georgetown, CO '}</p>
+            <p>{'720-526-0617'}</p>
             <a href="mailto:hello@bighorncrossing.com?Subject=BighornCrossing">{'hello@bighorncrossing.com'}</a>
           </div>
           <div className='address'>
