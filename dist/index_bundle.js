@@ -23297,7 +23297,7 @@ var Header = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   'a',
-                  { href: 'http://living.bighorncrossing.com/' },
+                  { href: 'http://lifestyle.bighorncrossing.com/' },
                   "BLOG"
                 )
               )
