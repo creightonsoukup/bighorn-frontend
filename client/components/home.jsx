@@ -29,7 +29,7 @@ class Home extends React.Component {
           <section className='text-only'>
             <Textblock style={'text-block background right-block margin-bottom'} content={content.homepage.textBlock1}/>
           </section>
-          <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460913/backyard_o2zp5r.jpg'/>
+          <FullpageImage src='https://res.cloudinary.com/bighorncrossing/image/upload/v1516460916/vqu4stpehzaq83rwcia0.jpg'/>
           <section className='overflow'>
             <SubHeader style={'subheader left-header'} text={'TOWNHOMES'}/>
             <Textblock style={'text-block right-block'} content={content.homepage.textBlock2}/>
