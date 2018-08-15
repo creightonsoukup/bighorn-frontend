@@ -94,6 +94,7 @@ export default class Footer extends React.Component {
             <ContactBroker close={this.closeModal}/>
           </Modal>
         )}
+
       </section>
     )
   }
