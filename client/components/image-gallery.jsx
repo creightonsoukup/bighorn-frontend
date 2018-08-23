@@ -6,7 +6,7 @@ export default class ImageGallery extends React.Component {
     super(props);
     this.state = { imageUrl:'',
                   position: 0,
-                  initialLoad: true
+                  initialLoad: false
                 }
     this.changeUrl = this.changeUrl.bind(this)
   }
@@ -45,7 +45,7 @@ export default class ImageGallery extends React.Component {
     return (
       <div className='image-gallery'>
         <img src={ this.state.imageUrl } />
-        
+
       </div>
     )
   }

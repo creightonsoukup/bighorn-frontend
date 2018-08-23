@@ -1120,7 +1120,7 @@ var ImageGallery = function (_React$Component) {
 
     _this.state = { imageUrl: '',
       position: 0,
-      initialLoad: true
+      initialLoad: false
     };
     _this.changeUrl = _this.changeUrl.bind(_this);
     return _this;

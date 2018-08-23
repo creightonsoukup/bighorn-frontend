@@ -4,6 +4,7 @@
   position: relative;
   overflow: hidden;
   z-index: 10;
+  height: 35vh;
   @include respond-to('small') {
     height: 70vh;
   }
@@ -16,6 +17,8 @@
   img {
     width: auto;
     transform: scale(1);
+    animation: kenburns 30s;
+    transition-timing-function: linear;
     height: 100%;
     margin-left: auto;
     margin-right: auto;

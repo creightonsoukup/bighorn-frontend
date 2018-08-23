@@ -3,13 +3,13 @@
   section {
     @include respond-to('large') {
       overflow: hidden;
-      padding: 0 5vw 0 5vw;
+      margin: auto;
     }
   }
   .overflow {
     max-height: 900px;
     @include respond-to('huge') {
-      max-height: 850px;
+      max-height: 700px;
     }
   }
  .text-only {

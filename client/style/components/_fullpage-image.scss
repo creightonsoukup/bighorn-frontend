@@ -6,7 +6,6 @@
   min-width: 100vw;
   min-height: 45vh;
   overflow: hidden;
-  background-color: $bighorn-grey;
   img {
    width: 100vw;
    transform: scale(1.4);
@@ -20,7 +19,7 @@
    };
   }
   @include respond-to('small') {
-    
+
   }
   @include respond-to('medium') {
     min-height: 80vh;
